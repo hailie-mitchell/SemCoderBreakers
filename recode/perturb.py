@@ -33,7 +33,7 @@ def set_seed(seed, deterministic=True):
 
 
 def get_languages(data):
-    if data in ["humaneval", "mbpp"]:
+    if data in ["humaneval", "mbpp", "cruxeval"]:
         return "python"
     if data in ["python"]:
         return data
@@ -427,7 +427,7 @@ if __name__ == '__main__':
     """ The main function to perform perturbations
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', type=str, default="humaneval", choices=["humaneval", "mbpp", "mbjp", "mbjsp", "mbkp", "mbphp", "mbrbp"])
+    parser.add_argument('--data', type=str, default="humaneval", choices=["humaneval", "mbpp", "mbjp", "mbjsp", "mbkp", "mbphp", "mbrbp", "cruxeval"])
     parser.add_argument('--config', default="config.json", help="The config to run.")
     parser.add_argument('--rng-seed', type=int, default=42, help="global random seed.")
     parser.add_argument('--rng-deterministic', type=bool, default=True)

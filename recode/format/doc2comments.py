@@ -1,5 +1,4 @@
-
-from matplotlib import docstring
+# from matplotlib import docstring
 
 def doc2comments(code, entry_point, language="python"):
     """ change \"\"\" to # comments

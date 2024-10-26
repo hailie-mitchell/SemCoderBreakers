@@ -193,14 +193,17 @@ def black_tablize_doc(doc, indent_type):
         for line in lines:
             new_line = str(line)
             space_ahead = ""
-            for ch_idx, ch in enumerate(line):
-                if ch in [" ", "\t"]:
-                    space_ahead += ch
-                else:
-                    break
+            ch_idx = 0    # Initialize ch_idx
+
+            if line:  # Only process non-empty lines
+                for ch_idx, ch in enumerate(line):
+                    if ch in [" ", "\t"]:
+                        space_ahead += ch
+                    else:
+                        break
             
             # new_line = space_ahead.replace(indent, indent + "# ") + new_line[ch_idx:]
-            if indent_type in space_ahead:
+            if line and indent_type in space_ahead:
                 new_line = space_ahead.replace(indent_type, "\t") + new_line[ch_idx:]
             new_lines.append(new_line)
         new_doc = "\n".join(new_lines)
