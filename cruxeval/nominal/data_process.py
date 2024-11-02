@@ -1,25 +1,41 @@
 import json
-import sys
+import argparse
 
 
-def for_perturb(input_file, output_file):
+ALT_FUNC_NAME = "operation_to_perform"
+
+
+def rename_function(code):
+    lines = code.splitlines()
+    for i in range(len(lines)):
+        if lines[i].strip().startswith('def f('):
+            lines[i] = lines[i].replace('def f', f'def {ALT_FUNC_NAME}', 1)
+    return '\n'.join(lines)
+
+
+def for_perturb(input_file, output_file, rename_func=False):
     """Prepare CRUXEval for code perturbation
     here instead of rewriting functions in ReCode
     we cheat them by formatting CRUXEval as code completion tasks"""
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         for line in infile:
             data = json.loads(line)
+
             # Change 'id' to 'task_id'
             data['task_id'] = f"CRUXEval/{data.pop('id').split('_')[1]}"
+
+            code = data.pop('code')
+            # Rename function if requested
+            code = rename_function(code) if rename_func else code
+            entry_point = ALT_FUNC_NAME if rename_func else 'f'
+
             # Split 'code' into 'prompt' and 'canonical_solution'
-            header, doc, body = sep(data.pop('code'), 'f')
+            header, doc, body = sep(code, entry_point)
             data['prompt'] = header + doc
             data['canonical_solution'] = body
-            # Add 'entry_point'
-            data['entry_point'] = 'f'   # not safe, but actually works
 
-            # TODO: change function names to more descriptive ones, e.g. func_to_analyze
-            # By doing so, we can also implement FUNC_RECIPES
+            # Add 'entry_point'
+            data['entry_point'] = entry_point
 
             # Write the modified data to the output file
             json.dump(data, outfile)
@@ -72,17 +88,17 @@ def sep(code, entry_point):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("Usage: python data_process.py <function_name> <input_file> <output_file>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Process data with specified function.")
+    parser.add_argument('function', choices=['for_perturb', 'for_eval'], 
+                        help="Function to execute: 'for_perturb' or 'for_eval'.")
+    parser.add_argument('input_file', help="Input file path.")
+    parser.add_argument('output_file', help="Output file path.")
+    parser.add_argument('--rename_func', type=bool, default=False,
+                        help="Specify whether to rename (True or False). Default is False.")
 
-    function_name = sys.argv[1]
-    input_file = sys.argv[2]
-    output_file = sys.argv[3]
+    args = parser.parse_args()
 
-    if function_name == "for_perturb":
-        for_perturb(input_file, output_file)
-    elif function_name == "for_eval":
-        for_eval(input_file, output_file)
-    else:
-        print("Invalid function name. Use 'for_perturb' or 'for_eval'.")
+    if args.function == "for_perturb":
+        for_perturb(args.input_file, args.output_file, args.rename_func)
+    elif args.function == "for_eval":
+        for_eval(args.input_file, args.output_file)
