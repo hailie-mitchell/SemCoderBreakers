@@ -1,0 +1,100 @@
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+Namespace(status='perturb', method='format', config='config.json', aug_method=None, datasets=['cruxeval'], models=['codegen-350M-mono'], n_outputs=1, ngpus=1, overwrite=False, subset='full', metric='passatk', eval_only=False, rng_seed=42, seed=0, num_samples=0, k=1, print_sample=False)
+=== python perturb.py --data cruxeval --subset full --method format --aug_method 0 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/format/cruxeval_tab_indent_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+800 generated prompts saved. Done...
+
+=== python perturb.py --data cruxeval --subset full --method format --aug_method 1 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/format/cruxeval_split_lines_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+Traceback (most recent call last):
+  File "/home/rc3593/recode/perturb.py", line 540, in <module>
+    generated_data = perturb_format(args, data, FORMAT_RECIPES)
+  File "/home/rc3593/recode/perturb.py", line 335, in perturb_format
+    res["prompt"] = eval(recipes[args.aug_method])(entry["prompt"], entry["entry_point"], language=get_languages(args.data))
+  File "/home/rc3593/recode/format/split_lines.py", line 8, in split_lines
+    new_code = longest_splits(code, entry_point, language)
+  File "/home/rc3593/recode/format/split_lines.py", line 122, in longest_splits
+    assert string_end != -1
+AssertionError
+=== python perturb.py --data cruxeval --subset full --method format --aug_method 2 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/format/cruxeval_doc2comments_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+Traceback (most recent call last):
+  File "/home/rc3593/recode/perturb.py", line 540, in <module>
+    generated_data = perturb_format(args, data, FORMAT_RECIPES)
+  File "/home/rc3593/recode/perturb.py", line 335, in perturb_format
+    res["prompt"] = eval(recipes[args.aug_method])(entry["prompt"], entry["entry_point"], language=get_languages(args.data))
+  File "/home/rc3593/recode/format/doc2comments.py", line 18, in doc2comments
+    assert doc_start != -1, "only support mbxp and humaneval for this function"
+AssertionError: only support mbxp and humaneval for this function
+=== python perturb.py --data cruxeval --subset full --method format --aug_method 3 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/format/cruxeval_new_lines_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+800 generated prompts saved. Done...
+
+=== python perturb.py --data cruxeval --subset full --method format --aug_method 4 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/format/cruxeval_new_line_aftercode_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+800 generated prompts saved. Done...
+
+=== python perturb.py --data cruxeval --subset full --method format --aug_method 5 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/format/cruxeval_new_line_afterdoc_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+800 generated prompts saved. Done...

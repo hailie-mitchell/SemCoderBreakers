@@ -1,0 +1,348 @@
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+Namespace(status='perturb', method='natgen', config='config.json', aug_method=None, datasets=['cruxeval'], models=['codegen-350M-mono'], n_outputs=1, ngpus=1, overwrite=False, subset='full', metric='passatk', eval_only=False, rng_seed=42, seed=0, num_samples=0, k=1, print_sample=False)
+=== python perturb.py --data cruxeval --subset full --method natgen --aug_method 0 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/natgen/cruxeval_DeadCodeInserter_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+0it [00:00, ?it/s]/opt/conda/envs/recode/lib/python3.10/site-packages/tree_sitter/__init__.py:36: FutureWarning: Language(path, name) is deprecated. Use Language(ptr, name) instead.
+  warn("{} is deprecated. Use {} instead.".format(old, new), FutureWarning)
+135it [00:20,  6.51it/s]error: cannot format tmp0_1730516063.9884803.py: Cannot parse: 2:0: d = {
+
+ === black fail to parse on [CRUXEval/135] ===
+
+223it [00:33,  6.58it/s]error: cannot format tmp0_1730516077.27634.py: Cannot parse: 10:2:              elif array[j]<= array[j - 1]: i = 1
+
+ === black fail to parse on [CRUXEval/223] ===
+
+684it [01:44,  6.58it/s]error: cannot format tmp0_1730516148.364553.py: Cannot parse: 2:27:     trans = str.maketrans('"'><', '9833')
+
+ === black fail to parse on [CRUXEval/684] ===
+
+760it [01:56,  6.60it/s]error: cannot format tmp0_1730516159.9929903.py: Cannot parse: 10:1:    ;
+
+ === black fail to parse on [CRUXEval/760] ===
+
+779it [01:59,  6.29it/s]error: cannot format tmp0_1730516162.912649.py: Cannot parse: 2:0: _i_7 = 0
+
+ === black fail to parse on [CRUXEval/779] ===
+
+790it [02:01,  6.24it/s]error: cannot format tmp0_1730516164.7468898.py: Cannot parse: 2:0: r = {
+
+ === black fail to parse on [CRUXEval/790] ===
+
+796it [02:02,  6.57it/s]error: cannot format tmp0_1730516165.656234.py: Cannot parse: 4:2:              else : return str
+
+ === black fail to parse on [CRUXEval/796] ===
+
+800it [02:02,  6.52it/s]
+DeadCodeInserter has 697 perturbations
+800 generated prompts saved. Done...
+
+=== python perturb.py --data cruxeval --subset full --method natgen --aug_method 1 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/natgen/cruxeval_ForWhileTransformer_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+0it [00:00, ?it/s]/opt/conda/envs/recode/lib/python3.10/site-packages/tree_sitter/__init__.py:36: FutureWarning: Language(path, name) is deprecated. Use Language(ptr, name) instead.
+  warn("{} is deprecated. Use {} instead.".format(old, new), FutureWarning)
+135it [00:20,  6.51it/s]error: cannot format tmp0_1730516193.195511.py: Cannot parse: 2:0: d = {
+
+ === black fail to parse on [CRUXEval/135] ===
+
+684it [01:43,  6.58it/s]error: cannot format tmp0_1730516276.9735596.py: Cannot parse: 2:27:    trans = str.maketrans('"'><', '9833')
+
+ === black fail to parse on [CRUXEval/684] ===
+
+760it [01:55,  6.60it/s]error: cannot format tmp0_1730516288.6138678.py: Cannot parse: 8:1:     ;
+
+ === black fail to parse on [CRUXEval/760] ===
+
+779it [01:58,  6.58it/s]error: cannot format tmp0_1730516291.4915254.py: Cannot parse: 2:0: values = text.split()
+
+ === black fail to parse on [CRUXEval/779] ===
+
+790it [02:00,  6.51it/s]error: cannot format tmp0_1730516293.1736236.py: Cannot parse: 2:0: r = {
+
+ === black fail to parse on [CRUXEval/790] ===
+
+800it [02:01,  6.57it/s]
+ForWhileTransformer has 699 perturbations
+800 generated prompts saved. Done...
+
+=== python perturb.py --data cruxeval --subset full --method natgen --aug_method 2 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/natgen/cruxeval_OperandSwap_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+0it [00:00, ?it/s]/opt/conda/envs/recode/lib/python3.10/site-packages/tree_sitter/__init__.py:36: FutureWarning: Language(path, name) is deprecated. Use Language(ptr, name) instead.
+  warn("{} is deprecated. Use {} instead.".format(old, new), FutureWarning)
+29it [00:04,  6.62it/s]error: cannot format tmp0_1730516305.7933624.py: Cannot parse: 5:1:      < len(nums)
+
+ === black fail to parse on [CRUXEval/29] ===
+
+135it [00:20,  6.22it/s]error: cannot format tmp0_1730516321.9353545.py: Cannot parse: 2:0: d = {
+
+ === black fail to parse on [CRUXEval/135] ===
+
+223it [00:34,  6.59it/s]error: cannot format tmp0_1730516335.6009402.py: Cannot parse: 7:25:            elif array[j - 1]: i = >= array[j]1
+
+ === black fail to parse on [CRUXEval/223] ===
+
+684it [01:45,  6.53it/s]error: cannot format tmp0_1730516406.5747068.py: Cannot parse: 2:27:    trans = str.maketrans('"'><', '9833')
+
+ === black fail to parse on [CRUXEval/684] ===
+
+760it [01:56,  6.53it/s]error: cannot format tmp0_1730516418.2352755.py: Cannot parse: 8:1:     ;
+
+ === black fail to parse on [CRUXEval/760] ===
+
+779it [01:59,  6.50it/s]error: cannot format tmp0_1730516421.1319275.py: Cannot parse: 2:0: values = text.split()
+
+ === black fail to parse on [CRUXEval/779] ===
+
+790it [02:01,  6.44it/s]error: cannot format tmp0_1730516422.8183813.py: Cannot parse: 2:0: r = {
+
+ === black fail to parse on [CRUXEval/790] ===
+
+800it [02:02,  6.51it/s]
+OperandSwap has 697 perturbations
+800 generated prompts saved. Done...
+
+=== python perturb.py --data cruxeval --subset full --method natgen --aug_method 3 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/natgen/cruxeval_VarRenamerCB_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+0it [00:00, ?it/s]/opt/conda/envs/recode/lib/python3.10/site-packages/tree_sitter/__init__.py:36: FutureWarning: Language(path, name) is deprecated. Use Language(ptr, name) instead.
+  warn("{} is deprecated. Use {} instead.".format(old, new), FutureWarning)
+8it [00:07,  1.19it/s]error: cannot format tmp0_1730517989.6757557.py: cannot use --safe with this file; failed to parse source file AST: invalid syntax (<unknown>, line 1)
+This could be caused by running Black with an older Python version that does not support new syntax used in your source file.
+
+ === black fail to parse on [CRUXEval/8] ===
+
+22it [00:17,  1.32it/s]error: cannot format tmp0_1730518000.3544698.py: Cannot parse: 1:25: def operation_to_perform(and):
+
+ === black fail to parse on [CRUXEval/22] ===
+
+26it [00:20,  1.29it/s]error: cannot format tmp0_1730518003.5824738.py: Cannot parse: 2:5:      for if in items.split() :
+
+ === black fail to parse on [CRUXEval/26] ===
+
+30it [00:24,  1.22it/s]error: cannot format tmp0_1730518006.8785691.py: Cannot parse: 3:5:      for not in array :
+
+ === black fail to parse on [CRUXEval/30] ===
+
+32it [00:25,  1.22it/s]error: cannot format tmp0_1730518008.5561.py: Cannot parse: 2:18:        reverse = ['*' + def for def in s.split(sep)]
+
+ === black fail to parse on [CRUXEval/32] ===
+
+71it [00:55,  1.29it/s]error: cannot format tmp0_1730518038.3549874.py: Cannot parse: 1:25: def operation_to_perform(def, n):
+
+ === black fail to parse on [CRUXEval/71] ===
+
+135it [01:41,  1.03it/s]error: cannot format tmp0_1730518084.0193915.py: Cannot parse: 2:0: he = {
+
+ === black fail to parse on [CRUXEval/135] ===
+
+155it [01:56,  1.26it/s]error: cannot format tmp0_1730518099.2039838.py: Cannot parse: 2:4:     if = 0
+
+ === black fail to parse on [CRUXEval/155] ===
+
+169it [02:07,  1.33it/s]error: cannot format tmp0_1730518109.885078.py: Cannot parse: 2:4:      if = list(text)
+
+ === black fail to parse on [CRUXEval/169] ===
+
+175it [02:11,  1.36it/s]error: cannot format tmp0_1730518113.995901.py: Cannot parse: 3:20:     w = max(map(lambda lambda : lambda.rfind(' '), lines))
+
+ === black fail to parse on [CRUXEval/175] ===
+
+187it [02:18,  1.83it/s]error: cannot format tmp0_1730518121.5342638.py: Cannot parse: 1:25: def operation_to_perform(def, index):
+
+ === black fail to parse on [CRUXEval/187] ===
+
+207it [02:33,  1.90it/s]error: cannot format tmp0_1730518135.9615812.py: Cannot parse: 2:5:     def = { }
+
+ === black fail to parse on [CRUXEval/207] ===
+
+238it [02:58,  1.22it/s]error: cannot format tmp0_1730518160.652993.py: Cannot parse: 3:5:      for if in ls :
+
+ === black fail to parse on [CRUXEval/238] ===
+
+242it [03:00,  1.60it/s]error: cannot format tmp0_1730518163.301543.py: Cannot parse: 2:1:      and = book.rsplit(':', 1)
+
+ === black fail to parse on [CRUXEval/242] ===
+
+275it [03:27,  1.16it/s]error: cannot format tmp0_1730518189.7600956.py: Cannot parse: 1:25: def operation_to_perform(yield):
+
+ === black fail to parse on [CRUXEval/275] ===
+
+276it [03:27,  1.20it/s]error: cannot format tmp0_1730518190.6515932.py: Cannot parse: 1:25: def operation_to_perform(and):
+
+ === black fail to parse on [CRUXEval/276] ===
+
+303it [03:48,  1.65it/s]error: cannot format tmp0_1730518210.9103057.py: Cannot parse: 2:4:     if = (len(text) + 1)// 2
+
+ === black fail to parse on [CRUXEval/303] ===
+
+327it [04:05,  1.40it/s]error: cannot format tmp0_1730518228.214047.py: Cannot parse: 3:4:      if = len(lst) - 1
+
+ === black fail to parse on [CRUXEval/327] ===
+
+333it [04:10,  1.28it/s]error: cannot format tmp0_1730518232.9421148.py: Cannot parse: 1:25: def operation_to_perform(if, lazy):
+
+ === black fail to parse on [CRUXEval/333] ===
+
+394it [04:56,  1.23it/s]error: cannot format tmp0_1730518278.9789915.py: Cannot parse: 3:4:     if = 0
+
+ === black fail to parse on [CRUXEval/394] ===
+
+465it [05:52,  1.35it/s]error: cannot format tmp0_1730518335.1141446.py: cannot use --safe with this file; failed to parse source file AST: cannot assign to None (<unknown>, line 2)
+This could be caused by running Black with an older Python version that does not support new syntax used in your source file.
+
+ === black fail to parse on [CRUXEval/465] ===
+
+472it [05:58,  1.24it/s]error: cannot format tmp0_1730518340.8397145.py: Cannot parse: 2:5:     def = { }
+
+ === black fail to parse on [CRUXEval/472] ===
+
+476it [06:01,  1.22it/s]error: cannot format tmp0_1730518344.1564183.py: Cannot parse: 1:25: def operation_to_perform(and, split_on):
+
+ === black fail to parse on [CRUXEval/476] ===
+
+478it [06:03,  1.23it/s]error: cannot format tmp0_1730518345.7502668.py: Cannot parse: 2:5:     def = { }
+
+ === black fail to parse on [CRUXEval/478] ===
+
+495it [06:14,  1.34it/s]error: cannot format tmp0_1730518357.1223009.py: Cannot parse: 1:25: def operation_to_perform(not):
+
+ === black fail to parse on [CRUXEval/495] ===
+
+511it [06:26,  1.25it/s]error: cannot format tmp0_1730518368.6431324.py: Cannot parse: 2:5:     not = dict(( x, '')for x in fields)
+
+ === black fail to parse on [CRUXEval/511] ===
+
+557it [07:00,  1.42it/s]error: cannot format tmp0_1730518403.1928208.py: Cannot parse: 2:5:     def = str.rpartition('ar')
+
+ === black fail to parse on [CRUXEval/557] ===
+
+587it [07:22,  1.90it/s]error: cannot format tmp0_1730518424.7061565.py: cannot use --safe with this file; failed to parse source file AST: cannot assign to None (<unknown>, line 2)
+This could be caused by running Black with an older Python version that does not support new syntax used in your source file.
+
+ === black fail to parse on [CRUXEval/587] ===
+
+602it [07:32,  1.32it/s]error: cannot format tmp0_1730518435.5997882.py: Cannot parse: 2:6:     pass = nums.count(target)
+
+ === black fail to parse on [CRUXEval/602] ===
+
+610it [07:38,  1.28it/s]error: cannot format tmp0_1730518441.522405.py: Cannot parse: 2:5:      def = dict.fromkeys(keys, value)
+
+ === black fail to parse on [CRUXEval/610] ===
+
+665it [08:20,  1.38it/s]error: cannot format tmp0_1730518482.7228417.py: Cannot parse: 2:4:     if = ""
+
+ === black fail to parse on [CRUXEval/665] ===
+
+684it [08:34,  1.28it/s]error: cannot format tmp0_1730518496.9383032.py: Cannot parse: 2:27:    trans = str.maketrans('"'><', '9833')
+
+ === black fail to parse on [CRUXEval/684] ===
+
+694it [08:42,  1.11it/s]error: cannot format tmp0_1730518505.0924318.py: Cannot parse: 1:25: def operation_to_perform(def):
+
+ === black fail to parse on [CRUXEval/694] ===
+
+706it [08:51,  1.28it/s]error: cannot format tmp0_1730518514.114787.py: Cannot parse: 2:1:      and = []
+
+ === black fail to parse on [CRUXEval/706] ===
+
+742it [09:18,  1.28it/s]error: cannot format tmp0_1730518541.2085578.py: Cannot parse: 2:7:     break = True
+
+ === black fail to parse on [CRUXEval/742] ===
+
+760it [09:31,  1.45it/s]error: cannot format tmp0_1730518554.406664.py: Cannot parse: 8:1:      ;
+
+ === black fail to parse on [CRUXEval/760] ===
+
+768it [09:37,  1.50it/s]error: cannot format tmp0_1730518559.6975255.py: Cannot parse: 1:28: def operation_to_perform(s, def):
+
+ === black fail to parse on [CRUXEval/768] ===
+
+779it [09:45,  1.14it/s]error: cannot format tmp0_1730518568.6353528.py: Cannot parse: 2:0: string = text.split()
+
+ === black fail to parse on [CRUXEval/779] ===
+
+790it [09:55,  1.22it/s]error: cannot format tmp0_1730518577.7443774.py: Cannot parse: 2:0: def = {
+
+ === black fail to parse on [CRUXEval/790] ===
+
+800it [10:02,  1.33it/s]
+VarRenamerCB has 665 perturbations
+800 generated prompts saved. Done...
+
+=== python perturb.py --data cruxeval --subset full --method natgen --aug_method 4 --seed 0 --config config.json --task partial_code ===
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/vocab/__init__.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+/opt/conda/envs/recode/lib/python3.10/site-packages/torchtext/utils.py:4: UserWarning: 
+/!\ IMPORTANT WARNING ABOUT TORCHTEXT STATUS /!\ 
+Torchtext is deprecated and the last released version will be 0.18 (this one). You can silence this warning by calling the following at the beginnign of your scripts: `import torchtext; torchtext.disable_torchtext_deprecation_warning()`
+  warnings.warn(torchtext._TORCHTEXT_DEPRECATION_MSG)
+generated outputs will be saved in datasets/perturbed_test/cruxeval/full/natgen/cruxeval_VarRenamerNaive_s0.jsonl
+loading data in datasets/nominal/cruxeval_partial.jsonl with 800 prompts
+0it [00:00, ?it/s]/opt/conda/envs/recode/lib/python3.10/site-packages/tree_sitter/__init__.py:36: FutureWarning: Language(path, name) is deprecated. Use Language(ptr, name) instead.
+  warn("{} is deprecated. Use {} instead.".format(old, new), FutureWarning)
+135it [00:21,  6.14it/s]error: cannot format tmp0_1730519450.7462249.py: Cannot parse: 2:0: VAR_0 = {
+
+ === black fail to parse on [CRUXEval/135] ===
+
+684it [01:51,  5.86it/s]error: cannot format tmp0_1730519540.3668404.py: Cannot parse: 2:27:    VAR_0 = str.maketrans('"'><', '9833')
+
+ === black fail to parse on [CRUXEval/684] ===
+
+760it [02:03,  6.12it/s]error: cannot format tmp0_1730519552.8225493.py: Cannot parse: 8:1:     ;
+
+ === black fail to parse on [CRUXEval/760] ===
+
+779it [02:06,  6.16it/s]error: cannot format tmp0_1730519555.8951766.py: Cannot parse: 2:0: VAR_0 = text.split()
+
+ === black fail to parse on [CRUXEval/779] ===
+
+790it [02:08,  6.11it/s]error: cannot format tmp0_1730519557.6896632.py: Cannot parse: 2:0: VAR_0 = {
+
+ === black fail to parse on [CRUXEval/790] ===
+
+800it [02:10,  6.15it/s]
+VarRenamerNaive has 699 perturbations
+800 generated prompts saved. Done...
