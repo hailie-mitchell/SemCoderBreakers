@@ -10,6 +10,9 @@ def rename_function(code):
     for i in range(len(lines)):
         if lines[i].strip().startswith('def f('):
             lines[i] = lines[i].replace('def f', f'def {ALT_FUNC_NAME}', 1)
+        # add elif to ensure recursive calls to function are also updated
+        elif lines[i].find('f(') != -1 and not lines[i][lines[i].find('f(') - 1].isalnum():
+            lines[i] = lines[i].replace('f(', f'{ALT_FUNC_NAME}(', 1)
     return '\n'.join(lines)
 
 
