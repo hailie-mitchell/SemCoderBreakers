@@ -8,6 +8,7 @@ import argparse
 import torch
 import random
 import os
+import re
 from tqdm import tqdm
 import json
 from nlaugmenter import *
@@ -234,6 +235,15 @@ def perturb_partial(args, data, recipes):
     """
     generated_data = []
     diff = 0
+
+    def safer_split(code):
+        # pattern = r'["\'][^"\']*["\']|[^\s]+'
+        # pattern = r'"(\\"|[^"])*"|\'(\\\'|[^\'])*\'|[^\s]+'
+        pattern = r'"(?:\\"|[^"])*"|\'(?:\\\'|[^\'])*\'|[^\s]+'
+        result = re.findall(pattern, code)
+
+        return result
+
     for idx, entry in tqdm(enumerate(data)):
         # if entry["task_id"] != "MBPP/11": continue
         res = {}
@@ -271,7 +281,8 @@ def perturb_partial(args, data, recipes):
             tsf = eval(recipes[args.aug_method])("natgen/languages.so", get_languages(args.data))
             # first half = True for prompt based perturbations
             new_code, meta = tsf.transform_code(code=new_code, first_half=True)
-            new_code = beautify_python_code(new_code.split()).replace("\\", "")
+            # new_code = beautify_python_code(new_code.split()).replace("\\", "")
+            new_code = beautify_python_code(safer_split(new_code))
             # make doc indent to be \t to match natgen format
             new_doc = black_tablize_doc(doc, indent_type)
             if "@@this is the line to split##" in code:
