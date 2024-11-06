@@ -5,8 +5,30 @@ import argparse
 import logging
 import os
 import re
+import signal
 
 DATAPATH = "nominal/cruxeval_partial.jsonl"
+
+class TimeoutException(Exception):
+    pass
+
+def timeout_handler(signum, frame):
+    raise TimeoutException("Function execution exceeded timeout limit.")
+
+def run_with_timeout(func, args, timeout):
+    """Run the function with a timeout using the signal module."""
+    signal.signal(signal.SIGALRM, timeout_handler)
+    signal.alarm(timeout)
+
+    try:
+        result = func(*args)
+    except TimeoutException:
+        raise TimeoutException(f"Function execution exceeded {timeout} seconds")
+    finally:
+        # Cancel the alarm if the function finishes before timeout
+        signal.alarm(0)
+
+    return result
 
 def validate_eval(datapath=DATAPATH, logfile=None):
 
@@ -58,7 +80,7 @@ def validate_eval(datapath=DATAPATH, logfile=None):
             log_str += "\ninput:\t" + sample["input"] + "\noutput:\t" + sample["output"] + "\nout:\t" + sample["err_out"] + "\n"
             logging.info(log_str)
 
-def main(datapath=DATAPATH, format="recode", logfile=None):
+def main(datapath=DATAPATH, format="recode", logfile=None, timeout=5):
 
     # check if datapath exists
     assert os.path.isfile(datapath), f"Dataset file {datapath} does not exist"
@@ -96,14 +118,25 @@ def main(datapath=DATAPATH, format="recode", logfile=None):
             func_dict = {}
 
             try:
-                exec(code, func_dict)
-                eval_str = func_name + "(" + sample_in + ")"
-                eval_ret = eval(eval_str, func_dict)
-                if eval_ret == eval(sample_out, {}): 
+                def execute_code():
+                    exec(code, func_dict)
+                    eval_str = func_name + "(" + sample_in + ")"
+                    eval_ret = eval(eval_str, func_dict)
+                    if eval_ret == eval(sample_out, {}): 
+                        return True
+                    else:
+                        sample["err_out"] = eval_ret
+                        wrong_samples.append(sample)
+                        return False
+
+                if run_with_timeout(execute_code, args=[], timeout=timeout):
                     total_right += 1
-                else:
-                    sample["err_out"] = eval_ret
-                    wrong_samples.append(sample)
+
+            except TimeoutException as te:
+                errors += 1
+                log_err = "TIMEOUT ERROR\ncode:\n" + code + "\nid:\t" + sample_id
+                log_err += "\ninput:\t" + sample_in + "\noutput:\t" + sample_out + "\nerror:\n" + str(te) + "\n"
+                logging.info(log_err)
 
             except Exception as e:
                 errors += 1
@@ -131,7 +164,10 @@ if __name__=="__main__":
     parser.add_argument("--data_path", default=DATAPATH, help="Filepath to dataset for validaiton.")
     parser.add_argument("--format", default="recode", choices=["recode", "eval"], help="Choose 'recode' or 'eval' format indicating format of data file. Default: 'recode'")
     parser.add_argument("--log_file", help="Path to log file to log output.")
+    parser.add_argument("--timeout", type=int, help="Seconds to timeout")
     args = parser.parse_args()
 
-    main(args.data_path, args.format, args.log_file)
-
+    if args.timeout is None:
+        main(args.data_path, args.format, args.log_file)
+    else:
+        main(args.data_path, args.format, args.log_file, args.timeout)
