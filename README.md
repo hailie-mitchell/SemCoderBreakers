@@ -16,6 +16,7 @@ The MBPP+, HumanEval+ and CRUXEval datasets were perturbed using [ReCode](https:
 
 The installation steps provided in the [ReCode repository's](https://github.com/amazon-science/recode) README were first followed. We updated the dataset paths in the config.json file to map to our new MBPP+, HumanEval+, and CRUXEval datasets.
 
+### MBPP+ & HumanEval+
 Next, we used the [perturb] option of Recode to create the perturbed versions of the datasets.
 
 For natural language perturbations, we ran the following command:
@@ -50,6 +51,35 @@ To verify the perturbations modified the input as intended, we ran the following
 python run_robust.py analysis [perturbation_name] --aug_method [index] --models None
 ```
 
+### CRUXEval
+To perturb the CRUXEval dataset, we started by modifying the format of the original dataset so that it can be handled by the ReCode framework.
+Since all samples in the CRUXEval dataset have source code with function names `f`, we can optionally change all of the samples to have an alternate function name in order to later perform function name perturbations.
+To reformat the CRUXEval dataset, we run the following script from our own repository:
+```
+cd SemCoderBreakers/cruxeval/nominal
+python data_process.py for_perturb [path_to_original_dataset] [path_to_save_reformatted_dataset] --rename_func
+```
+
+To then apply the ReCode perturbations, we must update some of the ReCode framework to handle the CRUXEval dataset.
+The modified ReCode files are procided in the directory `SemCoderBreakers/recode`.
+We can then apply the func_name, natgen, and format perturbations from the ReCode framework to the reformatted CRUXEval dataset with a simple script.
+First copy the script into the ReCode repository, and then run it:
+```
+cp SemCoderBreakers/cruxeval/command.sh [path_to_recode_repo]/command.sh
+cd [path_to_recode_repo]
+bash command.sh
+```
+
+Once the CRUXEval datasets have been perturbed, we validate that the sample inputs associated with each sample still produce the sample output in each sample when running the perturbed source code.
+We also reformat the perturbed datasets back to the format of the original CRUXEval dataset so that a model can be evaluated on the perturbed datasets.
+The validation can be run on either format of the perturbed dataset by modifying the `format` argument when running the validation script:
+```
+cd SemCoderBreakers/cruxeval
+python validate_split_data.py --data_path [path_to_perturbed dataset] --format recode
+python nominal/data_process.py for_eval [path_to_perturbed_dataset] [path_to_save_perturbed_reformatted_dataset]
+python validate_split_data.py --data_path [path_to_perturbed_reformatted_dataset] --format eval
+```
+
 ## SemCoder
 Next, we use the [SemCoder](https://arxiv.org/pdf/2406.01006) model to assess its robustness in code generation and execution reasoning against semantic-preserving perturbations of NL and code inputs.
 
@@ -57,7 +87,16 @@ The installation steps provided in the [SemCoder repository's](https://github.co
 
 The run_cruxeval.py and run_evalplus.py scripts in the [experiments](https://github.com/ARiSE-Lab/SemCoder/tree/main/experiments) directory were updated for our analyses. It was modified such that the raw problems were extracted from the perturbed datasets rather than the unchanged datasets.
 
-Then, the following command was run to generate solutions to the perturbed EvalPlus prompts using SemCoder. These settings remained consistent across all experiments run in our study. Note that the CRUXEval generations were computed using the same command but run_cruxeval.py was used.
+Then, the following command was run to generate solutions to the perturbed EvalPlus prompts using SemCoder. These settings remained consistent across all experiments run in our study.
 ```
 run_evalplus.py --model_key deepseek-ai/deepseek-coder-6.7b-base --dataset [dataset_name] --save_path [output_path] --n_batches 1     --n_problems_per_batch 1 --n_samples_per_problem 5     --max_new_tokens 100 --top_p 0.9 --temperature 0 --input_data_path [input_path]
+```
+
+To generate model responses on the perturbed CRUXEval datasets, the SemCoder script `SemCoder/scripts/eval/eval_cruxeval.sh` was changed to use temperature 0.
+The `SemCoder/experiments/cruxeval_utils.py` file was updated to point to the perturbed dataset file of interest.
+Additionally, we modified the prompting in the file `SemCoder/experiments/cruxeval_prompts.py` so that prompts referred to a function rather than `function f` since we renamed all functions in the CRUXEval dataset.
+Then we generated model responses with the SemCoder script:
+```
+cd SemCoder
+bash scripts/eval/eval_cruxeval.sh
 ```
