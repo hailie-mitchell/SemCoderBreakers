@@ -162,9 +162,9 @@ def eval_per_cat(args):
         NL_AUG_RECIPES, PARTIAL_RECIPES, FUNC_RECIPES, FORMAT_RECIPES, FULL_RECIPES, RECIPES, \
             DATASET_PATH, RANDOM_TRANS, data_path, output_adv_path, model_generate_path, run_script = read_config(args.config, "cruxeval")
         for task in ["input", "output"]:
-            print(f"Evaluating {model} on {task} prediction...")
-            # monologue so far
-            nominal_data_path = f"nominal/cruxeval_{task}/{model}_monologue/scored_results.json"
+            infer_mode = args.mode
+            print(f"Evaluating {model} on {task} prediction (with {infer_mode} inference)...")
+            nominal_data_path = f"nominal/cruxeval_{task}/{model}_{infer_mode}/scored_results.json"
 
             if not os.path.exists(nominal_data_path):
                 print(f"{nominal_data_path} missing, skip...")
@@ -190,7 +190,7 @@ def eval_per_cat(args):
                 method_name = RECIPES[args.method][aug_method]
 
                 if args.n_outputs == 1:
-                    perturbed_data_path = f"{args.method}/{method_name}/cruxeval_{task}/{model}_monologue/scored_results.json"
+                    perturbed_data_path = f"{args.method}/{method_name}/cruxeval_{task}/{model}_{infer_mode}/scored_results.json"
                     if os.path.exists(perturbed_data_path):
                         perturbed_data = read_json(perturbed_data_path)
                         perturbed_data_list.append(perturbed_data["raw_scored_generations"])
@@ -202,7 +202,7 @@ def eval_per_cat(args):
                     for seed in range(args.n_outputs):
                         if method_name not in RANDOM_TRANS and seed >= 1: # skip other seeds since they are not random
                             continue
-                        perturbed_data_path = f"{args.method}/{method_name}_s{seed}/cruxeval_{task}/{model}_monologue/scored_results.json"
+                        perturbed_data_path = f"{args.method}/{method_name}_s{seed}/cruxeval_{task}/{model}_{infer_mode}/scored_results.json"
                         if os.path.exists(perturbed_data_path):
                             perturbed_data = read_json(perturbed_data_path)
                             perturbed_data_list.append(perturbed_data["raw_scored_generations"])
@@ -239,12 +239,15 @@ def eval_per_cat(args):
     # directory = "statitic_jsons"
     # os.makedirs(directory, exist_ok=True)
 
-    json.dump(nominal_dict, open(f"statitic_jsons/{args.method}_nominal.json", "w"))
-    json.dump(results, open(f"statitic_jsons/{args.method}_perturbed.json", "w"))
+    json.dump(nominal_dict, open(f"statitic_jsons/{args.method}_{infer_mode}_nominal.json", "w"))
+    json.dump(results, open(f"statitic_jsons/{args.method}_{infer_mode}_perturbed.json", "w"))
     # json.load(nominal_dict, open(f"statitic_jsons/{args.method}_nominal.json", "r"))
 
     # reformulate results to csv table
     for task in ["input", "output"]:
+        NL_AUG_RECIPES, PARTIAL_RECIPES, FUNC_RECIPES, FORMAT_RECIPES, FULL_RECIPES, RECIPES, \
+            DATASET_PATH, RANDOM_TRANS, data_path, output_adv_path, model_generate_path, run_script = read_config(args.config, "cruxeval")
+
         full_data = []
         row = ["nominal"]
         for model in args.models:
@@ -302,10 +305,18 @@ def eval_per_cat(args):
                 row.append(" ")
         full_data.append(row)
 
-        header = [args.method] + args.models
-        csv_path = f"category_report/cruxeval_{task}_{args.method}.csv"
-        if not os.path.exists("category_report"):
-            os.mkdir("category_report")
+        # header = [args.method] + args.models
+        csv_path = f"category_report/{args.method}/{args.mode}/"
+        os.makedirs(csv_path, exist_ok=True)
+
+        if args.aug_method is not None:
+            method_name = RECIPES[args.method][args.aug_method]
+            header = [f"{args.method}/{method_name}"] + args.models
+            csv_path += f"cruxeval_{task}_{method_name}.csv"
+        else:
+            header = [args.method] + args.models
+            csv_path += f"cruxeval_{task}_{args.method}.csv"
+
         file = open(csv_path, "w")
         writer = csv.writer(file)
         writer.writerow(header)
@@ -317,11 +328,12 @@ if __name__ == '__main__':
     """ The main function for using our robustness benchmark
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--granularity', type=str, default='category', choices=['category', 'method'], help='Obtain robustness metrics on specific granularity')
+    parser.add_argument('--granularity', type=str, default="category", choices=["category", "method"], help="Obtain robustness metrics on specific granularity")
     parser.add_argument('--method', type=str, choices=["normal", "nlaugmenter", "natgen", "format", "func_name", "random"], help="The classes of perturbation. Please set method to natgen with status nominal to evaluate nominal partial code.")
     parser.add_argument('--config', default="config.json", help="path to recode config")
     parser.add_argument('--aug_method', type=int, default=None, help="The detailed augmentation method used with index (index defined in config.json for each method). Default None means running all the perturbations")
-    parser.add_argument('--models', nargs='+', default=["semcoder_s_1030"], help="A list of the models needed to evaluate with (or create subset dataset for perturbed dataset, not needed most of the times).")
+    parser.add_argument('--models', nargs='+', default=["semcoder_s_1030"], help="A list of the models needed to evaluate with")
+    parser.add_argument('--mode', type=str, default="monologue", choices=["monologue", "direct"], help="Inference mode of the model")
     parser.add_argument('--n_outputs', type=int, default=1, help="The total number of perturbations generated/evaluated with")
     args = parser.parse_args()
     print(args)

@@ -6,14 +6,27 @@ Then, to calculate robustness metrics $`\text{RP}_{s}@k`$, $`\text{RD}_{s}@k`$, 
 
 To run the robustness evaluation, use the following example command:
 ```sh
-python eval_robustness.py --granularity category --method format --config ../../recode/config.json --models semcoder_s_1030 --n_outputs 1
+python eval_robustness.py --granularity category --method format --config ../../recode/config.json\
+--models semcoder_s_1030 --n_outputs 1
 # we have some default value, so it is equivalent to:
 # python eval_robustness.py --method format --config ../../recode/config.json
 ```
 
 To get robustness metrics for a specific perturbation method, please add an `--aug_method` argument in your command:
 ```sh
-python eval_robustness.py --granularity category --method format --config ../../recode/config.json --aug_method 0 --models semcoder_s_1030 --n_outputs 1
+python eval_robustness.py --granularity category --method format --config ../../recode/config.json\
+--aug_method 0 --models semcoder_s_1030 --n_outputs 1
 # or simplified as 
 # python eval_robustness.py --method format --config ../../recode/config.json --aug_method 0
+```
+
+If you're using direct prediction for CRUXEval in SemCoder pipline, you can specify the `--mode` argument to obtain the robustness metrics for that:
+```sh
+python eval_robustness.py --granularity category --method format --config ../../recode/config.json\
+--models semcoder_s_1030 --mode direct --n_outputs 1
+# or simplified as 
+# python eval_robustness.py --method format --config ../../recode/config.json --mode direct
+##
+# and you may specify the method as well
+# python eval_robustness.py --method format --config ../../recode/config.json --mode direct --aug_method 0
 ```
