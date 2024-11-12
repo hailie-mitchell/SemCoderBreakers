@@ -1,6 +1,6 @@
 {
     "sample_299": [
-        "'staovk'"
+        "'staovkk'"
     ],
     "sample_500": [
         "'dsj'"
@@ -36,7 +36,7 @@
         "'3.12'"
     ],
     "sample_781": [
-        "'6noitnomajivihs'"
+        "'6onto'"
     ],
     "sample_794": [
         "'normalcharsqwet42'"
@@ -45,7 +45,7 @@
         "False"
     ],
     "sample_55": [
-        "[89, 43, 17, 14, 8, 4]"
+        "[89, 43, 17, 8, 4, 14]"
     ],
     "sample_344": [
         "[6, 4, 2, 8, 15]"
@@ -63,7 +63,7 @@
         "'fubarbaz'"
     ],
     "sample_113": [
-        "'987YhnsHaShD 93275YRGsGbGsShFbSfB'"
+        "'987YhnsHAsHd 93275YRGsGbGsShFbSfB'"
     ],
     "sample_682": [
         "'hy_er_ni_mo_vi_chyp'"
@@ -105,16 +105,16 @@
         "'sowpf'"
     ],
     "sample_31": [
-        "3"
+        "10"
     ],
     "sample_278": [
-        "{0: [5, 32], 132: [991, 997]}"
+        "{0: [5, 32], 132: []}"
     ],
     "sample_619": [
         "'   rock   paper   scissors  '"
     ],
     "sample_685": [
-        "1"
+        "-2"
     ],
     "sample_790": [
         "(False, False)"
@@ -126,7 +126,7 @@
         "'fuyh'"
     ],
     "sample_791": [
-        "'000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        "'8999'"
     ],
     "sample_622": [
         "'galgu'"
@@ -174,13 +174,13 @@
         "' t 1cos'"
     ],
     "sample_780": [
-        "''"
+        "'2 5'"
     ],
     "sample_786": [
         "'91kefp7'"
     ],
     "sample_717": [
-        "'imetable'"
+        "'timetable'"
     ],
     "sample_8": [
         "'UppEr'"
@@ -201,7 +201,7 @@
         "[0, 6, 2, -1, -2, 0, 6, 2, -1, -2]"
     ],
     "sample_142": [
-        "'hpfdky'"
+        "'phdfky'"
     ],
     "sample_261": [
         "([], [516, 214, 51])"
@@ -213,7 +213,7 @@
         "False"
     ],
     "sample_701": [
-        "'31849 let it!31849 pass!'"
+        "'let it!pass!'"
     ],
     "sample_1": [
         "{1: None}"
@@ -228,7 +228,7 @@
         "'1,2,3,4'"
     ],
     "sample_691": [
-        "'rpyt'"
+        "'rpt'"
     ],
     "sample_626": [
         "'bbab'"
@@ -240,10 +240,10 @@
         "[('a', 1), ('b', 2), ('c', 3)]"
     ],
     "sample_251": [
-        "'Marie;Nelson;Oscar;+353. '"
+        "'Marie;Nelson;Oscar;+353. Marie;Nelson;Oscar;+353'"
     ],
     "sample_250": [
-        "'wlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace"
+        "'wlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace Awlace"
     ],
     "sample_390": [
         "0"
@@ -255,7 +255,7 @@
         "'Done!'"
     ],
     "sample_536": [
-        "4"
+        "6"
     ],
     "sample_652": [
         "'3'"
@@ -267,7 +267,7 @@
         "'razugizoernmgzu'"
     ],
     "sample_403": [
-        "3"
+        "2"
     ],
     "sample_745": [
         "'minimc@minimc.io'"
@@ -294,7 +294,7 @@
         "11"
     ],
     "sample_741": [
-        "1"
+        "9"
     ],
     "sample_252": [
         "'foo'"
@@ -327,7 +327,7 @@
         "['-4 => 4', '1 => 2', '- => -3']"
     ],
     "sample_202": [
-        "[10, 15]"
+        "[15, 15]"
     ],
     "sample_711": [
         "'apples\\t\\tpears\\t\\tbananas'"
@@ -357,7 +357,7 @@
         "'jao mthouse'"
     ],
     "sample_210": [
-        "46"
+        "48"
     ],
     "sample_475": [
         "1"
@@ -393,10 +393,10 @@
         "[(3, 1)]"
     ],
     "sample_457": [
-        "[]"
+        "[3]"
     ],
     "sample_2": [
-        "'hbtofdeiequ'"
+        "'hbtofdeie'"
     ],
     "sample_792": [
         "{'a': 'dog', 'b': 'dog'}"
@@ -417,7 +417,7 @@
         "False"
     ],
     "sample_728": [
-        "'r'"
+        "'R'"
     ],
     "sample_441": [
         "{37: 'forty-five', '23': 'what?'}"
@@ -474,7 +474,7 @@
         "'__1.0r0__a_j6__6'"
     ],
     "sample_266": [
-        "[2, 3, 4, 6, -2, -2]"
+        "[2, 3, 4, 6, -2, 3, -2]"
     ],
     "sample_243": [
         "False"
@@ -483,13 +483,13 @@
         "[]"
     ],
     "sample_76": [
-        "[10, 3, 2, 2, 6, 0]"
+        "[6, 2, 2, 3, 0, 0, 0, 0, 0]"
     ],
     "sample_64": [
-        "' 7 '"
+        "'     7     '"
     ],
     "sample_765": [
-        "3"
+        "4"
     ],
     "sample_52": [
         "'seiq d'"
@@ -504,7 +504,7 @@
         "'| GENERAL NAGOOR'"
     ],
     "sample_518": [
-        "False"
+        "True"
     ],
     "sample_253": [
         "'umwwfv'"
@@ -540,7 +540,7 @@
         "[]"
     ],
     "sample_334": [
-        "'00nU 00 9 rCSAz 00w 00 lpA5BO 00sizL 00i7rlVr'"
+        "'00nU00 9 rCSAz00w00 lpA5BO00sizL00i7rlVr'"
     ],
     "sample_181": [
         "['3291223', 6]"
@@ -555,7 +555,7 @@
         "'E Wrestled Evil Until Upperfeat'"
     ],
     "sample_424": [
-        "'Makers of a Statement'"
+        "'Statement'"
     ],
     "sample_406": [
         "True"
@@ -567,7 +567,7 @@
         "'d khqw whi fwi bbn 41'"
     ],
     "sample_458": [
-        "'poo4Im'"
+        "'i,po4mIm'"
     ],
     "sample_312": [
         "'True'"
@@ -579,7 +579,7 @@
         "[[1, 1, 1, 1]]"
     ],
     "sample_204": [
-        "['m', 's']"
+        "['m', 'r']"
     ],
     "sample_624": [
         "'llomnrpc'"
@@ -624,7 +624,7 @@
         "{}"
     ],
     "sample_615": [
-        "0"
+        "1"
     ],
     "sample_170": [
         "2"
@@ -645,7 +645,7 @@
         "7"
     ],
     "sample_491": [
-        "[4, 8, 8, 5, 5, 5, 8, 8]"
+        "[4, 8, 8, 5, 5, 5]"
     ],
     "sample_62": [
         "('eating', 'books', 'piano', 'excitement')"
@@ -660,13 +660,13 @@
         "[[1, 2, 3], [1, 2, 3, 1, 2, 3]]"
     ],
     "sample_302": [
-        "'wdeejjjzsjsjjsxjjhaystacksddaddddddefsfd'"
+        "'wdeejjjzsjsjjsxjjhaystacksdddddddefsfd'"
     ],
     "sample_140": [
-        "'Hi'"
+        "'Hey'"
     ],
     "sample_198": [
-        "'mj'"
+        "'msmf'"
     ],
     "sample_385": [
         "[0, 2, 1]"
@@ -690,10 +690,10 @@
         "[]"
     ],
     "sample_214": [
-        "'present/here'"
+        "'present'"
     ],
     "sample_285": [
-        "6"
+        "5"
     ],
     "sample_294": [
         "'2$z&5H3*1a@#a*1hris'"
@@ -708,7 +708,7 @@
         "'jcmfxv'"
     ],
     "sample_35": [
-        "[1, 0, 0, 2, 0]"
+        "[1, 2, 0, 3, -1]"
     ],
     "sample_81": [
         "[('Bulls', 'bulls'), ('White Sox', 45)]"
@@ -717,7 +717,7 @@
         "'gmIrt'"
     ],
     "sample_462": [
-        "'ooooooooo'"
+        "'oooooooo'"
     ],
     "sample_77": [
         "''"
@@ -735,13 +735,13 @@
         "[9, 1, 0, 1, 1]"
     ],
     "sample_738": [
-        "'r;r;r;r;r;r;r;r;'"
+        "'r;r;r;r;r;r;r;r'"
     ],
     "sample_428": [
         "[]"
     ],
     "sample_101": [
-        "[ -4, 4,   1,  0]"
+        "[ -4, 4, 1, 0]"
     ],
     "sample_345": [
         "('mv', 'ml')"
@@ -753,10 +753,10 @@
         "False"
     ],
     "sample_272": [
-        "[9, 7, 5, 3, 1, 2, 4, 6, 8, 0, 2, 4, 6, 8, 0]"
+        "[9, 7, 5, 3, 1, 2, 4, 6, 8, 0, 0]"
     ],
     "sample_255": [
-        "'no asw'"
+        "'o'"
     ],
     "sample_593": [
         "[]"
@@ -789,7 +789,7 @@
         "['a', 'ca']"
     ],
     "sample_366": [
-        "'hello, world!!_ hi'"
+        "' hello, world!!_ hi'"
     ],
     "sample_422": [
         "[1, 1, 4]"
@@ -813,13 +813,13 @@
         "['Angela', 'Dan', 'Dusty', 'Joe', 'Linda', 'Pete']"
     ],
     "sample_375": [
-        "'sierizam'"
+        "'sieram'"
     ],
     "sample_66": [
-        "'ppy'"
+        "'p'"
     ],
     "sample_317": [
-        "' vup u zwwo oihee umuwuuw! '"
+        "' vup u zwwo oihee umwauw! '"
     ],
     "sample_392": [
         "'Hello Is It MyClass'"
@@ -828,19 +828,19 @@
         "'h/ grateful k'"
     ],
     "sample_161": [
-        "'rinpxdifkj '"
+        "' rinpxdifkj'"
     ],
     "sample_661": [
         "'ee'"
     ],
     "sample_735": [
-        "'ABB'"
+        "'AbB'"
     ],
     "sample_561": [
         "7"
     ],
     "sample_319": [
-        "3"
+        "4"
     ],
     "sample_553": [
         "'swlh076293m4'"
@@ -885,7 +885,7 @@
         "2"
     ],
     "sample_6": [
-        "[('4', 52), ('a', 12)]"
+        "[('11', 52), ('4', 52)]"
     ],
     "sample_354": [
         "'R, R!!!'"
@@ -915,28 +915,28 @@
         "'3 4 '"
     ],
     "sample_481": [
-        "[1, 1, 1]"
+        "[1, 1]"
     ],
     "sample_218": [
-        "'cfcabfabcaab'"
+        "'bcfcabfcababab'"
     ],
     "sample_623": [
         "'IH'"
     ],
     "sample_653": [
-        "5"
+        "1"
     ],
     "sample_205": [
         "'fiu##nk#he###wumun'"
     ],
     "sample_770": [
-        "'$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+        "'$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
     ],
     "sample_190": [
         "'jiojikld'"
     ],
     "sample_640": [
-        "1"
+        "10"
     ],
     "sample_602": [
         "4"
@@ -948,7 +948,7 @@
         "'&&nbsp;&nbsp;&nbsp;'"
     ],
     "sample_132": [
-        "'abcd'"
+        "'abcdabc'"
     ],
     "sample_233": [
         "[3, 1, 2]"
@@ -957,7 +957,7 @@
         "[4, 8, 6, 8, 5]"
     ],
     "sample_178": [
-        "[2, 2, 2]"
+        "[2, 2]"
     ],
     "sample_313": [
         "'urecord'"
@@ -1023,7 +1023,7 @@
         "'hosu'"
     ],
     "sample_223": [
-        "1"
+        "2"
     ],
     "sample_504": [
         "[1, 1, 1, 1]"
@@ -1047,13 +1047,13 @@
         "'[ac]'"
     ],
     "sample_526": [
-        "'ekwier'"
+        "'ekwie'"
     ],
     "sample_356": [
         "[1, 2]"
     ],
     "sample_620": [
-        "'3 ihomxqd nad taerl'"
+        "'3 ihoxmqd nad taerl'"
     ],
     "sample_246": [
         "0"
@@ -1071,7 +1071,7 @@
         "[]"
     ],
     "sample_575": [
-        "10 + 4 + 4 + 4"
+        "10 + 4 + 4 + 4 + 10 + 10 + 10"
     ],
     "sample_519": [
         "{1: False, 2 :0}"
@@ -1095,7 +1095,7 @@
         "2"
     ],
     "sample_380": [
-        "'xxz'"
+        "'jarcz'"
     ],
     "sample_3": [
         "'bcksrutq'"
@@ -1107,7 +1107,7 @@
         "True"
     ],
     "sample_355": [
-        "' '"
+        "' John '"
     ],
     "sample_397": [
         "{'x': 0, 'u': 0, 'w': 0, 'j': 0, 3: 0, 6: 0}"
@@ -1134,7 +1134,7 @@
         "'a'"
     ],
     "sample_719": [
-        "'if (x) {y = 1;} else {z = 1;}'"
+        "'if (x) {\\n  y = 1;\\n} else {\\n  z = 1;\\n}'"
     ],
     "sample_225": [
         "False"
@@ -1152,7 +1152,7 @@
         "2"
     ],
     "sample_332": [
-        "[-6, -2, 1, -3, 0, 1]"
+        "[]"
     ],
     "sample_420": [
         "True"
@@ -1188,7 +1188,7 @@
         "'LittleRedRidingHoodLiTTleBIGGeXEiT'"
     ],
     "sample_798": [
-        "'@!', '@hihu'"
+        "'@!', 'The function should return the string without the prefix '@hihu''"
     ],
     "sample_702": [
         "[-4, 0, -5]"
@@ -1206,7 +1206,7 @@
         "'kxkxxfck--'"
     ],
     "sample_259": [
-        "'Srigna mtching is a big part of RexEx library.'"
+        "'Srigna mtchig is a big part of RexEx library.'"
     ],
     "sample_479": [
         "[1, 5, 3]"
@@ -1218,19 +1218,19 @@
         "'coscifysu'"
     ],
     "sample_726": [
-        "(3, 34)"
+        "(4, 37)"
     ],
     "sample_339": [
         "2"
     ],
     "sample_384": [
-        "'s'"
+        "'asfdellos'"
     ],
     "sample_671": [
-        "'dgriyad mgd rdgod sgyd'"
+        "'dwriyad mgf dwto segyd'"
     ],
     "sample_137": [
-        "[]"
+        "[0, 0]"
     ],
     "sample_105": [
         "'Permission Is Granted'"
@@ -1260,10 +1260,10 @@
         "[1, 5, 7, 8, 2, 0, 3]"
     ],
     "sample_407": [
-        "3"
+        "0"
     ],
     "sample_185": [
-        "[16, 14, 12, 7, 9, 11]"
+        "[16, 11, 12, 9, 7, 14]"
     ],
     "sample_548": [
         "'spider'"
@@ -1287,7 +1287,7 @@
         "[1, 7, -5]"
     ],
     "sample_712": [
-        "[['p', 'u', 'c', 'i', 'c', 'A', '('], ['A']]"
+        "[['p', 'u', 'c', 'i', 'c', 'A', '('], ['A', 'p', 'u', 'c', 'i', 'c', 'A']]"
     ],
     "sample_100": [
         "{'1': 'b'}"
@@ -1386,7 +1386,7 @@
         "'*  ereH olleH'"
     ],
     "sample_336": [
-        "'234dsfssdfs333324314s'"
+        "'234dsfssdf'"
     ],
     "sample_59": [
         "'hi'"
@@ -1419,10 +1419,10 @@
         "'no'"
     ],
     "sample_427": [
-        "'s a a b s d s a a s a a'"
+        "'s a a b s d s a a s a'"
     ],
     "sample_516": [
-        "['d', 'isa']"
+        "['condor']"
     ],
     "sample_494": [
         "'001'"
@@ -1485,7 +1485,7 @@
         "{'john': None, 'doe': None, 'the': None}"
     ],
     "sample_463": [
-        "{-1: -1, 5: 5, -4: -4}"
+        "{-1: -1, 5: 5}"
     ],
     "sample_618": [
         "'89'"
@@ -1497,13 +1497,13 @@
         "'.'"
     ],
     "sample_5": [
-        "(3, 'DSUWeqExTQdCMGpxux')"
+        "(3, 'DSUWeqExTQdCMGpxrx')"
     ],
     "sample_141": [
         "[1, 3, 1, 3, 3, 1, 1, 1, 1, 1, 1]"
     ],
     "sample_584": [
-        "'000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        "'5123807309875480094949830'"
     ],
     "sample_456": [
         "'Join\\tus\\tin\\tHungary'"
@@ -1524,7 +1524,7 @@
         "0"
     ],
     "sample_722": [
-        "'JvOzOoOGK/'"
+        "',WpZpPpDl/'"
     ],
     "sample_466": [
         "'th'"
@@ -1536,7 +1536,7 @@
         "''"
     ],
     "sample_470": [
-        "['A', 'C', 'E']"
+        "['B', 'D']"
     ],
     "sample_426": [
         "[1, 2, 3, 8]"
@@ -1548,13 +1548,13 @@
         "{}"
     ],
     "sample_783": [
-        "7"
+        "0"
     ],
     "sample_13": [
         "2"
     ],
     "sample_522": [
-        "[0.0]"
+        "[0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]"
     ],
     "sample_455": [
         "'?XYZ'"
@@ -1569,13 +1569,13 @@
         "'${first}y, ${second}x, ${third}r, ${fourth}p'"
     ],
     "sample_538": [
-        "'zz0574zzz'"
+        "'zzzz0574zzz'"
     ],
     "sample_571": [
         "'a    b'"
     ],
     "sample_643": [
-        "'damdroDm'"
+        "'damdrodM'"
     ],
     "sample_195": [
         "'ilfdoirwirmtoib'"
@@ -1587,7 +1587,7 @@
         "[0, 1, 3]"
     ],
     "sample_106": [
-        "[4, 2, -4, 16, -4, 18, 2, 16, -2, 18, -2, 9, 3, 3]"
+        "[4, 2, -4, 16, -2, 18, 8, -4, 18, 6, 6]"
     ],
     "sample_16": [
         "'zejrohaj'"
@@ -1602,13 +1602,13 @@
         "''"
     ],
     "sample_498": [
-        "[2, 2, 3, 3, 2, 3]"
+        "[2, 2, 3, 3, 3, 2]"
     ],
     "sample_760": [
         "['f', 'h', 'j', 'k']"
     ],
     "sample_405": [
-        "[5, 3, 4, 1, 2, 3, 5]"
+        "[2, 3, 4, 1, 2, 3, 5]"
     ],
     "sample_597": [
         "'JAAFODSFA SODOFJ AOAFJIS  JAFASIDFSA1'"
@@ -1656,10 +1656,10 @@
         "'5'"
     ],
     "sample_340": [
-        "'E GHJkx DpTv'"
+        "' EG HikjpTxV'"
     ],
     "sample_221": [
-        "'24.fc5.bpxa'"
+        "'24.bpxa5.c'"
     ],
     "sample_743": [
         "-8"
@@ -1707,7 +1707,7 @@
         "{'disface': 9, 'cam': 7, 'mforce': 5}"
     ],
     "sample_614": [
-        "7"
+        "6"
     ],
     "sample_189": [
         "'{{{{}}}}'"
@@ -1722,10 +1722,10 @@
         "'ca'"
     ],
     "sample_254": [
-        "'upper case'"
+        "'lower casease'"
     ],
     "sample_706": [
-        "['ab', 'xy']"
+        "['xy', 'ab']"
     ],
     "sample_290": [
         "'bixaaaily'"
@@ -1746,7 +1746,7 @@
         "'o'"
     ],
     "sample_44": [
-        "'+*n+z+o+h'"
+        "'+*n+*z+*o+*h'"
     ],
     "sample_341": [
         "{}"
@@ -1788,7 +1788,7 @@
         "True"
     ],
     "sample_799": [
-        "'eqe-;ew22nnnnnnn'"
+        "'eqe-;ew22'"
     ],
     "sample_668": [
         "'earhellomyfriend'"
@@ -1842,7 +1842,7 @@
         "2"
     ],
     "sample_129": [
-        "[34, 27, 20, 13, 6]"
+        "[34, 29, 24, 19, 14, 9, 4]"
     ],
     "sample_349": [
         "{'noeohqhk': 623}"
@@ -1872,13 +1872,13 @@
         "([0, 0, 0, 0, 0, 0, 0, 0, 0], [6, 3, 7, 4, 8])"
     ],
     "sample_720": [
-        "35"
+        "37"
     ],
     "sample_525": [
         "(7, 3)"
     ],
     "sample_287": [
-        "'pINNEAPLE'"
+        "'pinneaple'"
     ],
     "sample_469": [
         "'syduyai'"
@@ -1914,7 +1914,7 @@
         "1"
     ],
     "sample_149": [
-        "'3,2,3,3,2,3,2,3,3,0,0,'"
+        "'3,2,3,3,2,,2,3,5,4,3,,1,3,2,3,2,3,,3,3,0,0,'"
     ],
     "sample_152": [
         "20"
@@ -1923,7 +1923,7 @@
         "5"
     ],
     "sample_621": [
-        "b'\\x82\\xb1\\x82\\xea\\x82\\xcd\\x82\\xb3'"
+        "b'\\x82\\xb1\\x82\\xea\\x82\\xb9\\x82\\xb1'"
     ],
     "sample_461": [
         "True"
@@ -1932,7 +1932,7 @@
         "'abc'"
     ],
     "sample_139": [
-        "[1, 2, 1, 1, 1, 2]"
+        "'no'"
     ],
     "sample_260": [
         "[1, 2, 3, 4, 5, 6]"
@@ -1941,7 +1941,7 @@
         "1"
     ],
     "sample_718": [
-        "'15ThisIsSoAtrocious'"
+        "'18ThisIsSoAtrocious'"
     ],
     "sample_248": [
         "[666]"
@@ -1950,7 +1950,7 @@
         "'K zKB'"
     ],
     "sample_410": [
-        "[1, 1, 3, -1, 1, -2, 6]"
+        "[1, 1, 3, -1, 1, -2, 6, 1, 3, -1, 1, -2, 6]"
     ],
     "sample_607": [
         "True"
@@ -1965,7 +1965,7 @@
         "'https://www.ekapusta.com/image/url'"
     ],
     "sample_269": [
-        "[9, 2]"
+        "[9, 2, '0']"
     ],
     "sample_226": [
         "[1, 3, 3]"
@@ -1980,7 +1980,7 @@
         "'no'"
     ],
     "sample_280": [
-        "'0000000 0000000 01101100 01100101 01101110'"
+        "'00000000 00000000 01101100 01100101 01101110'"
     ],
     "sample_286": [
         "[1,2,3,4,11,6,7,8,9,10]"
@@ -1992,7 +1992,7 @@
         "'jrowdlp'"
     ],
     "sample_444": [
-        "[-5, 3, -2, -3, -1, 3, 5]"
+        "[-5, 3, -2, -3, -1, 3, 5, -5, 3, -2, -3, -1, 3, 5]"
     ],
     "sample_184": [
         "[2,1]"
@@ -2010,13 +2010,13 @@
         "{'a': -1, 'b': 0, 'c': 1}"
     ],
     "sample_747": [
-        "True"
+        "False"
     ],
     "sample_182": [
         "[('a', 2), ('b', 1)]"
     ],
     "sample_32": [
-        "'*e;*o;*u;*m;*o;*l;*e'"
+        "'*e;*o;*u;*m;*e'"
     ],
     "sample_80": [
         "'ba'"
@@ -2052,10 +2052,10 @@
         "'ifulhxhzpnyihyf'"
     ],
     "sample_148": [
-        "'2i-o 12 tfiqr.'"
+        "'2imo 12 tfiqr.-'"
     ],
     "sample_594": [
-        "28"
+        "27"
     ],
     "sample_123": [
         "[1, 2, 3, 5, 6, 8]"
@@ -2091,13 +2091,13 @@
         "'ellod!p.nkyp.exa.bi.y'"
     ],
     "sample_201": [
-        "'1252'"
+        "'152'"
     ],
     "sample_368": [
-        "'4327 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        "'4327 0000000000 0000000000 4327 0000000000 4327'"
     ],
     "sample_554": [
-        "[5, -3, 9999, 1, 0, 2]"
+        "[-5, 3, 9999, 1, 0, 2]"
     ],
     "sample_610": [
         "{1: 3, 2: 3}"
@@ -2106,13 +2106,13 @@
         "[3, 1, 0, 2]"
     ],
     "sample_292": [
-        "'*******'"
+        "'*******a*'"
     ],
     "sample_690": [
         "'800'"
     ],
     "sample_256": [
-        "11"
+        "12"
     ],
     "sample_606": [
         "'ruamNHIB'"
@@ -2175,7 +2175,7 @@
         "'nwv mef ofme bdrylday nwv mef ofme bdrylday nwv mef ofme bdrylday'"
     ],
     "sample_633": [
-        "1"
+        "3"
     ],
     "sample_565": [
         "10"
@@ -2184,7 +2184,7 @@
         "[1, 0, -3, 1, -2, -6]"
     ],
     "sample_398": [
-        "{'2': [2, '2'], '0': [1, '0'], '1': [2, '1']}"
+        "{'2': [2], '0': [1], '1': [2]}"
     ],
     "sample_91": [
         "['1', '2', 'a', 'b', '3', 'x', 'y']"
@@ -2199,7 +2199,7 @@
         "'VsNlYgLtAw'"
     ],
     "sample_291": [
-        "{'a': ['a']}"
+        "{'a': 'a'}"
     ],
     "sample_57": [
         "'no'"
@@ -2223,25 +2223,25 @@
         "'non ascii'"
     ],
     "sample_388": [
-        "'_28in'"
+        "'28in'"
     ],
     "sample_335": [
         "'sjbrfqmw'"
     ],
     "sample_273": [
-        "'.NE'"
+        "'.T'"
     ],
     "sample_488": [
         "'tezmgvn 651h'"
     ],
     "sample_550": [
-        "[1, 1, 2, 4, 4, 16]"
+        "[1, 1, 1, 4, 2, 4, 16, 4, 16]"
     ],
     "sample_53": [
-        "[0, 0, 0, 0, 0, 1, 1]"
+        "[1, 1, 1, 1, 1, 1]"
     ],
     "sample_748": [
-        "(('a', 123), ('b', 456))"
+        "('a', 123)"
     ],
     "sample_128": [
         "'Mmtohm'"
@@ -2250,7 +2250,7 @@
         "False"
     ],
     "sample_183": [
-        "['echo', 'nice!']"
+        "['hello!!!', 'nice!']"
     ],
     "sample_459": [
         "{'vzjmc': 'b', 'ae': 'f'}"
@@ -2265,7 +2265,7 @@
         "'090 this is the ultimate 0 address to attack'"
     ],
     "sample_244": [
-        "'BC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC"
+        "'BC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC1tyBC"
     ],
     "sample_714": [
         "['x', 'x', 'x']"
@@ -2304,7 +2304,7 @@
         "'HyE dUDe ThIs $Nd^ &*&tHIs@#'"
     ],
     "sample_99": [
-        "'aa___bb'"
+        "'aa+++___bb'"
     ],
     "sample_448": [
         "True"
@@ -2316,10 +2316,10 @@
         "'loved a'"
     ],
     "sample_755": [
-        "'ph>t#A#BiEcDefW#ON#iiNCU'"
+        "'ph>t#A#BiEcDefW###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax###ax"
     ],
     "sample_115": [
-        "b'111; 124; 124; 97; 103; 120; 53; '"
+        "b'111; 114; 111; 124; 124; 97; 103; 120; 53; '"
     ],
     "sample_72": [
         "True"
@@ -2367,7 +2367,7 @@
         "['a', ' b', 'c', ' b ', 'c ']"
     ],
     "sample_754": [
-        "['000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        "['000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
     ],
     "sample_277": [
         "[4, 3, 2, 1]"
@@ -2397,6 +2397,6 @@
         "'f.irst_second_third'"
     ],
     "sample_684": [
-        "'Transform numbers983333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
+        "'Transform numbers983333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
     ]
 }

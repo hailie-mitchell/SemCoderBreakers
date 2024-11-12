@@ -1,4 +1,4 @@
-Scoring /home/hm3075/SemCoder/output_dir/eval/cruxeval/cruxeval_output/semcoder_s_1030_direct/generations.json... expect around a minute
+Scoring /home/rc3593/SemCoder/output_dir/eval/cruxeval/cruxeval_output/semcoder_s_1030_direct/generations.json... expect around a minute
 Finished!
-pass@1: 46.5 pass@5: 100.0
-Dumping to /home/hm3075/SemCoder/output_dir/eval/cruxeval/cruxeval_output/semcoder_s_1030_direct/scored_results.json
+pass@1: 47.4 pass@5: 100.0
+Dumping to /home/rc3593/SemCoder/output_dir/eval/cruxeval/cruxeval_output/semcoder_s_1030_direct/scored_results.json
