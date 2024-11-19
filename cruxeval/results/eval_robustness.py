@@ -2,6 +2,7 @@ import os
 import json
 import argparse
 import csv
+import copy
 
 
 def read_config(config, data):
@@ -147,16 +148,28 @@ def calculate_metric(perturbed_data_list, metric, nominal_data):
 def eval_per_cat(args):
     results = {}    # for all the perturbed result [worst_dict, best_dict]
     nominal_dict = {}   # for nominal result 
-    nominal_passatk_dict = {} # for nominal passatk
+    nominal_passatk_dict = {}   # for nominal passatk
+    if args.nonrobust_stats:
+        nonrobust_dict = {}     # for non-robust samples
 
     for model in args.models:
         results[model] = {}
         nominal_dict[model] = {}
         nominal_passatk_dict[model] = {}
+        if args.nonrobust_stats:
+            nonrobust_dict[model] = {}
         for task in ["input", "output"]:
             results[model][task] = {}
             nominal_dict[model][task] = {}
             nominal_passatk_dict[model][task] = {}
+            if args.nonrobust_stats:
+                nonrobust_dict[model][task] = {
+                    "right_to_wrong": {},
+                    "wrong_to_right": {},
+                    "right_to_complete_wrong": [],
+                    "wrong_to_complete_right": [],
+                }
+                nonrobust_dict[model][f"{task}_raw"] = {}
 
     for model in args.models:
         NL_AUG_RECIPES, PARTIAL_RECIPES, FUNC_RECIPES, FORMAT_RECIPES, FULL_RECIPES, RECIPES, \
@@ -223,6 +236,10 @@ def eval_per_cat(args):
                     # merge results across different aug_method
                     passatk_worst_dict = get_worst_passatk_dict(perturbed_data_list)
                     passatk_best_dict = get_best_passatk_dict(perturbed_data_list)
+                    if args.nonrobust_stats:
+                        nonrobust_dict[model][f"{task}_raw"][method_name] = [
+                            copy.deepcopy(passatk_worst_dict), copy.deepcopy(passatk_best_dict)
+                        ]
 
                     if results[model][task] is None:
                         results[model][task] = [passatk_worst_dict, passatk_best_dict]
@@ -239,8 +256,8 @@ def eval_per_cat(args):
     # directory = "statitic_jsons"
     # os.makedirs(directory, exist_ok=True)
 
-    json.dump(nominal_dict, open(f"statitic_jsons/{args.method}_{infer_mode}_nominal.json", "w"))
-    json.dump(results, open(f"statitic_jsons/{args.method}_{infer_mode}_perturbed.json", "w"))
+    # json.dump(nominal_dict, open(f"statitic_jsons/{args.method}_{infer_mode}_nominal.json", "w"))
+    # json.dump(results, open(f"statitic_jsons/{args.method}_{infer_mode}_perturbed.json", "w"))
     # json.load(nominal_dict, open(f"statitic_jsons/{args.method}_nominal.json", "r"))
 
     # reformulate results to csv table
@@ -296,9 +313,52 @@ def eval_per_cat(args):
                     if results[model][task][0][sample] != nominal_dict[model][task][sample]:
                         # worst dict difference
                         cnt += 1
+                        if args.nonrobust_stats:
+                            if nominal_dict[model][task][sample]:
+                                nonrobust_dict[model][task]["right_to_wrong"][sample] = {
+                                    "nominal": nominal_dict[model][task][sample],
+                                    "perturbed": {
+                                        aug_method: nonrobust_dict[model][f"{task}_raw"][aug_method][0][sample]
+                                        for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
+                                    },
+                                    "method_succeeded": [
+                                        aug_method for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
+                                        if nonrobust_dict[model][f"{task}_raw"][aug_method][0][sample] != nominal_dict[model][task][sample]
+                                    ],
+                                }
+                                if all(
+                                    not passed for passed in nonrobust_dict[model][task]["right_to_wrong"][sample]["perturbed"].values()
+                                ):
+                                    nonrobust_dict[model][task]["right_to_complete_wrong"].append(sample)
+                            else:
+                                nonrobust_dict[model][task]["wrong_to_right"][sample] = {
+                                    "nominal": nominal_dict[model][task][sample],
+                                    "perturbed": {
+                                        aug_method: nonrobust_dict[model][f"{task}_raw"][aug_method][0][sample]
+                                        for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
+                                    },
+                                    "method_succeeded": [
+                                        aug_method for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
+                                        if nonrobust_dict[model][f"{task}_raw"][aug_method][0][sample] != nominal_dict[model][task][sample]
+                                    ],
+                                }
+                                # due to worst dict, no need for extra check
+                                nonrobust_dict[model][task]["wrong_to_complete_right"].append(sample)
                     elif results[model][task][1][sample] != nominal_dict[model][task][sample]:
                         # best dict difference
                         cnt += 1
+                        if args.nonrobust_stats:
+                            nonrobust_dict[model][task]["wrong_to_right"][sample] = {
+                                "nominal": nominal_dict[model][task][sample],
+                                "perturbed": {
+                                    aug_method: nonrobust_dict[model][f"{task}_raw"][aug_method][1][sample]
+                                    for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
+                                },
+                                "method_succeeded": [
+                                    aug_method for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
+                                    if nonrobust_dict[model][f"{task}_raw"][aug_method][1][sample] != nominal_dict[model][task][sample]
+                                ],
+                            }
                     total_cnt += 1
                 row.append(cnt / total_cnt * 100.)
             else:
@@ -322,6 +382,10 @@ def eval_per_cat(args):
         writer.writerow(header)
         writer.writerows(full_data)
         file.close()
+
+    if args.nonrobust_stats:
+        os.makedirs("stats", exist_ok=True)
+        json.dump(nonrobust_dict, open(f"stats/{args.method}_{infer_mode}_nonrobust.json", "w"))
     return
 
 if __name__ == '__main__':
@@ -330,10 +394,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--granularity', type=str, default="category", choices=["category", "method"], help="Obtain robustness metrics on specific granularity")
     parser.add_argument('--method', type=str, choices=["normal", "nlaugmenter", "natgen", "format", "func_name", "random"], help="The classes of perturbation. Please set method to natgen with status nominal to evaluate nominal partial code.")
-    parser.add_argument('--config', default="config.json", help="path to recode config")
+    parser.add_argument('--config', default="../../recode/config.json", help="path to recode config")
     parser.add_argument('--aug_method', type=int, default=None, help="The detailed augmentation method used with index (index defined in config.json for each method). Default None means running all the perturbations")
     parser.add_argument('--models', nargs='+', default=["semcoder_s_1030"], help="A list of the models needed to evaluate with")
     parser.add_argument('--mode', type=str, default="monologue", choices=["monologue", "direct"], help="Inference mode of the model")
+    parser.add_argument('--nonrobust_stats', action='store_true', help="Show detailed statistics of non-robust samples")
     parser.add_argument('--n_outputs', type=int, default=1, help="The total number of perturbations generated/evaluated with")
     args = parser.parse_args()
     print(args)
