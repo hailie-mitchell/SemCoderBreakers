@@ -156,7 +156,7 @@ def main(datapath=DATAPATH, format="recode", logfile=None, timeout=5):
                 elif "task_id" in sample: sample_id = sample["task_id"]
                 else: sample_id = "-100"
                 log_str = "code:\n" + sample["prompt"] + sample["canonical_solution"] + "\nid:\t" + sample_id 
-                log_str += "\ninput:\t" + sample["input"] + "\noutput:\t" + sample["output"] + "\nout:\t" + sample["err_out"] + "\n"
+                log_str += "\ninput:\t" + sample["input"] + "\noutput:\t" + sample["output"] + "\nout:\t" + str(sample["err_out"]) + "\n"
                 logging.info(log_str)
 
 if __name__=="__main__":
