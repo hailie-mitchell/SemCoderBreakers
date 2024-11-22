@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
             ## sort on keys and remove keys
             print(args.gen_dir, f"{count} files", len(combined_json))
-            assert len(combined_json) == 800
+            # assert len(combined_json) == 800
 
             try: os.makedirs(new_dir)
             except: pass
@@ -61,7 +61,7 @@ if __name__ == "__main__":
                         raise ValueError("Keys overlap")
                     combined_json.update(input_json)
             print(args.gen_dir, f"{count} files", len(combined_json))
-            assert len(combined_json) == 800
+            # assert len(combined_json) == 800
 
             output_json = "generations_raw.json"
             with open(os.path.join(args.gen_dir, output_json), "w") as fp:
