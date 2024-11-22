@@ -3,6 +3,7 @@ import argparse
 
 
 ALT_FUNC_NAME = "operation_to_perform"
+LINE_SPLIT = "# print('@@this is the line to split##')"
 
 
 def rename_function(code):
@@ -51,13 +52,19 @@ def for_eval(input_file, output_file):
         for line in infile:
             data = json.loads(line)
             # Merge 'prompt' and 'canonical_solution' back to code (necessary)
-            data['code'] = data.pop('prompt') + data.pop('canonical_solution')
+            p = data.pop('prompt')
+            sol = data.pop('canonical_solution')
+            if LINE_SPLIT in sol:
+                p = p.rstrip()
+                sol = sol.replace(LINE_SPLIT, "")
+            data['code'] = p + sol
             
             # Other optional operations
             # Change 'task_id' to 'id'
             data['id'] = f"sample_{data.pop('task_id').split('/')[1]}"
             # Remove 'entry_point'
             data.pop('entry_point', None)
+            data.pop('partial', None)
 
             # Write the modified data to the output file
             json.dump(data, outfile)
