@@ -1,7 +1,13 @@
 # Reference: https://github.com/facebookresearch/cruxeval/blob/main/prompts.py
+import re
+
+def get_func_name(code):
+    func_name = re.search(r'def\s+([^\s(]+)\s*\(', code).group(1)
+    return func_name
 
 def make_cot_output_prompt(s):
     code, input = s
+    func_name = get_func_name(code)
     return f"""You are given a Python function and an assertion containing an input to the function. Complete the assertion with a literal (no unsimplified expressions, no function calls) containing the output when executing the provided code on the given input, even if the function is incorrect or incomplete. Do NOT output any extra information. Execute the program step by step before arriving at an answer, and provide the full assertion with the correct output in [ANSWER] and [/ANSWER] tags, following the examples.
 
 [PYTHON]
@@ -25,7 +31,7 @@ assert f("hi") == "bhihia"
 
 [PYTHON]
 {code}
-assert operation_to_perform({input}) == ??
+assert {func_name}({input}) == ??
 [/PYTHON]
 [THOUGHT]
 """
@@ -33,6 +39,7 @@ assert operation_to_perform({input}) == ??
 def make_forward_monologue_output_prompt(s):
     special_token = "[MONOLOGUE]" # We just need a special token to trigger the monologue -- no few-shot examples needed
     code, input = s
+    func_name = get_func_name(code)
     # annotate each line with a line label for efficient monologue: # [Lx]
     code = code.split("\n")
     for i, line in enumerate(code, 1):
@@ -42,7 +49,7 @@ def make_forward_monologue_output_prompt(s):
     return f"""Simulate the Execution: You are given a Python function and an assertion containing a function input. Complete the assertion containing the execution output corresponding to the given input in [ANSWER] and [/ANSWER] tags.
 [PYTHON]
 {code}
-assert operation_to_perform({input}) == ??
+assert {func_name}({input}) == ??
 [/PYTHON]
 {special_token}
 """
@@ -50,6 +57,7 @@ assert operation_to_perform({input}) == ??
 
 def make_direct_output_prompt(s):
     code, input = s
+    func_name = get_func_name(code)
     return f"""You are given a Python function and an assertion containing an input to the function. Complete the assertion with a literal (no unsimplified expressions, no function calls) containing the output when executing the provided code on the given input, even if the function is incorrect or incomplete. Do NOT output any extra information. Provide the full assertion with the correct output in [ANSWER] and [/ANSWER] tags, following the examples.
 
 [PYTHON]
@@ -72,13 +80,14 @@ assert f("x9j") == "x9ja"
 
 [PYTHON]
 {code}
-assert operation_to_perform({input}) == ??
+assert {func_name}({input}) == ??
 [/PYTHON]
 [ANSWER]
 """
 
 def make_direct_input_prompt(s):
     code, output = s
+    func_name = get_func_name(code)
     return f"""You will be given a function and an output in the form function(??) == output. Find any input such that executing the function on the input leads to the given output. There may be multiple answers, but you should only output one. In [ANSWER] and [/ANSWER] tags, complete the assertion with one such input that will produce the output when executing the function.
 
 [PYTHON]
@@ -105,13 +114,14 @@ assert f("ba", "nana") == "banana"
 
 [PYTHON]
 {code}
-assert operation_to_perform(??) == {output}
+assert {func_name}(??) == {output}
 [/PYTHON]
 [ANSWER]
 """
 
 def make_cot_input_prompt(s):
     code, output = s
+    func_name = get_func_name(code)
     return f"""You will be given a function and an output in the form function(??) == output. Your task is to find any input such that executing the function on the input leads to the given output. There may be multiple answers, but only output one. First, think step by step. You MUST surround the answer with [ANSWER] and [/ANSWER] tags. Express your answer as a passing assertion containing the input and the given output.
 
 [PYTHON]
@@ -130,7 +140,7 @@ assert f(16) == 17
 
 [PYTHON]
 {code}
-assert operation_to_perform(??) == {output}
+assert {func_name}(??) == {output}
 [/PYTHON]
 [THOUGHT]
 """
@@ -139,10 +149,11 @@ assert operation_to_perform(??) == {output}
 def make_backward_monologue_input_prompt(s):
     special_token = "[MONOLOGUE]"
     code, output = s
+    func_name = get_func_name(code)
     return f"""Deduce the Semantic Constraints: You are given a Python program and its expected output. Find one input such that executing the program with the input leads to the given output. Complete the assertion with one such input in between [ANSWER] and [/ANSWER].
 [PYTHON]
 {code}
-assert operation_to_perform(??) == {output}
+assert {func_name}(??) == {output}
 [/PYTHON]
 
 {special_token}
