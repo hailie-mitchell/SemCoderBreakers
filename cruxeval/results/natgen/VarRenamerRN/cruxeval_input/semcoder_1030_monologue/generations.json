@@ -1,0 +1,602 @@
+{
+    "sample_759": [
+        "operation_to_perform('hello world', 'xyz')"
+    ],
+    "sample_697": [
+        "operation_to_perform('not it', 'separator')"
+    ],
+    "sample_2": [
+        "operation_to_perform('hbtofdeiequ')"
+    ],
+    "sample_105": [
+        "operation_to_perform('permission is granted')"
+    ],
+    "sample_672": [
+        "operation_to_perform(['1', 'z'], 1, 'd')"
+    ],
+    "sample_620": [
+        "operation_to_perform('3 i h o x m q d n   a n d   t r e l')"
+    ],
+    "sample_201": [
+        "operation_to_perform('abc641524xyz')"
+    ],
+    "sample_711": [
+        "operation_to_perform('apples\\n\\npears\\n\\nbananas')"
+    ],
+    "sample_696": [
+        "operation_to_perform('abc')"
+    ],
+    "sample_449": [
+        "operation_to_perform(['1', '2', '3'])"
+    ],
+    "sample_126": [
+        "operation_to_perform('kkxkxxfck')"
+    ],
+    "sample_406": [
+        "operation_to_perform('abc')"
+    ],
+    "sample_680": [
+        "operation_to_perform('we32r71g72ug94823658324')"
+    ],
+    "sample_198": [
+        "operation_to_perform('tcmfsm', '')"
+    ],
+    "sample_582": [
+        "operation_to_perform(7, 5)"
+    ],
+    "sample_391": [
+        "operation_to_perform(['9', 'x', 'y', 'z'])"
+    ],
+    "sample_551": [
+        "operation_to_perform({'key1': ['a', 'b', 'c', 'inf'], 'key2': ['a', 'b', 'c', 'inf']})"
+    ],
+    "sample_482": [
+        "operation_to_perform('Because it \\'intrigues\\' them')"
+    ],
+    "sample_740": [
+        "operation_to_perform([1, 2, 3, 4], 3)"
+    ],
+    "sample_512": [
+        "operation_to_perform('00011110')"
+    ],
+    "sample_13": [
+        "operation_to_perform(['Alice', 'Bob'])"
+    ],
+    "sample_253": [
+        "operation_to_perform('abcumwwfv', 'abc')"
+    ],
+    "sample_594": [
+        "operation_to_perform('a' * 33 + '\\n')"
+    ],
+    "sample_663": [
+        "operation_to_perform([], 'some_value')"
+    ],
+    "sample_141": [
+        "operation_to_perform([1, 2, 1, 3, 3, 1, 1, 1, 1, 1, 1])"
+    ],
+    "sample_454": [
+        "operation_to_perform({}, 0)"
+    ],
+    "sample_477": [
+        "operation_to_perform('|xduaisf')"
+    ],
+    "sample_642": [
+        "operation_to_perform('   ')"
+    ],
+    "sample_223": [
+        "operation_to_perform([1, 2, 1], 2)"
+    ],
+    "sample_199": [
+        " and "
+    ],
+    "sample_606": [
+        "operation_to_perform('ruam')"
+    ],
+    "sample_84": [
+        "operation_to_perform('nwv mef ofme bdryl')"
+    ],
+    "sample_429": [
+        "operation_to_perform({87.29: 3, 'defghi': 2, 'abc': 2, 5: 1})"
+    ],
+    "sample_445": [
+        "operation_to_perform('carrot, banana, strawberry and')"
+    ],
+    "sample_600": [
+        "operation_to_perform([])"
+    ],
+    "sample_81": [
+        "operation_to_perform({'Bulls': 'BULLS', 'White Sox': 45}, 'Bulls')"
+    ],
+    "sample_19": [
+        "operation_to_perform('', '')"
+    ],
+    "sample_691": [
+        "operation_to_perform('rpytt', 'ytt')"
+    ],
+    "sample_53": [
+        "operation_to_perform('aaaaaaa')"
+    ],
+    "sample_98": [
+        "operation_to_perform('Hello world')"
+    ],
+    "sample_367": [
+        "operation_to_perform([6, 2, 1, 1, 4, 1, 3], 3)"
+    ],
+    "sample_558": [
+        "operation_to_perform([1, 2, 3, 4, 5], [2, 3])"
+    ],
+    "sample_23": [
+        "operation_to_perform('new-medium-performing-application - XQuery 2.', '')"
+    ],
+    "sample_74": [
+        "operation_to_perform([44, 34, 23, 82, 15, 24, 11, 63], 8, 99)"
+    ],
+    "sample_8": [
+        "operation_to_perform('UppEr', 1)"
+    ],
+    "sample_344": [
+        "operation_to_perform([15, 8, 6, 4, 2], lambda x: x)"
+    ],
+    "sample_49": [
+        "operation_to_perform('816')"
+    ],
+    "sample_304": [
+        "operation_to_perform({87: 7, 18: 6, 5: 1, 3: 2})"
+    ],
+    "sample_36": [
+        "operation_to_perform('ha', '')"
+    ],
+    "sample_245": [
+        "operation_to_perform('abc', 'XYZ')"
+    ],
+    "sample_100": [
+        "operation_to_perform({'1': 'b', '2': 'c'}, ['2'])"
+    ],
+    "sample_269": [
+        "operation_to_perform(['0', 2])"
+    ],
+    "sample_770": [
+        "operation_to_perform('78', '$')"
+    ],
+    "sample_626": [
+        "operation_to_perform('abab', [('a', 'b')])"
+    ],
+    "sample_394": [
+        "operation_to_perform('Hello World!')"
+    ],
+    "sample_297": [
+        "operation_to_perform(0)"
+    ],
+    "sample_26": [
+        "operation_to_perform('hello. world', 'target')"
+    ],
+    "sample_453": [
+        "operation_to_perform('hello', 'o')"
+    ],
+    "sample_748": [
+        "operation_to_perform({'a': 123, 'b': 456})"
+    ],
+    "sample_735": [
+        "operation_to_perform('abb')"
+    ],
+    "sample_264": [
+        "operation_to_perform('papaeara')"
+    ],
+    "sample_46": [
+        "operation_to_perform(['manyletters', 'asvsz', 'helloman'], '')"
+    ],
+    "sample_387": [
+        "operation_to_perform([3, 1], 2, 0)"
+    ],
+    "sample_648": [
+        "operation_to_perform([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5])"
+    ],
+    "sample_103": [
+        "operation_to_perform('abcdefghij')"
+    ],
+    "sample_572": [
+        "operation_to_perform({2: 10, 3: 1}, 0)"
+    ],
+    "sample_704": [
+        "operation_to_perform('', 1, '.')"
+    ],
+    "sample_785": [
+        "operation_to_perform(1)"
+    ],
+    "sample_765": [
+        "operation_to_perform('abc123')"
+    ],
+    "sample_579": [
+        "operation_to_perform('')"
+    ],
+    "sample_353": [
+        "operation_to_perform([1, 1, 1, 1, 2, 2, 3])"
+    ],
+    "sample_221": [
+        "operation_to_perform('.bpxa24fc5', '24')"
+    ],
+    "sample_278": [
+        "operation_to_perform([0, 132], [5, 32])"
+    ],
+    "sample_398": [
+        "operation_to_perform({'2': 2, '0': 1, '1': 2})"
+    ],
+    "sample_723": [
+        "operation_to_perform('d g a   n q d k\\nu l l   q c h a   k l', True)"
+    ],
+    "sample_634": [
+        "operation_to_perform('aeou')"
+    ],
+    "sample_450": [
+        "operation_to_perform('K zBK')"
+    ],
+    "sample_89": [
+        "operation_to_perform('o')"
+    ],
+    "sample_94": [
+        "operation_to_perform({'w': 3}, {'wi': 10})"
+    ],
+    "sample_45": [
+        "operation_to_perform('aa', 'a')"
+    ],
+    "sample_792": [
+        "operation_to_perform(['a', 'b'], ['car', 'dog'])"
+    ],
+    "sample_273": [
+        "operation_to_perform('TEN.')"
+    ],
+    "sample_165": [
+        "operation_to_perform('abc', 0, 3)"
+    ],
+    "sample_521": [
+        "operation_to_perform([77, 9, 0, 2, 5, 77, 4, 0, 43])"
+    ],
+    "sample_790": [
+        "operation_to_perform(5)"
+    ],
+    "sample_407": [
+        "operation_to_perform([])"
+    ],
+    "sample_25": [
+        "operation_to_perform({'l': 1, 't': 2, 'x': 3})"
+    ],
+    "sample_746": [
+        "operation_to_perform({})"
+    ],
+    "sample_69": [
+        "operation_to_perform({'Alice': 10, 'Bob': 20}, 'Charlie')"
+    ],
+    "sample_550": [
+        "operation_to_perform([1, 2, 4])"
+    ],
+    "sample_56": [
+        "operation_to_perform('Hello, World!')"
+    ],
+    "sample_162": [
+        "operation_to_perform('\u0421BISHOPSWIFT')"
+    ],
+    "sample_142": [
+        "operation_to_perform('phdfky')"
+    ],
+    "sample_327": [
+        "operation_to_perform([-3, 1, 7, -1])"
+    ],
+    "sample_227": [
+        "operation_to_perform('manolo')"
+    ],
+    "sample_153": [
+        "operation_to_perform('abcdef', 'gh', 123)"
+    ],
+    "sample_112": [
+        "operation_to_perform('XYZLtRRdnHodLTTBIGGeXET fult')"
+    ],
+    "sample_731": [
+        "operation_to_perform('Chris requires  ride to the irport on Fridy.', 'Chris')"
+    ],
+    "sample_644": [
+        "operation_to_perform([6, 1], 0)"
+    ],
+    "sample_28": [
+        "operation_to_perform([5, 4, 3, 2, 1])"
+    ],
+    "sample_793": [
+        "operation_to_perform([1, 2, 3], 0, 3)"
+    ],
+    "sample_181": [
+        "operation_to_perform('abc3d2e9f1g2h2i3')"
+    ],
+    "sample_701": [
+        "operation_to_perform('31849 let it!31849 pass!', ['3', '1', '8', '4', '9', ' ', '!'])"
+    ],
+    "sample_251": [
+        "operation_to_perform([['Marie', 'Nelson', 'Oscar'], ['+', '3', '5', '3']])"
+    ],
+    "sample_284": [
+        "operation_to_perform('abc', 'abc')"
+    ],
+    "sample_292": [
+        "operation_to_perform('5abc83xyz23@#')"
+    ],
+    "sample_419": [
+        "operation_to_perform('mmfbxyz', 'mmfb')"
+    ],
+    "sample_786": [
+        "operation_to_perform('kefp719', 'k')"
+    ],
+    "sample_760": [
+        "operation_to_perform({'k': 1, 'j': 2, 'h': 3, 'f': 4})"
+    ],
+    "sample_405": [
+        "operation_to_perform([6, 3, 4, 1, 2, 3, 5])"
+    ],
+    "sample_446": [
+        "operation_to_perform([])"
+    ],
+    "sample_796": [
+        "operation_to_perform('fnuiyh', '')"
+    ],
+    "sample_12": [
+        "operation_to_perform('If you want to live a happy life! Daniel', 'If you want to live a happy life!')"
+    ],
+    "sample_212": [
+        "operation_to_perform([3, -3, 6, 2, 7, -9, 1])"
+    ],
+    "sample_443": [
+        "operation_to_perform('   cd lorem cd ipsum cd')"
+    ],
+    "sample_727": [
+        "operation_to_perform(['dxh', 'ix', 'snegi', 'wiubvu'], 'd')"
+    ],
+    "sample_216": [
+        "operation_to_perform('abc12')"
+    ],
+    "sample_702": [
+        "operation_to_perform([-4, -5, 0])"
+    ],
+    "sample_437": [
+        "operation_to_perform(['d', 'o', 'e'])"
+    ],
+    "sample_195": [
+        "operation_to_perform('acsilfdoirwirmtoibsac ')"
+    ],
+    "sample_63": [
+        "operation_to_perform('abcdbtdabdahesyehu', 'abc')"
+    ],
+    "sample_93": [
+        "operation_to_perform('iq')"
+    ],
+    "sample_518": [
+        "operation_to_perform('abc')"
+    ],
+    "sample_208": [
+        "operation_to_perform(['cat1d d2ee'])"
+    ],
+    "sample_777": [
+        "operation_to_perform(['avc  a .d e'], 'x')"
+    ],
+    "sample_517": [
+        "operation_to_perform('SzHjifnzoA')"
+    ],
+    "sample_519": [
+        "operation_to_perform({})"
+    ],
+    "sample_756": [
+        "operation_to_perform('abc!')"
+    ],
+    "sample_529": [
+        "operation_to_perform([1, 1, 2, 2, 3, 3])"
+    ],
+    "sample_138": [
+        "operation_to_perform('tflb omn rtt', 'tfblomnrt')"
+    ],
+    "sample_622": [
+        "operation_to_perform('something.g, a, l, g, u')"
+    ],
+    "sample_144": [
+        "operation_to_perform([])"
+    ],
+    "sample_117": [
+        "operation_to_perform('Hello World!')"
+    ],
+    "sample_722": [
+        "operation_to_perform(',WpZpPPDL/')"
+    ],
+    "sample_296": [
+        "operation_to_perform('http://www.https://www.www.ekapusta.com/image/url')"
+    ],
+    "sample_337": [
+        "operation_to_perform('ll')"
+    ],
+    "sample_5": [
+        "operation_to_perform('abcdefghijklmnopqrstuvwxyz', 'x', 'x')"
+    ],
+    "sample_749": [
+        "operation_to_perform('l\\nl', 2)"
+    ],
+    "sample_650": [
+        "operation_to_perform('', 'any_substring')"
+    ],
+    "sample_261": [
+        "operation_to_perform([12, 516, 5, 214, 51], 5)"
+    ],
+    "sample_209": [
+        "operation_to_perform('prefix', 'prefixhymi')"
+    ],
+    "sample_329": [
+        "operation_to_perform('Hello')"
+    ],
+    "sample_355": [
+        "operation_to_perform('123 23x John z', '123 ')"
+    ],
+    "sample_763": [
+        "operation_to_perform('z', 'yCxpg2C2Pny', 'a')"
+    ],
+    "sample_780": [
+        "operation_to_perform([2, 2, 2, 1, 3])"
+    ],
+    "sample_314": [
+        "operation_to_perform('-90 244,105')"
+    ],
+    "sample_173": [
+        "operation_to_perform([5, 8, 6, 8, 4])"
+    ],
+    "sample_363": [
+        "operation_to_perform([1])"
+    ],
+    "sample_439": [
+        "operation_to_perform('c osci fys s u')"
+    ],
+    "sample_647": [
+        "operation_to_perform('/alcm@ an)t//eprw)/e!/d\\nujv', 2)"
+    ],
+    "sample_589": [
+        "operation_to_perform([-70, 20, 9, 1])"
+    ],
+    "sample_411": [
+        "operation_to_perform('orange', ['apple', 'banana'])"
+    ],
+    "sample_787": [
+        "operation_to_perform('Xzd')"
+    ],
+    "sample_623": [
+        "operation_to_perform('HI~', ['~'])"
+    ],
+    "sample_220": [
+        "operation_to_perform('bagfedcacbagfedc', 7, 7)"
+    ],
+    "sample_274": [
+        "operation_to_perform([1, 2, 3, 4], 5)"
+    ],
+    "sample_539": [
+        "operation_to_perform([])"
+    ],
+    "sample_68": [
+        "operation_to_perform('dq', 'd')"
+    ],
+    "sample_555": [
+        "operation_to_perform('odes\\tcode\\twell', 3)"
+    ],
+    "sample_544": [
+        " and "
+    ],
+    "sample_246": [
+        "operation_to_perform('abcdefg', 'hijklmn')"
+    ],
+    "sample_440": [
+        "operation_to_perform('abc')"
+    ],
+    "sample_290": [
+        "operation_to_perform('PREFIX_ABIXAAAILY', 'PREFIX_')"
+    ],
+    "sample_384": [
+        "operation_to_perform('abcsfdellos', 'abc')"
+    ],
+    "sample_564": [
+        "operation_to_perform([395, [666], 7])"
+    ],
+    "sample_356": [
+        "operation_to_perform([1, 2], 1)"
+    ],
+    "sample_161": [
+        "operation_to_perform('j rinpxdif', ' ')"
+    ],
+    "sample_58": [
+        "operation_to_perform([-1, 0, 1])"
+    ],
+    "sample_123": [
+        "operation_to_perform([1, 2, 3, 6, 8], 5)"
+    ],
+    "sample_645": [
+        "operation_to_perform([5, 5, 5], 5)"
+    ],
+    "sample_222": [
+        "operation_to_perform('0aabbaa0bb', 'b')"
+    ],
+    "sample_64": [
+        "operation_to_perform('7', 11)"
+    ],
+    "sample_767": [
+        "operation_to_perform('hello world')"
+    ],
+    "sample_168": [
+        "operation_to_perform('spaib', 'b', 2)"
+    ],
+    "sample_305": [
+        "operation_to_perform('o hoseto ', ' ')"
+    ],
+    "sample_109": [
+        "operation_to_perform([], 0, 9)"
+    ],
+    "sample_41": [
+        "operation_to_perform([21, 92, 58], [])"
+    ],
+    "sample_609": [
+        "operation_to_perform({}, 0)"
+    ],
+    "sample_426": [
+        "operation_to_perform([1, 2, 3], 8, 3)"
+    ],
+    "sample_381": [
+        "operation_to_perform('19', 5)"
+    ],
+    "sample_375": [
+        "operation_to_perform(['s', 'i', 'e', 'r', 'i', 'i', 'z', 'z', 'i', 'z', 'a', 'm'], 'z')"
+    ],
+    "sample_497": [
+        "operation_to_perform(44)"
+    ],
+    "sample_101": [
+        "operation_to_perform([-4, 4, 1], 2, 0)"
+    ],
+    "sample_615": [
+        "operation_to_perform([1, 2, 3], 4)"
+    ],
+    "sample_270": [
+        "operation_to_perform({})"
+    ],
+    "sample_120": [
+        "operation_to_perform({})"
+    ],
+    "sample_164": [
+        "operation_to_perform([0, 1, 3, 4, 5])"
+    ],
+    "sample_318": [
+        "operation_to_perform('W238', 'W238')"
+    ],
+    "sample_745": [
+        "operation_to_perform('minimc@minimc.io.')"
+    ],
+    "sample_472": [
+        "operation_to_perform('abcde')"
+    ],
+    "sample_621": [
+        "operation_to_perform('13:45:56', 'utf-8')"
+    ],
+    "sample_543": [
+        "operation_to_perform('.,,,,, , \u0645\u0646\u0628\u062a')"
+    ],
+    "sample_417": [
+        "operation_to_perform([8, 2, 8, 8])"
+    ],
+    "sample_475": [
+        "operation_to_perform([0, 1, 2], 1)"
+    ],
+    "sample_163": [
+        "operation_to_perform('w))))))))))))', '', 15)"
+    ],
+    "sample_789": [
+        "operation_to_perform('bR', 2)"
+    ],
+    "sample_147": [
+        "operation_to_perform([1, 1, 1])"
+    ],
+    "sample_596": [
+        "operation_to_perform(['2', '3', '4', '7', '8', '9'], '2')"
+    ],
+    "sample_303": [
+        "operation_to_perform('mJklbn')"
+    ],
+    "sample_310": [
+        "operation_to_perform(['__', '1.00r', '__j_a6__', '6'])"
+    ]
+}

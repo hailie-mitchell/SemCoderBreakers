@@ -3,16 +3,16 @@
         "'staovk'"
     ],
     "sample_500": [
-        "'i w'"
+        "'os wi w'"
     ],
     "sample_303": [
         "'mJkLbn'"
     ],
     "sample_40": [
-        "'the cow goes moo#######'"
+        "'the cow goes moo#'"
     ],
     "sample_495": [
-        "('a1234', '\u00e5r')"
+        "('a1234', 'r')"
     ],
     "sample_436": [
         "['7', ' ', 's', '7', ' ']"
@@ -24,10 +24,10 @@
         "'quack'"
     ],
     "sample_389": [
-        "[1, 2, 3, 'n', 'a', 'm', 'm', 'o']"
+        "[1, 2, 3, 'nammo']"
     ],
     "sample_231": [
-        "1"
+        "2"
     ],
     "sample_14": [
         "'POO'"
@@ -39,7 +39,7 @@
         "''"
     ],
     "sample_794": [
-        " and "
+        "'normalcharsqwet42'"
     ],
     "sample_27": [
         "False"
@@ -51,25 +51,25 @@
         "[6, 4, 2, 8, 15]"
     ],
     "sample_222": [
-        "'0aabba0b'"
+        "'0aabbab'"
     ],
     "sample_162": [
-        "'\u0421BISSOPSWIFT'"
+        "'\u0421BIHSOPWIFT'"
     ],
     "sample_478": [
-        "{'meow': 2}"
+        "{'m': 2, 'e': 2, 'o': 2, 'w': 2, ' ': 1}"
     ],
     "sample_669": [
         "'fubarbaz'"
     ],
     "sample_113": [
-        " and "
+        "'987YhnsHaShD 93275YRgSgBsFbSfB'"
     ],
     "sample_682": [
-        "'hy'"
+        "'hy_yp'"
     ],
     "sample_521": [
-        "[0, 2, 5, 77, 4, 0, 9, 43, 77]"
+        "[77, 9, 0, 2, 5, 77, 4, 0, 43]"
     ],
     "sample_776": [
         "{}"
@@ -90,13 +90,13 @@
         "'ea!'"
     ],
     "sample_520": [
-        "6"
+        " and "
     ],
     "sample_590": [
-        "'25000   $'"
+        "'5000   $'"
     ],
     "sample_85": [
-        "[]"
+        "[3, 4.5]"
     ],
     "sample_530": [
         "'ff'"
@@ -108,7 +108,7 @@
         "1"
     ],
     "sample_278": [
-        "{0: [], 132: [991, 32, 997]}"
+        "{0: [], 132: [5, 32]}"
     ],
     "sample_619": [
         "'   rock   paper   scissors  '"
@@ -156,10 +156,10 @@
         "[2, 1, 2]"
     ],
     "sample_258": [
-        "[1, 7, 2, 3, 9]"
+        "[1, 7, 2, 7, 9]"
     ],
     "sample_75": [
-        "-22"
+        "5"
     ],
     "sample_788": [
         "'hello.txt'"
@@ -168,19 +168,19 @@
         "[{}]"
     ],
     "sample_283": [
-        "'Iron Man'"
+        "'Ant-Man'"
     ],
     "sample_239": [
-        "'1cos'"
+        "'0 t 1cos '"
     ],
     "sample_780": [
-        "'2 5'"
+        "'2'"
     ],
     "sample_786": [
-        "'kefp719'"
+        "'19kefp7'"
     ],
     "sample_717": [
-        "'timetable, 2mil'"
+        "'imetable, 2'"
     ],
     "sample_8": [
         "'UppEr'"
@@ -198,7 +198,7 @@
         "'qozx'"
     ],
     "sample_301": [
-        "[0, 6, 2, -1, -2, -2, -2, -1, -1, 2, 2, -1, -1, 0, 0]"
+        "[0, 6, 2, -1, -2, -2, -2, -1, -1, 2, 2, -1, -1, -2, -2]"
     ],
     "sample_142": [
         "'ykdfhp'"
@@ -213,7 +213,7 @@
         "False"
     ],
     "sample_701": [
-        "'31849 let it!31849 pass'"
+        "'31849 let it!31849 pass!'"
     ],
     "sample_1": [
         "{1: None, 2: None}"
@@ -231,7 +231,7 @@
         "'rpytt'"
     ],
     "sample_626": [
-        "'babab'"
+        "'baab'"
     ],
     "sample_435": [
         "''"
@@ -243,7 +243,7 @@
         "'Marie;Nelson;Oscar;+353'"
     ],
     "sample_250": [
-        "'wlace Aw'"
+        "'wlace Ae A e c a'"
     ],
     "sample_390": [
         "0"
@@ -267,7 +267,7 @@
         "'razugizoernmgzu'"
     ],
     "sample_403": [
-        " and "
+        "6"
     ],
     "sample_745": [
         "'minimc@minimc.io'"
@@ -279,13 +279,13 @@
         "1"
     ],
     "sample_513": [
-        "[2]"
+        "[0]"
     ],
     "sample_490": [
-        "'\\n\\n\\r\\r \\n'"
+        "'\\n\\n\\r\\r '"
     ],
     "sample_413": [
-        "'ucwuc'"
+        "'ucwcucc'"
     ],
     "sample_582": [
         "[5, 5, 5, 5, 5, 5, 5]"
@@ -306,7 +306,7 @@
         "[-1, 2, -7, 4, 0, 6, -4]"
     ],
     "sample_372": [
-        "['']"
+        "['0,']"
     ],
     "sample_609": [
         "{}"
@@ -339,7 +339,7 @@
         "[]"
     ],
     "sample_768": [
-        "'abba'"
+        " and "
     ],
     "sample_695": [
         "{}"
@@ -354,7 +354,7 @@
         "0"
     ],
     "sample_200": [
-        "'housejao mt'"
+        "'housejomt'"
     ],
     "sample_210": [
         "48"
@@ -363,7 +363,7 @@
         "1"
     ],
     "sample_175": [
-        "''"
+        "'   '"
     ],
     "sample_10": [
         "''"
@@ -372,7 +372,7 @@
         "''"
     ],
     "sample_68": [
-        "'wpvr.hnuemo'"
+        "'wpvr.dq.omeunh'"
     ],
     "sample_476": [
         "False"
@@ -402,10 +402,10 @@
         "{'a': 'car', 'b': 'dog'}"
     ],
     "sample_793": [
-        "6"
+        "3"
     ],
     "sample_150": [
-        "[-2, 4, -4]"
+        "[-2, -4]"
     ],
     "sample_196": [
         "'mixed'"
@@ -414,7 +414,7 @@
         "'R:j:u:g: :z:u:f:E:r:j:u:g: :n:z:u:f:e'"
     ],
     "sample_739": [
-        "True"
+        "False"
     ],
     "sample_728": [
         "'u'"
@@ -423,10 +423,10 @@
         "{37: 'forty-five', '23': 'what?'}"
     ],
     "sample_399": [
-        "'--acado'"
+        "'a-cado'"
     ],
     "sample_724": [
-        "[3, 3, 3, 3]"
+        "[3, 2, 1, 0]"
     ],
     "sample_363": [
         "[1]"
@@ -435,13 +435,13 @@
         "['gloss', 'banana', 'barn', 'lawn']"
     ],
     "sample_418": [
-        "'qqqq'"
+        "'qqqqq'"
     ],
     "sample_249": [
-        "{'f': 0, 's': 0, 'a': 0}"
+        "{'f': 0, 's': 0, 'a': 1}"
     ],
     "sample_71": [
-        "{1: 2, 3: 4, 5: 6, 7: 8, 2: 9}"
+        "{1: 2, 3: 4, 5: 6, 7: 8, 2: 1}"
     ],
     "sample_49": [
         "'816'"
@@ -465,16 +465,16 @@
         "''"
     ],
     "sample_193": [
-        "'11'"
+        "'1:1'"
     ],
     "sample_337": [
         "'LL'"
     ],
     "sample_310": [
-        "'__1.00r__ja_a6__6'"
+        "'__1.00r__j_a6__6'"
     ],
     "sample_266": [
-        "[2, 3, 3, 4, 6, -2]"
+        "[2, 3, 3, 4, 6, -2, -2]"
     ],
     "sample_243": [
         "True"
@@ -486,7 +486,7 @@
         "[6, 2, 2, 0, 0, 0, 0, 0, 3, 10]"
     ],
     "sample_64": [
-        "'    7'"
+        "'          7'"
     ],
     "sample_765": [
         "3"
@@ -519,19 +519,19 @@
         "''"
     ],
     "sample_647": [
-        "operation_to_perform('/alcm@ an)t//eprw)/e!/d\\nujv', 0)  # This will raise an error"
+        "['/alcm@ an)t//eprw)/e!/d\\nujv']"
     ],
     "sample_118": [
         "'zbzquiuqnmfkx'"
     ],
     "sample_12": [
-        "'If you want to live a happy life! Daniel'"
+        "' you want to live a happy life! '"
     ],
     "sample_157": [
         "1"
     ],
     "sample_592": [
-        "[3, 11]"
+        "[3, 3]"
     ],
     "sample_320": [
         "'usAR'"
@@ -552,7 +552,7 @@
         "True"
     ],
     "sample_651": [
-        " and "
+        "'E wrestled evil until upperfeat'"
     ],
     "sample_424": [
         "'akers of a Statement'"
@@ -567,7 +567,7 @@
         "'-'"
     ],
     "sample_458": [
-        "',,pom,o,'"
+        "',,p4,o,,'"
     ],
     "sample_312": [
         "'True'"
@@ -582,7 +582,7 @@
         "['m', 'a']"
     ],
     "sample_624": [
-        "'x'"
+        "'xllomnrpc'"
     ],
     "sample_654": [
         "'ap?d'"
@@ -636,13 +636,13 @@
         "[-8, -7, -6, -5, 2]"
     ],
     "sample_545": [
-        "[8, -1, 8, 2]"
+        "[8, -1, 8]"
     ],
     "sample_45": [
-        " and "
+        "0"
     ],
     "sample_586": [
-        "6"
+        "5"
     ],
     "sample_491": [
         "[4, 8, 8, 5, 5, 8, 8, 8, 8, 4, 4]"
@@ -690,7 +690,7 @@
         "[]"
     ],
     "sample_214": [
-        "11"
+        "12"
     ],
     "sample_285": [
         "5"
@@ -699,19 +699,19 @@
         "'2xz&5H3*1a@#a*1hris'"
     ],
     "sample_21": [
-        "[1, 1, 2, 2, 2]"
+        "[1, 1, 2, 2, 2, 2]"
     ],
     "sample_636": [
-        "{ 3: 'A3', 1: 'A1', 2: 'A2', 1: 'A1', 2: 'A2', 1: 'A1' }"
+        "{3: 'A3', 1: 'A1', 2: 'A2', 1: 'A1', 2: 'A2', 1: 'A1'}"
     ],
     "sample_708": [
         "'jcmfxv     '"
     ],
     "sample_35": [
-        "[1, 2, 1, 3]"
+        "[3, 2, 1, 4]"
     ],
     "sample_81": [
-        "[('Bulls', '23'), ('White Sox', 45)]"
+        "[('Bulls', 23), ('White Sox', 45)]"
     ],
     "sample_159": [
         "'mGiTr'"
@@ -723,7 +723,7 @@
         "''"
     ],
     "sample_409": [
-        "'queriS'"
+        "'querisI'"
     ],
     "sample_567": [
         "['three_four_five']"
@@ -744,7 +744,7 @@
         "[-4, 4, 1, 0]"
     ],
     "sample_345": [
-        "('ml', 'mv')"
+        "('mv', 'ml')"
     ],
     "sample_762": [
         "'this and cpanel'"
@@ -786,10 +786,10 @@
         "[1, 9, 4]"
     ],
     "sample_188": [
-        "['a']"
+        "['a', 'ca']"
     ],
     "sample_366": [
-        " and "
+        "''"
     ],
     "sample_422": [
         "[1, 4, 1]"
@@ -801,7 +801,7 @@
         "'acbCed'"
     ],
     "sample_155": [
-        " and "
+        "'dskj\\ns hj\\ncdjn\\nxhji\\ncn'"
     ],
     "sample_306": [
         "[0, 6, 1, 2, 0]"
@@ -813,7 +813,7 @@
         "['Angela', 'Dan', 'Dusty', 'Joe', 'Linda', 'Pete']"
     ],
     "sample_375": [
-        "'sieriz'"
+        "'sieam'"
     ],
     "sample_66": [
         "'ha'"
@@ -828,13 +828,13 @@
         "'h/ grateful k'"
     ],
     "sample_161": [
-        "'j rinpxdif'"
+        "'difkj rinpx'"
     ],
     "sample_661": [
         "'elrts,SS ee'"
     ],
     "sample_735": [
-        "'AbB'"
+        "'A(bB)'"
     ],
     "sample_561": [
         "7"
@@ -855,7 +855,7 @@
         "[182, 32, 'r6', 'r5', 'rge', '', 'f', 'f1q', -4]"
     ],
     "sample_229": [
-        "['m', 'm', '9', '1', '0', 'L', 'k']"
+        "[1, 'm', 2, '9', '1', 2, 'L', 2]"
     ],
     "sample_558": [
         "False"
@@ -864,7 +864,7 @@
         "'towaru'"
     ],
     "sample_220": [
-        "'cbagfedc'"
+        "'fedcbagfedc'"
     ],
     "sample_730": [
         "2"
@@ -879,13 +879,13 @@
         "'ZN KGD JW LNT'"
     ],
     "sample_245": [
-        "['u', 'p', 'p', 'e', 'r', 'c', 'a', 's', 'e', 'd', 'v', 'z']"
+        "['U', 'P', 'P', 'E', 'R', 'C', 'A', 'S', 'E', 'D']"
     ],
     "sample_318": [
         "1"
     ],
     "sample_6": [
-        "[('4', 52)]"
+        "[('74', 31)]"
     ],
     "sample_354": [
         "'R, R!!!'"
@@ -897,7 +897,7 @@
         "{'a': 1}"
     ],
     "sample_501": [
-        "'qjpj jzm'"
+        "'qpjfi jzm'"
     ],
     "sample_725": [
         "5"
@@ -918,7 +918,7 @@
         "[1, 1]"
     ],
     "sample_218": [
-        "'bbaabcbfcacba'"
+        "'bacfcbaafccab'"
     ],
     "sample_623": [
         "'HI~!'"
@@ -930,13 +930,13 @@
         "'fiu##nk#he###wumun'"
     ],
     "sample_770": [
-        "'$$$$78'"
+        "'$$$78'"
     ],
     "sample_190": [
         "'jiojickldl'"
     ],
     "sample_640": [
-        " and "
+        "0"
     ],
     "sample_602": [
         "4"
@@ -951,7 +951,7 @@
         "'abcdabc'"
     ],
     "sample_233": [
-        "[3]"
+        "[]"
     ],
     "sample_173": [
         "[4, 8, 6, 8, 5]"
@@ -990,13 +990,13 @@
         "[4]"
     ],
     "sample_89": [
-        "'O'"
+        "'o'"
     ],
     "sample_649": [
         "' f9\\n ldf9\\n adf9!\\n f9?'"
     ],
     "sample_179": [
-        "[7, 7, 7, 7, 7, 7, 1, 2, 6, 0, 2]"
+        "[2, 6, 2, 1, 7, 7, 1, 2, 6, 0, 2]"
     ],
     "sample_0": [
         "[(3, 1), (2, 3)]"
@@ -1008,7 +1008,7 @@
         "[1, 2, 3]"
     ],
     "sample_638": [
-        "'aba'"
+        "''"
     ],
     "sample_412": [
         "8"
@@ -1023,13 +1023,13 @@
         "'osu'"
     ],
     "sample_223": [
-        "2"
+        "1"
     ],
     "sample_504": [
         "[1, 1, 1, 1]"
     ],
     "sample_327": [
-        "[-3, 7, -1, -1]"
+        "[-3, 1, 7, -1]"
     ],
     "sample_351": [
         "'a_A_b_B3 '"
@@ -1053,7 +1053,7 @@
         "[2, 1]"
     ],
     "sample_620": [
-        "'3 ih ox mq d a n d a r t e l'"
+        "'3 i h o x m q d a n a t r e l'"
     ],
     "sample_246": [
         "0"
@@ -1071,7 +1071,7 @@
         "[None]"
     ],
     "sample_575": [
-        "48"
+        "44"
     ],
     "sample_519": [
         "{1: False, 2: 0}"
@@ -1158,7 +1158,7 @@
         "True"
     ],
     "sample_616": [
-        "'[\\\\n][\\\\n]y\\\\n'"
+        "'[\\\\n][\\\\n][y]\\\\n'"
     ],
     "sample_546": [
         "'Do you know who the other was? [NEGMENDS]'"
@@ -1170,7 +1170,7 @@
         "'dbtdabdahesyehu'"
     ],
     "sample_632": [
-        " and "
+        "[0, 0, 0, 1, 4, 5, 7, 9, 25, 63, 87]"
     ],
     "sample_564": [
         "[395, 666, 7, 4]"
@@ -1179,13 +1179,13 @@
         "'g'"
     ],
     "sample_434": [
-        "10"
+        "11"
     ],
     "sample_603": [
         "'not oscillating'"
     ],
     "sample_112": [
-        " and "
+        "'XYZ LittleRedRidingHood LiTTleBIGGeXEiT fault'"
     ],
     "sample_798": [
         "'@!'"
@@ -1194,22 +1194,22 @@
         "[-4]"
     ],
     "sample_20": [
-        "',saw'"
+        "'was,'"
     ],
     "sample_65": [
         "9"
     ],
     "sample_298": [
-        " and "
+        "'DST vavf n dmv dfvm gamcu dgcvb.'"
     ],
     "sample_126": [
-        "'kkxkxxfck'"
+        "'kkxkxxfck-'"
     ],
     "sample_259": [
         "'SER'"
     ],
     "sample_479": [
-        "[1, 2, 6]"
+        "[1, 2, 3]"
     ],
     "sample_596": [
         "['2', '3', '4', '7', '8', '9']"
@@ -1218,7 +1218,7 @@
         "'coscifysu'"
     ],
     "sample_726": [
-        "(2, 32)"
+        "(2, 33)"
     ],
     "sample_339": [
         "2"
@@ -1227,7 +1227,7 @@
         "'asfdellos'"
     ],
     "sample_671": [
-        "'dwriyodg emf rwtd dgo seggo'"
+        "'dgriyat dmf rwto segya'"
     ],
     "sample_137": [
         "[]"
@@ -1254,10 +1254,10 @@
         "[8, 2, 8]"
     ],
     "sample_557": [
-        "'xxx arm marxx'"
+        "'xxx ar mmmarxx'"
     ],
     "sample_681": [
-        "[1, 5, 8, 7, 2, 0, 3]"
+        "[1, 5, 7, 8, 2, 0, 3]"
     ],
     "sample_407": [
         "0"
@@ -1287,7 +1287,7 @@
         "[-5, 7]"
     ],
     "sample_712": [
-        "[['A', ')', 'p', 'u', 'c', 'c', 'i', 'h', '(', 'A']]"
+        "[['A', ')', 'p', 'u', 'c', 'i', 'h', '(', 'A']]"
     ],
     "sample_100": [
         "{'1': 'a', 1: 'b', '1': 'b'}"
@@ -1302,7 +1302,7 @@
         "'bR'"
     ],
     "sample_237": [
-        "'zlwaqiauzlwaqiau'"
+        "'uzlwaqiaj'"
     ],
     "sample_694": [
         "('c', {'e': 1, 'd': 2})"
@@ -1311,13 +1311,13 @@
         "True"
     ],
     "sample_400": [
-        "'I, am, eat, food.'"
+        "'I, am'"
     ],
     "sample_60": [
         "'R'"
     ],
     "sample_531": [
-        "'skdjgblw asdl '"
+        "''"
     ],
     "sample_262": [
         "'BA'"
@@ -1326,13 +1326,13 @@
         "'Because it intrigues them'"
     ],
     "sample_264": [
-        "'pApAra'"
+        "'pApArA'"
     ],
     "sample_742": [
         "False"
     ],
     "sample_630": [
-        "{1: 1, 0: 0, 2: -9, 3: -7}"
+        "{1: -9, 0: -7, 2: -9, 3: -7}"
     ],
     "sample_208": [
         "['c', 'a', 't', 'd', ' ', 'd', 'e', 'e']"
@@ -1347,10 +1347,10 @@
         "['4', '4']"
     ],
     "sample_167": [
-        "'aaQwQwbbQwQwccQwQwde'"
+        "'aaQWQWbbQWQWccQWQWde'"
     ],
     "sample_38": [
-        "'1oE-Err Bzz-Bmm'"
+        "'1oE-err Bzz-Bmm'"
     ],
     "sample_467": [
         "{}"
@@ -1371,7 +1371,7 @@
         "[1, 2, 3]"
     ],
     "sample_485": [
-        "'avdropj    gsd'"
+        "'avdrop gsd   '"
     ],
     "sample_679": [
         "True"
@@ -1404,7 +1404,7 @@
         "[4, 3, 6, 1]"
     ],
     "sample_449": [
-        "True"
+        "False"
     ],
     "sample_343": [
         "[[1, 2, 3], [1, 2], 1, [1, 2, 3], 3, [2, 1]]"
@@ -1443,7 +1443,7 @@
         "['ab cd']"
     ],
     "sample_361": [
-        "2"
+        "1"
     ],
     "sample_506": [
         "'sn'"
@@ -1497,7 +1497,7 @@
         "'.'"
     ],
     "sample_5": [
-        " and "
+        "(2, 'xxxxxxxxxxxxaxaxaxaxaxaxax')"
     ],
     "sample_141": [
         "[1, 3, 1, 3, 3, 1, 1, 1, 1, 1, 1]"
@@ -1512,13 +1512,13 @@
         "['Russia', 'Kazakhstan']"
     ],
     "sample_540": [
-        "[5, 5, 5, 5, 5, 4, 6, 4, 9, 5]"
+        "[5, 5, 5, 5, 5, 6, 4, 9, 5]"
     ],
     "sample_378": [
         "'No such key!'"
     ],
     "sample_715": [
-        "True"
+        "False"
     ],
     "sample_22": [
         "[0]"
@@ -1542,7 +1542,7 @@
         "[1, 2, 3, 8]"
     ],
     "sample_281": [
-        "{1: 2, 3: 4, 5: 6, 'message': 'qrTHo', 8: 2}"
+        "{1: 2, 3: 4, 5: 6, 8: 2}"
     ],
     "sample_120": [
         "{}"
@@ -1566,13 +1566,13 @@
         "{}"
     ],
     "sample_779": [
-        "'pythony, rubyx, cxr, javascriptp'"
+        "'${first}y, ${second}x, ${third}r, ${fourth}p'"
     ],
     "sample_538": [
         "'zz0574zzz'"
     ],
     "sample_571": [
-        "'a    b'"
+        "r'a    b'"
     ],
     "sample_643": [
         "'damdrodM'"
@@ -1593,7 +1593,7 @@
         "'zejrohaj'"
     ],
     "sample_568": [
-        "'hbwmm'"
+        "'bwmmh'"
     ],
     "sample_329": [
         "False"
@@ -1602,19 +1602,19 @@
         "''"
     ],
     "sample_498": [
-        "[2, 2, 2, 3, 3, 3]"
+        "[2, 2, 3, 2, 3]"
     ],
     "sample_760": [
         "['f', 'h', 'j', 'k']"
     ],
     "sample_405": [
-        "[0, 5]"
+        "[3, 1, 2, 3, 5]"
     ],
     "sample_597": [
         "'JAAFODSFA SODOFJ AOAFJIS  JAFASIDFSA1'"
     ],
     "sample_93": [
-        "'iq!!!'"
+        "'qi!!!'"
     ],
     "sample_433": [
         "'T,Sspp,G ,.tB,Vxk,Cct'"
@@ -1638,7 +1638,7 @@
         "'t\\nZA\\nA'"
     ],
     "sample_729": [
-        " and "
+        "[10, 2]"
     ],
     "sample_322": [
         "['d', 't', 't', 's', 'lsi']"
@@ -1656,10 +1656,10 @@
         "'5'"
     ],
     "sample_340": [
-        "' DGHiJVekptx'"
+        "' EG HIJKPTDVXkx'"
     ],
     "sample_221": [
-        "'bpxa24fc5.'"
+        "'.bpxa24fc5'"
     ],
     "sample_743": [
         "-6"
@@ -1692,7 +1692,7 @@
         "'spabn'"
     ],
     "sample_347": [
-        "'hzzchzcw'"
+        "'hzzchzcw  '"
     ],
     "sample_376": [
         "' programmers'"
@@ -1734,7 +1734,7 @@
         "'wwwwhhhtttpp'"
     ],
     "sample_678": [
-        "{'H': 1, 'I': 1}"
+        "{'h': 1, 'i': 1}"
     ],
     "sample_232": [
         "'yesyes'"
@@ -1773,10 +1773,10 @@
         "'Half Life'"
     ],
     "sample_73": [
-        "(3, 5)"
+        "(5, 5)"
     ],
     "sample_393": [
-        "'sca---acs'"
+        "'acssc'"
     ],
     "sample_547": [
         "'h,e,l,l,o,wo,r,ld,'"
@@ -1788,7 +1788,7 @@
         "True"
     ],
     "sample_799": [
-        "'eqe-;ew22nnnnn'"
+        "'eqe-;ew22nnn'"
     ],
     "sample_668": [
         "'rhellomyfriendea'"
@@ -1809,22 +1809,22 @@
         "'try.'"
     ],
     "sample_138": [
-        "'mtflb omn rtt'"
+        "'tflb omn rtt'"
     ],
     "sample_212": [
         "[1, -9, 7, 2, 6, -3, 3]"
     ],
     "sample_771": [
-        " and "
+        "[2, 4, 6, 8]"
     ],
     "sample_672": [
-        "'1zm'"
+        "'1zd'"
     ],
     "sample_693": [
         "'x0x0'"
     ],
     "sample_733": [
-        "''"
+        "'n'"
     ],
     "sample_234": [
         "0"
@@ -1842,7 +1842,7 @@
         "2"
     ],
     "sample_129": [
-        "[24, 18, 12, 8, 0]"
+        "[22, 19, 16, 13, 10, 7, 4, 1, 0]"
     ],
     "sample_349": [
         "{'noeohqhk': 623, 1049: 55}"
@@ -1866,16 +1866,16 @@
         "0"
     ],
     "sample_680": [
-        " and "
+        "'we32r71g72ug94823658324'"
     ],
     "sample_591": [
-        "([0, 0, 1, 1, 0, 1, 1, 1, 0], [3, 4, 6, 7, 8])"
+        "([1, 0, 1, 1, 0, 1, 0, 1, 1], [1, 3, 4, 6, 8, 9])"
     ],
     "sample_720": [
-        "40"
+        "39"
     ],
     "sample_525": [
-        "('CODE', 'TEXT')"
+        "(0, 7)"
     ],
     "sample_287": [
         "'pinneaple'"
@@ -1911,10 +1911,10 @@
         "{'t': 2, 'x:': 3}"
     ],
     "sample_110": [
-        "1"
+        "2"
     ],
     "sample_149": [
-        "'3,,,,,2,,,,,1,,,,,,,3,,,,,'"
+        "'3,2,1,3,'"
     ],
     "sample_152": [
         "20"
@@ -1929,7 +1929,7 @@
         "True"
     ],
     "sample_598": [
-        "''"
+        "'abc'"
     ],
     "sample_139": [
         "'no'"
@@ -2007,7 +2007,7 @@
         "'mjsmjqwmjsqjwisojqwiso'"
     ],
     "sample_275": [
-        "{-1: 'a', 0: 'b', 1: 'c'}"
+        "{'a': -1, 'b': 0, 'c': 1}"
     ],
     "sample_747": [
         "False"
@@ -2016,19 +2016,19 @@
         "[('b', 1), ('a', 2)]"
     ],
     "sample_32": [
-        "'*me;*vo'"
+        "'*volume'"
     ],
     "sample_80": [
         "'ba'"
     ],
     "sample_307": [
-        "'px| | | | |c|zn|yf'"
+        "'px| | | |c|zn|yf'"
     ],
     "sample_11": [
         "{'foo': ['bar']}"
     ],
     "sample_43": [
-        "'6 ** 2'"
+        "-1"
     ],
     "sample_86": [
         "['2e', 'drcr', 'sdfs']"
@@ -2037,7 +2037,7 @@
         "'ha'"
     ],
     "sample_58": [
-        "[-1, 0, 0, 1, 1, -1, 0, -1, 0, -1]"
+        "[-1, 0, 0, 1, 1, -1, 0, 0, 1, 1]"
     ],
     "sample_41": [
         "[58, 92, 21]"
@@ -2052,7 +2052,7 @@
         "'ifulhxhzpnyihyf'"
     ],
     "sample_148": [
-        " and "
+        "'2imo im tfiqr-'"
     ],
     "sample_594": [
         "30"
@@ -2070,16 +2070,16 @@
         "'BYE, NO, WAY'"
     ],
     "sample_130": [
-        "'h=l'"
+        "'o=9'"
     ],
     "sample_23": [
         "'new-medium-performing-application - XQuery 2.2'"
     ],
     "sample_696": [
-        "3"
+        "4"
     ],
     "sample_555": [
-        "'odes  code  well'"
+        "'odes  codewell'"
     ],
     "sample_370": [
         "False"
@@ -2094,7 +2094,7 @@
         "'641524'"
     ],
     "sample_368": [
-        "'4327 00000004327 00000004327 4327 0000004327 4327'"
+        "'4327 00004327 0000004327 4327 0004327 4327'"
     ],
     "sample_554": [
         "[-5, 3, 9999, 1, 0, 2]"
@@ -2106,7 +2106,7 @@
         "[3, 1, 0, 2]"
     ],
     "sample_292": [
-        "'5*83*23****'"
+        "'5*83*23**'"
     ],
     "sample_690": [
         "'800'"
@@ -2118,7 +2118,7 @@
         "'ruamNHIB'"
     ],
     "sample_197": [
-        "'0 oC'"
+        "'1234567890 0'"
     ],
     "sample_95": [
         "{'fr': 'AAA'}"
@@ -2130,7 +2130,7 @@
         "{0: 5}"
     ],
     "sample_169": [
-        "'+++++taole'"
+        "'++++++++'"
     ],
     "sample_581": [
         "'saXkooon'"
@@ -2184,22 +2184,22 @@
         "[1, 0, -3, 1, -2, -6]"
     ],
     "sample_398": [
-        "{'2': 2, '0': 1, '1': 2, 2: ['1'], 1: ['0']}"
+        "{'2': 2, '0': 1, '1': 2}"
     ],
     "sample_91": [
         "['1', '2', 'a', 'b', '3', 'x', 'y']"
     ],
     "sample_82": [
-        "'BFS'"
+        "True"
     ],
     "sample_430": [
         "[5, 1, 3, 7, 8, '', 0, -1, []]"
     ],
     "sample_119": [
-        "'VsNlYgLtAw'"
+        "'VnLyGlTaW'"
     ],
     "sample_291": [
-        "{'a': 'a'}"
+        "{'a': [2]}"
     ],
     "sample_57": [
         "1"
@@ -2226,13 +2226,13 @@
         "'2nm_28in'"
     ],
     "sample_335": [
-        "'sjbr?fqmw'"
+        "'sjbrfqmw'"
     ],
     "sample_273": [
         "'T'"
     ],
     "sample_488": [
-        "'tezmgvn 651h'"
+        "'tezmgvn 51h'"
     ],
     "sample_550": [
         "[1, 4, 16, 2, 4]"
@@ -2244,7 +2244,7 @@
         "(('a', 123), ('b', 456))"
     ],
     "sample_128": [
-        "'Mmoamt'"
+        "'Mmohamt'"
     ],
     "sample_28": [
         "True"
@@ -2253,7 +2253,7 @@
         "['echo', 'hello!!!']"
     ],
     "sample_459": [
-        "{'vzjmc': 'b', 'ae': 'f', '0': '0'}"
+        "{'vzjmc': 'b', 'ae': 'f'}"
     ],
     "sample_510": [
         "'Wy'"
@@ -2277,7 +2277,7 @@
         "'    tab tab tabulates'"
     ],
     "sample_639": [
-        " and "
+        "'yes no no no no no no no no no no no no no no no no '"
     ],
     "sample_697": [
         "('', '', 'not it')"
@@ -2286,7 +2286,7 @@
         "{1: 2, 2: 4}"
     ],
     "sample_288": [
-        "[(1, 3)]"
+        "[(1, 3), (12, 6), (55, 4)]"
     ],
     "sample_423": [
         "[4, 2, 5, 1, 3, 2]"
@@ -2295,25 +2295,25 @@
         "[1, 1, 1]"
     ],
     "sample_659": [
-        "3"
+        "2"
     ],
     "sample_772": [
-        "'DFAB'"
+        "'sejgpoDFA.'"
     ],
     "sample_177": [
-        "'HEy dUDE THis $Nd^ &*&TTHI@#'"
+        "'HEy dUDe tHis $ND^ &*&THIs@#'"
     ],
     "sample_99": [
-        "'aa+++___bb'"
+        "'aa___bb'"
     ],
     "sample_448": [
-        "False"
+        "True"
     ],
     "sample_431": [
         "[]"
     ],
     "sample_709": [
-        "'loved a'"
+        "'a loved'"
     ],
     "sample_755": [
         "'ph>t#A#BiEcDefW#ON#iiNCU'"
@@ -2331,7 +2331,7 @@
         "'I'"
     ],
     "sample_785": [
-        "'1 '"
+        "'1'"
     ],
     "sample_174": [
         "[1, 3, 2]"
@@ -2340,7 +2340,7 @@
         "'-2139-1'"
     ],
     "sample_551": [
-        "['a', 'b', 'c']"
+        "['a', 'b', 'c', 'inf']"
     ],
     "sample_486": [
         "{1:1, 2:4, 3:9}"
@@ -2358,13 +2358,13 @@
         "[]"
     ],
     "sample_472": [
-        "['x', 'y', 'z', '5', 'c']"
+        "[1, 1, 1, 1, 1]"
     ],
     "sample_70": [
-        "15"
+        "32"
     ],
     "sample_599": [
-        "['a', '', 'b', '', 'c', '']"
+        "['a', 'b c', 'c', '', '']"
     ],
     "sample_754": [
         "['2', '2', '4', '0', '7', '2']"
@@ -2379,16 +2379,16 @@
         "False"
     ],
     "sample_359": [
-        "[' dZwbSR', ' wijHeq', ' qluVok', 'dxjxbF']"
+        "[' dZwbSR', ' wijHeq', ' qluVok', ' dxjxbF']"
     ],
     "sample_707": [
         "'udbs l'"
     ],
     "sample_763": [
-        "'yCxpg2C2Pny2'"
+        "'yCxpg2C2Pny'"
     ],
     "sample_192": [
-        "'!klcd'"
+        "'!klcd!ma:r'"
     ],
     "sample_629": [
         "'cat'"
