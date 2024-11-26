@@ -72,12 +72,17 @@ def get_best_passatk_dict(perturbed_data_list):
     return passatk_best
 
 
-def calculate_passatk(data):
+def calculate_passatk(data, is_raw_data=True):
     length = len(data)
     cnt = 0
-    for passed in data.values():
-        if passed[0]:
-            cnt += 1
+    if is_raw_data:
+        for passed in data.values():
+            if passed[0]:
+                cnt += 1
+    else:
+        for passed in data.values():
+            if passed:
+                cnt += 1
     return cnt / length
 
 
@@ -97,8 +102,8 @@ def calculate_metric(perturbed_data_list, metric, nominal_data):
             passatk_list.append(calculate_passatk(perturbed_data))
 
         worst_cnt = 0
-        for sample in passatk_worst.keys():
-            if passatk_worst[sample]: 
+        for passed in passatk_worst.values():
+            if passed: 
                 worst_cnt += 1
 
         return passatk_list, worst_cnt / length if passatk_list else " ", passatk_worst
@@ -191,6 +196,7 @@ def eval_per_cat(args):
             # Works but in a dirty way
             nominal_dict[model][task] = get_worst_passatk_dict([nominal_pass_dict])
             nominal_passatk_dict[model][task] = nominal_passatk
+            nominal_cross_checked = False
 
             results[model][task] = None
             for aug_method in range(len(RECIPES[args.method])):
@@ -224,8 +230,9 @@ def eval_per_cat(args):
                             print(f"{perturbed_data_path} not exists, skip..")
                             pass
 
-                    _, method_passatk, _ = calculate_metric(perturbed_data_list, "passatk", nominal_pass_dict)
-                    method_passatk *= 100.0
+                    # _, method_passatk, _ = calculate_metric(perturbed_data_list, "passatk", nominal_pass_dict)
+                    method_passatk = calculate_passatk(get_worst_passatk_dict(perturbed_data_list), is_raw_data=False)
+                    method_passatk *= 100.
 
                 if perturbed_data_list:
                     if passatk_list:
@@ -236,6 +243,28 @@ def eval_per_cat(args):
                     # merge results across different aug_method
                     passatk_worst_dict = get_worst_passatk_dict(perturbed_data_list)
                     passatk_best_dict = get_best_passatk_dict(perturbed_data_list)
+                    assert passatk_worst_dict.keys() == passatk_best_dict.keys(),\
+                        "Worst and best dict have different samples."
+
+                    if not nominal_cross_checked:
+                        assert len(passatk_worst_dict) <= len(nominal_pass_dict),\
+                            "Perturbed datasets have more samples than nominal dataset."
+                        if len(passatk_worst_dict) < len(nominal_pass_dict):
+                            print("Perturbed datasets have less samples than nominal dataset.")
+                            print("Assume sampling and try to extract the subset from the nominal dataset:")
+                            sampled_nominal_pass_dict = {}
+                            for sample in passatk_worst_dict.keys():
+                                assert sample in nominal_pass_dict.keys(), "Unexpected sample found."
+                                sampled_nominal_pass_dict[sample] = nominal_pass_dict[sample]
+                            nominal_pass_dict = sampled_nominal_pass_dict
+                            nominal_passatk = calculate_passatk(nominal_pass_dict) * 100.
+                            nominal_dict[model][task] = get_worst_passatk_dict([nominal_pass_dict])
+                            nominal_passatk_dict[model][task] = nominal_passatk
+                            print(f"nominal sampled; re-evaluated nominal pass@1: {nominal_passatk:.2f}")
+                        else:
+                            assert nominal_pass_dict.keys() == passatk_worst_dict.keys(), "Unexpected sample found."
+                        nominal_cross_checked = True
+
                     if args.nonrobust_stats:
                         nonrobust_dict[model][f"{task}_raw"][method_name] = [
                             copy.deepcopy(passatk_worst_dict), copy.deepcopy(passatk_best_dict)
@@ -252,6 +281,9 @@ def eval_per_cat(args):
                     # no data available
                     # print(f"\t{RECIPES[args.method][aug_method]} passatk: {passatk_list}, {method_passatk}")
                     print(f"No data processed for {method_name}. Skip...")
+
+            if not nominal_cross_checked:
+                print("Nominal dataset has not cross checked with perturbed dataset. Result might be inaccurate.")
 
     # directory = "statitic_jsons"
     # os.makedirs(directory, exist_ok=True)
@@ -297,7 +329,7 @@ def eval_per_cat(args):
                     if results[model][task][0][sample]:
                         cnt += 1
                     total_cnt += 1
-                passatk = cnt / total_cnt * 100
+                passatk = cnt / total_cnt * 100.
                 nominal_passatk = nominal_passatk_dict[model][task]
                 row.append((nominal_passatk - passatk) / nominal_passatk * 100.)
             else:
