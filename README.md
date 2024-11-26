@@ -95,8 +95,11 @@ run_evalplus.py --model_key deepseek-ai/deepseek-coder-6.7b-base --dataset [data
 To generate model responses on the perturbed CRUXEval datasets, the SemCoder script `SemCoder/scripts/eval/eval_cruxeval.sh` was changed to use temperature 0.
 The `SemCoder/experiments/cruxeval_utils.py` file was updated to point to the perturbed dataset file of interest.
 Additionally, we modified the prompting in the file `SemCoder/experiments/cruxeval_prompts.py` so that prompts referred to a function rather than `function f` since we renamed all functions in the CRUXEval dataset.
+These changes can also be seen in our [modified fork of the SemCoder repository](https://github.com/hailie-mitchell/SemCoder).
 Then we generated model responses with the SemCoder script:
 ```
 cd SemCoder
 bash scripts/eval/eval_cruxeval.sh
 ```
+
+Additional details about robustness evaluations of model generations for the CRUXEval datasets are available in our [cruxeval evaluation documentation](cruxeval/results/README.md).
