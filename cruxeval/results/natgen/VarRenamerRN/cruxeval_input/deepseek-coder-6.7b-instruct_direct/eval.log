@@ -1,0 +1,4 @@
+Scoring /home/hm3075/SemCoder/output/cruxeval/cruxeval_input/natgen/VarRenamerRN/deepseek-coder-6.7b-instruct_direct/generations.json... expect around a minute
+Finished!
+pass@1: 33.5 pass@5: 100.0
+Dumping to /home/hm3075/SemCoder/output/cruxeval/cruxeval_input/natgen/VarRenamerRN/deepseek-coder-6.7b-instruct_direct/scored_results.json
