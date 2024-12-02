@@ -1,5 +1,5 @@
 func_name/FuncRenameInflectionalVariation,semcoder_1030,semcoder_s_1030
 nominal,64.0,62.0
-passatk,0.0,0.0
-drop (%),100.0,100.0
-relative (%),64.0,62.0
+passatk,63.5,56.99999999999999
+drop (%),0.78125,8.064516129032269
+relative (%),17.5,16.0

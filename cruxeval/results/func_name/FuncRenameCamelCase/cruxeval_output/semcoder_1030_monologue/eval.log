@@ -1,4 +1,4 @@
-Scoring /home/rc3593/SemCoder/output_dir/eval/cruxeval/cruxeval_output/semcoder_1030_monologue/generations.json... expect around a minute
+Scoring /home/rc3593/SemCoder/output_dir/func_name/cruxeval/FuncRenameCamelCase/cruxeval_output/semcoder_1030_monologue/generations.json... expect around a minute
 Finished!
-pass@1: 60.0 pass@5: 100.0
-Dumping to /home/rc3593/SemCoder/output_dir/eval/cruxeval/cruxeval_output/semcoder_1030_monologue/scored_results.json
+pass@1: 59.5 pass@5: 100.0
+Dumping to /home/rc3593/SemCoder/output_dir/func_name/cruxeval/FuncRenameCamelCase/cruxeval_output/semcoder_1030_monologue/scored_results.json

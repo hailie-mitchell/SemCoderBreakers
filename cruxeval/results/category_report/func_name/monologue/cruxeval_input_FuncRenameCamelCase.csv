@@ -1,5 +1,5 @@
 func_name/FuncRenameCamelCase,semcoder_1030,semcoder_s_1030
 nominal,64.0,62.0
-passatk,0.0,0.0
-drop (%),100.0,100.0
-relative (%),64.0,62.0
+passatk,56.49999999999999,63.0
+drop (%),11.71875000000001,-1.6129032258064515
+relative (%),19.5,21.0

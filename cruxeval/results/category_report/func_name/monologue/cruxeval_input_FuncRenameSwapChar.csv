@@ -1,5 +1,5 @@
 func_name/FuncRenameSwapChar,semcoder_1030,semcoder_s_1030
 nominal,64.0,62.0
-passatk,0.0,0.0
-drop (%),100.0,100.0
-relative (%),64.0,62.0
+passatk,58.5,61.5
+drop (%),8.59375,0.8064516129032258
+relative (%),16.5,15.5

@@ -1,5 +1,5 @@
 func_name/FuncRenameButterFinger,semcoder_1030,semcoder_s_1030
 nominal,44.5,49.0
-passatk,0.0,0.0
-drop (%),100.0,100.0
-relative (%),44.5,49.0
+passatk,46.5,48.0
+drop (%),-4.49438202247191,2.0408163265306123
+relative (%),5.0,8.0

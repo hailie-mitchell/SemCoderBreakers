@@ -8,9 +8,12 @@ from utils_general import (
     pass_at_k,
 )
 
-def evaluate_generations(generations : dict[str, list], mode):
+def evaluate_generations(generations : dict[str, list], mode, method=None):
     # Load the samples
-    dataset = [json.loads(l) for l in open("../data/cruxeval.jsonl", "r").readlines()]
+    path_to_nominal = "../data/cruxeval.jsonl"
+    if method is not None:
+        path_to_nominal = f"../data/cruxeval_{method}_s0_eval.jsonl"
+    dataset = [json.loads(l) for l in open(path_to_nominal, "r").readlines()]
     samples = list(generations.keys())
     ref_dict = {
         doc["id"]: (doc["code"], doc["input"], doc["output"]) for doc in dataset if doc["id"] in samples
@@ -65,6 +68,12 @@ if __name__ == "__main__":
         type=str,
         default=None,
     )
+    parser.add_argument(
+        "--method", 
+        help="perturbation method to evaluate, specific to ReCode",
+        type=str,
+        default=None,
+    )
 
     args = parser.parse_args()
     generations = json.load(open(args.generations_path, "r"))
@@ -73,7 +82,7 @@ if __name__ == "__main__":
     if "input" in args.generations_path: args.mode = "input"
     else: args.mode = "output"
 
-    results = evaluate_generations(generations, args.mode)
+    results = evaluate_generations(generations, args.mode, args.method)
     print(f"Finished!")
     print("pass@1:", round(results["pass_at_1"], 1), "pass@5:", round(results["pass_at_5"], 1))
     if args.scored_results_path != None:
