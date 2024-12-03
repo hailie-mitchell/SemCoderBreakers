@@ -1,0 +1,602 @@
+{
+    "sample_759": [
+        "opegation_to_perform('banana', 'na')"
+    ],
+    "sample_697": [
+        "opegation_to_perform('not it', '')"
+    ],
+    "sample_2": [
+        "opegation_to_perform('hbto+fde+iequ')"
+    ],
+    "sample_105": [
+        "opegation_to_perform('permission Is Granted')"
+    ],
+    "sample_672": [
+        "opegation_perform('123456', 3, 'z')"
+    ],
+    "sample_620": [
+        "opegation_to_perform('q m x o h i 3 n d a t r e l')"
+    ],
+    "sample_201": [
+        "opegation_to_perform('425164')"
+    ],
+    "sample_711": [
+        "opegation_to_perform('apples\\n\\n\\npears\\n\\n\\nbananas')"
+    ],
+    "sample_696": [
+        "opegation_to_perform('ababa')"
+    ],
+    "sample_449": [
+        "opegation_to_perform('123456')"
+    ],
+    "sample_126": [
+        "opegation_to_perform('-kkxkxxfck')"
+    ],
+    "sample_406": [
+        "opegation_to_perform('hello')"
+    ],
+    "sample_680": [
+        "opegation_to_perform('w3e9r71g72u94g9823658324')"
+    ],
+    "sample_198": [
+        "opegation_to_perform('mfsct', 'ct')"
+    ],
+    "sample_582": [
+        "opegation_to_perform(7, 5)"
+    ],
+    "sample_391": [
+        "opegation_to_perform(['9', '8', '7', '6', '5', '4', '3', '2', '1'])"
+    ],
+    "sample_551": [
+        "opegation_to_perform({'a': ['b', 'c'], 'b': ['a', 'c'], 'c': ['a', 'b', 'inf']})"
+    ],
+    "sample_482": [
+        "opegation_to_perform('Because it \\\\\\'intrigues them')"
+    ],
+    "sample_740": [
+        "opegation_to_perform([1, 2, 3, 4, 5], 3)"
+    ],
+    "sample_512": [
+        "opegation_to_perform('10101010')"
+    ],
+    "sample_13": [
+        "opegation_to_perform(['John', 'Alice'])"
+    ],
+    "sample_253": [
+        "opegation_to_perform('umwwfv', 'um')"
+    ],
+    "sample_594": [
+        "opegation_to_perform('This is a test file.\\nIt contains lines of text.')"
+    ],
+    "sample_663": [
+        "opegation_to_perform([1, 2, 3, 4, 5], 3)"
+    ],
+    "sample_141": [
+        "opegation_to_perform([1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4])"
+    ],
+    "sample_454": [
+        "opegation_to_perform({'a': 1, 'b': 2}, 0)"
+    ],
+    "sample_477": [
+        "opegation_to_perform('xduaisf|r')"
+    ],
+    "sample_642": [
+        "opegation_to_perform(' ')"
+    ],
+    "sample_223": [
+        "opegation_to_perform([1, 2, 3, 4, 5], 5)"
+    ],
+    "sample_199": [
+        "opegation_to_perform('mnmnj krupa...##!!@#!!@#$$@##', '#')"
+    ],
+    "sample_606": [
+        "opegation_to_perform('ruam')"
+    ],
+    "sample_84": [
+        "opegation_to_perform('newday myday ofmeday bdrylday')"
+    ],
+    "sample_429": [
+        "opegation_to_perform({87.29: 3, 'defghi': 2, 'abc': 2, 5: 1})"
+    ],
+    "sample_445": [
+        "opegation_to_perform('carrot, banana, and strawberry')"
+    ],
+    "sample_600": [
+        "opegation_to_perform([1, 2, 3])"
+    ],
+    "sample_81": [
+        "opegation_to_perform({'Bulls': 25, 'White Sox': 45}, 'Bulls')"
+    ],
+    "sample_19": [
+        "opegation_to_perform('123')"
+    ],
+    "sample_691": [
+        "opegation_to_perform('rpytt', 'tt')"
+    ],
+    "sample_53": [
+        "opegation_to_perform('abcdefg')"
+    ],
+    "sample_98": [
+        "opegation_to_perform('Hello World')"
+    ],
+    "sample_367": [
+        "opegation_to_perform([6, 2, 1, 1, 4, 1, 1], 1)"
+    ],
+    "sample_558": [
+        "opegation_to_perform([1, 2, 3, 4, 5], [1, 3])"
+    ],
+    "sample_23": [
+        "opegation_to_perform('new-medium-performing-application - XQuery 2. ', '.')"
+    ],
+    "sample_74": [
+        "opegation_to_perform([44, 34, 23, 82, 15, 24, 11, 63], 4, 99)"
+    ],
+    "sample_8": [
+        "opegation_to_perform('lower', 1)"
+    ],
+    "sample_344": [
+        "opegation_to_perform([15, 2, 8, 6, 4], sorted)"
+    ],
+    "sample_49": [
+        "opegation_to_perform('816')"
+    ],
+    "sample_304": [
+        "opegation_to_perform({87: 7, 18: 6, 50: 5, 23: 4, 11: 3})"
+    ],
+    "sample_36": [
+        "opegation_perform('ha  ', ' ')"
+    ],
+    "sample_245": [
+        "opegation_to_perform('abc', 'DEF')"
+    ],
+    "sample_100": [
+        "opegation_to_perform({'1': 'a', '2': 'b', '3': 'c'}, ['1', '3'])"
+    ],
+    "sample_269": [
+        "opegation_to_perform([1, 2])"
+    ],
+    "sample_770": [
+        "opegation_perform('78', '$')"
+    ],
+    "sample_626": [
+        "opegation_to_perform('abab', [('a', 'b'), ('b', 'a')])"
+    ],
+    "sample_394": [
+        "opegation_to_perform('first line\\n\\nsecond line')"
+    ],
+    "sample_297": [
+        "opegation_to_perform(543)"
+    ],
+    "sample_26": [
+        "opegation_to_perform('a.b c.d e.f', 'a.b c.d e.f')"
+    ],
+    "sample_453": [
+        "opegation_to_perform('banana', 'a')"
+    ],
+    "sample_748": [
+        "opegation_to_perform({'a': 123, 'b': 456})"
+    ],
+    "sample_735": [
+        "opegation_to_perform('(a(b(b)a)')"
+    ],
+    "sample_264": [
+        "opegation_to_perform('paper')"
+    ],
+    "sample_46": [
+        "opegation_to_perform(['many', 'letters', 'as', 'vs', 'z', 'hello', 'man'], '')"
+    ],
+    "sample_387": [
+        "opegation_to_perform([3, 1, 2], 1, 0)"
+    ],
+    "sample_648": [
+        "opegation_to_perform([1, 2, 3, 4, 5, 6, 7], [1, 3, 5, 7])"
+    ],
+    "sample_103": [
+        "opegation_to_perform('ABCDEFGHIJ')"
+    ],
+    "sample_572": [
+        "opegation_to_perform({1: 2, 2: 10, 3: 1}, 2)"
+    ],
+    "sample_704": [
+        "opegation_to_perform('.', 2, '*')"
+    ],
+    "sample_785": [
+        "opegation_to_perform(1)"
+    ],
+    "sample_765": [
+        "opegation_to_perform('123abc')"
+    ],
+    "sample_579": [
+        "opegation_perform('')"
+    ],
+    "sample_353": [
+        "opegation_to_perform([1, 2, 2, 3, 3, 3, 4, 4, 4, 4])"
+    ],
+    "sample_221": [
+        "opegation_perform('24fc5.bpxa', '.')"
+    ],
+    "sample_278": [
+        "opegation_to_perform([0, 132], [5, 32])"
+    ],
+    "sample_398": [
+        "opegation_to_perform({'2': 2, '0': 1, '1': 2})"
+    ],
+    "sample_723": [
+        "opegation_to_perform('d g a   n q d k\\nu l l   q c h a   k l', True)"
+    ],
+    "sample_634": [
+        "opegation_to_perform('aAa')"
+    ],
+    "sample_450": [
+        "opegation_perform('Ka Bz')"
+    ],
+    "sample_89": [
+        "opegation_to_perform('o')"
+    ],
+    "sample_94": [
+        "opegation_to_perform({'w': 3}, {'wi': 10})"
+    ],
+    "sample_45": [
+        "opegation_to_perform('banana', 'b')"
+    ],
+    "sample_792": [
+        "opegation_to_perform(['a', 'b'], ['car', 'dog'])"
+    ],
+    "sample_273": [
+        "opegation_to_perform('T.E.N.')"
+    ],
+    "sample_165": [
+        "opegation_to_perform('Hello, World', 0, 5)"
+    ],
+    "sample_521": [
+        "opegation_to_perform([77, 9, 0, 2, 5, 77, 4, 0, 43])"
+    ],
+    "sample_790": [
+        "opegation_to_perform({'a': 1, 'b': 2})"
+    ],
+    "sample_407": [
+        "opegation_to_perform([1, 2, 3])"
+    ],
+    "sample_25": [
+        "opegation_to_perform({'f': 1, 'l': 1, 't': 2})"
+    ],
+    "sample_746": [
+        "opegation_to_perform({'name':'john.doe'})"
+    ],
+    "sample_69": [
+        "opegation_to_perform({'John': 87, 'Sam': 92, 'Sarah': 76}, 'Mike')"
+    ],
+    "sample_550": [
+        "opegation_to_perform([1, 1, 2])"
+    ],
+    "sample_56": [
+        "opegation_to_perform('This sentence is in English.')"
+    ],
+    "sample_162": [
+        "opegation_to_perform('cBishOpsWiFt')"
+    ],
+    "sample_142": [
+        "opegation_to_perform('ykdfhp')"
+    ],
+    "sample_327": [
+        "opegation_to_perform([3, 1, 7, 1])"
+    ],
+    "sample_227": [
+        "opegation_to_perform('manolo')"
+    ],
+    "sample_153": [
+        "opegation_to_perform('hello123', '123', 123)"
+    ],
+    "sample_112": [
+        "opegation_to_perform('XyZltrRdNhOdLttbIGgExet FuLt')"
+    ],
+    "sample_731": [
+        "opegation_to_perform('Chris requires  ride to the irport on Fridy.', 'requires  ride to the irport on Fridy.')"
+    ],
+    "sample_644": [
+        "opegation_to_perform([1, 2, 3, 4, 5, 6], 1)"
+    ],
+    "sample_28": [
+        "opegation_to_perform([5, 4, 3, 2, 1])"
+    ],
+    "sample_793": [
+        "opegation_to_perform([1, 2, 3, 4, 5], 1, 5)"
+    ],
+    "sample_181": [
+        "opegation_to_perform('3291223')"
+    ],
+    "sample_701": [
+        "opegation_to_perform('31849 let it!!31849 pass!!', ['!!', '!'])"
+    ],
+    "sample_251": [
+        "opegation_to_perform([['Marie', 'Nelson'], ['Oscar']])"
+    ],
+    "sample_284": [
+        "opegation_to_perform('banana', 'ban')"
+    ],
+    "sample_292": [
+        "opegation_to_perform('58323123')"
+    ],
+    "sample_419": [
+        "opegation_to_perform('mmfb', 'b')"
+    ],
+    "sample_786": [
+        "opegation_to_perform('719kefp', 'f')"
+    ],
+    "sample_760": [
+        "opegation_to_perform({'k': 1, 'j': 2, 'h': 3, 'f': 4})"
+    ],
+    "sample_405": [
+        "opegation_to_perform([6, 3, 4, 1, 2, 3, 5])"
+    ],
+    "sample_446": [
+        "opegation_to_perform([1, 2, 3, 4, 5])"
+    ],
+    "sample_796": [
+        "opegation_to_perform('fnuiyh', 'fnu')"
+    ],
+    "sample_12": [
+        "opegation_to_perform('If you want to live a happy life Daniel', 'Daniel')"
+    ],
+    "sample_212": [
+        "opegation_to_perform([1, 7, 2, 6, -3, -9, 3])"
+    ],
+    "sample_443": [
+        "opegation_perform('cdlorem ipsumcd')"
+    ],
+    "sample_727": [
+        "opegation_perform(['dxh', 'ix', 'snegi', 'wiubvu'], 'wi')"
+    ],
+    "sample_216": [
+        "opegation_to_perform('123456')"
+    ],
+    "sample_702": [
+        "opegation_to_perform([-5, 0, -4])"
+    ],
+    "sample_437": [
+        "opegation_to_perform(['d', 'o', 'e'])"
+    ],
+    "sample_195": [
+        "opegation_to_perform('acsacscnaspaspilfdoirwirmtoibsac')"
+    ],
+    "sample_63": [
+        "opegation_to_perform('dbtdabdahesyehu', 'dbt')"
+    ],
+    "sample_93": [
+        "opegation_to_perform('iq')"
+    ],
+    "sample_518": [
+        "opegation_to_perform('123')"
+    ],
+    "sample_208": [
+        "opegation_to_perform(['123', '456', 'cat and dog', '789'])"
+    ],
+    "sample_777": [
+        "opegation_to_perform(['abc  a .d e', 'bcd e'], 'e')"
+    ],
+    "sample_517": [
+        "opegation_to_perform('SzHjifnzo')"
+    ],
+    "sample_519": [
+        "opegation_to_perform({})"
+    ],
+    "sample_756": [
+        "opegation_to_perform('banana')"
+    ],
+    "sample_529": [
+        "opegation_to_perform([1, 1, 2, 3])"
+    ],
+    "sample_138": [
+        "opegation_to_perform('tflb omn rtt', 'b')"
+    ],
+    "sample_622": [
+        "opegation_perform('g.a.l.g.u.')"
+    ],
+    "sample_144": [
+        "opegation_to_perform([[3, 2, 1], [4, 5, 6], [7, 8, 9]])"
+    ],
+    "sample_117": [
+        "opegation_to_perform([1, 2, 3, 4, 5])"
+    ],
+    "sample_722": [
+        "opegation_to_perform(',WpZpPPDL/')"
+    ],
+    "sample_296": [
+        "opegation_to_perform('http://www.www.ekapusta.com/image/url')"
+    ],
+    "sample_337": [
+        "opegation_to_perform('Ll')"
+    ],
+    "sample_5": [
+        "opegation_to_perform('12345678901234567890', 'x', 'X')"
+    ],
+    "sample_749": [
+        "opegation_to_perform('l \\n', 2)"
+    ],
+    "sample_650": [
+        "opegation_to_perform('banana', 'ba')"
+    ],
+    "sample_261": [
+        "opegation_to_perform([12, 516, 5, 214, 51], 10)"
+    ],
+    "sample_209": [
+        "opegation_to_perform('hy', 'hymi')"
+    ],
+    "sample_329": [
+        "opegation_to_perform('Hello')"
+    ],
+    "sample_355": [
+        "opegation_to_perform('123x John z', '123x ')"
+    ],
+    "sample_763": [
+        "opegation_to_perform('C2Pny', 'yCxpg2C2Pny', 'C2Pny')"
+    ],
+    "sample_780": [
+        "opegation_to_perform([2, 2, 2, 3, 3, 3, 4, 4, 4, 4])"
+    ],
+    "sample_314": [
+        "opegation_to_perform('105, -90 244')"
+    ],
+    "sample_173": [
+        "opegation_to_perform([5, 8, 6, 8, 4])"
+    ],
+    "sample_363": [
+        "opegation_to_perform([1, 2, 3, 4, 5])"
+    ],
+    "sample_439": [
+        "opegation_to_perform('coscify su')"
+    ],
+    "sample_647": [
+        "opegation_to_perform('/\\nalcm@ an)t//eprw)\\ne!/d\\nujv', 1)"
+    ],
+    "sample_589": [
+        "opegation_to_perform([-70, 20, 9, 1])"
+    ],
+    "sample_411": [
+        "opegation_to_perform('banana', ['ba', 'na'])"
+    ],
+    "sample_787": [
+        "opegation_to_perform('xzd')"
+    ],
+    "sample_623": [
+        "opegation_to_perform('HI', '~')"
+    ],
+    "sample_220": [
+        "opegation_to_perform('abcdefg', 3, 5)"
+    ],
+    "sample_274": [
+        "opegation_to_perform([1, 2, 3, 4], 5)"
+    ],
+    "sample_539": [
+        "opegation_to_perform(['a', 'b', 'c'])"
+    ],
+    "sample_68": [
+        "opegation_perform('q.d.q', 'q')"
+    ],
+    "sample_555": [
+        "opegation_on_perform('codes\\twell', 4)"
+    ],
+    "sample_544": [
+        "opegation_to_perform('\\t\\t\\ttab tab tabulates')"
+    ],
+    "sample_246": [
+        "opegation_to_perform('banana', 'nana')"
+    ],
+    "sample_440": [
+        "opegation_to_perform('123')"
+    ],
+    "sample_290": [
+        "opegation_to_perform('ABIXAAAILY', 'ABIX')"
+    ],
+    "sample_384": [
+        "opegation_to_perform('sfdellos', 'abcdefghijklmnopqrstuvwxyz')"
+    ],
+    "sample_564": [
+        "opegation_to_perform([[395, 666, 7, 4], [], [1, 2, 3]])"
+    ],
+    "sample_356": [
+        "opegation_to_perform([1, 2], 2)"
+    ],
+    "sample_161": [
+        "opegation_perform('j rinpxdif', 'j')"
+    ],
+    "sample_58": [
+        "opegation_to_perform([-1, 0, 0, 1, 1])"
+    ],
+    "sample_123": [
+        "opegation_to_perform([1, 2, 3, 5, 6, 8], 4)"
+    ],
+    "sample_645": [
+        "opegation_to_perform([1, 2, 3, 0, 4, 5], 2)"
+    ],
+    "sample_222": [
+        "opegation_to_perform('0aabbaa0b', 'b')"
+    ],
+    "sample_64": [
+        "opegation_to_perform('7', 11)"
+    ],
+    "sample_767": [
+        "opegation_to_perform('123 456 789')"
+    ],
+    "sample_168": [
+        "opegation_to_perform('spaib', 'a', 2)"
+    ],
+    "sample_305": [
+        "opegation_to_perform('o hoseto', 'e')"
+    ],
+    "sample_109": [
+        "opegation_to_perform([9, 1, 1], 2, 0)"
+    ],
+    "sample_41": [
+        "opegation_to_perform([21, 92], [58])"
+    ],
+    "sample_609": [
+        "opegation_to_perform({'a': 'b', 'c': 'd', 'e': 'f'}, 'e')"
+    ],
+    "sample_426": [
+        "opegation_to_perform([1, 2, 3], 8, 1)"
+    ],
+    "sample_381": [
+        "opegation_to_perform('19', 5)"
+    ],
+    "sample_375": [
+        "opegation_to_perform('sieriizzizam', 'z')"
+    ],
+    "sample_497": [
+        "opegation_to_perform(44)"
+    ],
+    "sample_101": [
+        "opegation_to_perform([-4, 1, 0], 1, 4)"
+    ],
+    "sample_615": [
+        "opegation_to_perform([1, 2, 3, 4], 5)"
+    ],
+    "sample_270": [
+        "opegation_to_perform({'a': 1, 'b': 2, 'c': 3})"
+    ],
+    "sample_120": [
+        "opegation_to_perform({'USA': 'English', 'Germany': 'German', 'France': 'French'})"
+    ],
+    "sample_164": [
+        "opegation_to_perform([3, 1, 0, 2, 5, 4])"
+    ],
+    "sample_318": [
+        "opegation_to_perform('apple', 'p')"
+    ],
+    "sample_745": [
+        "opegation_to_perform('minimc@minimc.io.')"
+    ],
+    "sample_472": [
+        "opegation_to_perform('aaabbbccc-ddddeee')"
+    ],
+    "sample_621": [
+        "opegation_to_perform('13:45:56', 'utf-8')"
+    ],
+    "sample_543": [
+        "opegation_to_perform('.,,,,, , \u0645\u0646\u0628\u062a')"
+    ],
+    "sample_417": [
+        "opegation_to_perform([8, 2, 8, 1])"
+    ],
+    "sample_475": [
+        "opegation_to_perform([0, 1, 2, 3, 4], -1)"
+    ],
+    "sample_163": [
+        "opegation_to_perform('w', ')', 15)"
+    ],
+    "sample_789": [
+        "opegation_to_perform('bRb', 3)"
+    ],
+    "sample_147": [
+        "opegation_to_perform([1, 2, 3, 4, 5, 6, 7])"
+    ],
+    "sample_596": [
+        "opegation_to_perform(['2', '3', '4', '7', '8', '9'], '3')"
+    ],
+    "sample_303": [
+        "opegation_to_perform('mJklbn')"
+    ],
+    "sample_310": [
+        "opegation_to_perform(['__1.00r', 'ja', '6'])"
+    ]
+}

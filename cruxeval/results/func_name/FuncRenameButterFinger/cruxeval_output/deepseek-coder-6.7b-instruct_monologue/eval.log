@@ -1,0 +1,4 @@
+Scoring /home/hm3075/SemCoder/output/cruxeval/func_name/FuncRenameButterFinger/cruxeval_output/deepseek-coder-6.7b-instruct_monologue/generations.json... expect around a minute
+Finished!
+pass@1: 36.5 pass@5: 100.0
+Dumping to /home/hm3075/SemCoder/output/cruxeval/func_name/FuncRenameButterFinger/cruxeval_output/deepseek-coder-6.7b-instruct_monologue/scored_results.json
