@@ -169,7 +169,7 @@ class Task(ABC):
                 dataset = dataset.shuffle(seed=seed)
             self.dataset = dataset
             warn(
-                "This task will use a locally downloaded dataset, not from the HF hub."
+                f"This task will use the dataset at {self.DATASET_PATH}, not from the HF hub."
             )
 
     @abstractmethod
@@ -230,9 +230,12 @@ class InputPrediction(Task):
     DATASET_PATH = "/home/rc3593/SemCoder/cruxeval/cruxeval.jsonl"
     DATASET_NAME = None
 
-    def __init__(self, cot=False, monologue=False, shuffle=False, seed=0):
+    def __init__(self, cot=False, monologue=False, shuffle=False, seed=0, method=None):
         self.cot = cot
         self.monologue = monologue
+        if method is not None:
+            self.DATASET_PATH = f"/home/rc3593/SemCoder/cruxeval/cruxeval_{method}_s0_eval.jsonl"
+
         super().__init__(
             stop_words=["[/ANSWER]"],
             requires_execution=False,
@@ -287,10 +290,12 @@ class OutputPrediction(Task):
     DATASET_PATH = "/home/rc3593/SemCoder/cruxeval/cruxeval.jsonl"
     DATASET_NAME = None
 
-    def __init__(self, cot=False, monologue=False, shuffle=False, seed=0):
+    def __init__(self, cot=False, monologue=False, shuffle=False, seed=0, method=None):
         self.cot = cot
         self.monologue = monologue
         stop_words = ["[/ANSWER]"]
+        if method is not None:
+            self.DATASET_PATH = f"/home/rc3593/SemCoder/cruxeval/cruxeval_{method}_s0_eval.jsonl"
 
         super().__init__(
             stop_words=stop_words,
@@ -343,9 +348,11 @@ TASK_REGISTRY = {
 ALL_TASKS = sorted(list(TASK_REGISTRY))
 
 
-def get_task(task_name, cot=False, monologue=False, shuffle=False, seed=0):
+def get_task(task_name, cot=False, monologue=False, shuffle=False, seed=0, method=None):
     try:
-        return TASK_REGISTRY[task_name](cot=cot, monologue=monologue, shuffle=shuffle, seed=seed)
+        return TASK_REGISTRY[task_name](
+            cot=cot, monologue=monologue, shuffle=shuffle, seed=seed, method=method
+        )
     except KeyError:
         print("Available tasks:")
         pprint(TASK_REGISTRY)
@@ -420,7 +427,7 @@ class Generator:
     def generate(self, task_name, log_path):
         task = get_task(
             task_name, cot=self.args.cot, monologue=self.args.monologue,
-            shuffle=self.args.shuffle, seed=self.args.seed
+            shuffle=self.args.shuffle, seed=self.args.seed, method=self.args.method
         )
 
         dataset = task.get_dataset()

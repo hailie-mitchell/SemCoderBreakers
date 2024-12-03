@@ -148,6 +148,12 @@ def parse_args():
         default="references.json",
         help="Path for saving the reference solutions/tests",
     )
+    parser.add_argument(
+        "--method",
+        type=str,
+        default=None,
+        help="Perturbation method to evaluate, specific to ReCode",
+    )
     args = parser.parse_args()
 
     precision_map = {
