@@ -1,5 +1,5 @@
-format,semcoder_s_1030
-nominal,47.375
-passatk,45.5
-drop (%),3.95778364116095
-relative (%),3.375
+format,semcoder_1030,semcoder_s_1030
+nominal,45.0,44.0
+passatk,42.0,42.0
+drop (%),6.666666666666667,4.545454545454546
+relative (%),6.5,5.0

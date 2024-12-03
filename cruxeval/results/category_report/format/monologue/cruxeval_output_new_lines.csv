@@ -1,5 +1,5 @@
-format/new_lines,semcoder_s_1030
-nominal,62.0
-passatk,63.125
-drop (%),-1.8145161290322582
-relative (%),9.375
+format/new_lines,semcoder_1030,semcoder_s_1030
+nominal,58.5,60.5
+passatk,57.99999999999999,62.0
+drop (%),0.854700854700867,-2.479338842975207
+relative (%),7.5,13.5

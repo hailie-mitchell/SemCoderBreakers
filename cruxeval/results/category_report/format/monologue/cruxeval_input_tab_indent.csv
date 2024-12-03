@@ -1,5 +1,5 @@
-format/tab_indent,semcoder_s_1030
-nominal,62.875
-passatk,61.375
-drop (%),2.3856858846918487
-relative (%),13.750000000000002
+format/tab_indent,semcoder_1030,semcoder_s_1030
+nominal,64.0,62.0
+passatk,59.0,60.0
+drop (%),7.8125,3.225806451612903
+relative (%),14.000000000000002,17.0

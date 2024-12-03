@@ -26,7 +26,7 @@ def read_config(config, data):
              DATASET_PATH, RANDOM_TRANS, data_path, output_adv_path, model_generate_path, run_script
 
 
-def read_json(file_name):
+def read_json(file_name, ref_file=None):
     """ A help funtion to load data json files
     """
     data = []
@@ -36,9 +36,25 @@ def read_json(file_name):
 
     with open(file_name, 'r') as input_file:
         if file_name.endswith('.json'):
-            # Load a single JSON object from the file
-            return json.load(input_file)
+            if ref_file is None:
+                # Load a single JSON object from the file
+                return json.load(input_file)
+            data = json.load(input_file)
+            ref_data = read_json(ref_file)["raw_scored_generations"]
+            if data["raw_scored_generations"].keys() == ref_data.keys():
+                return data
+            data = data["raw_scored_generations"]
+            sampled_data = {}
+            for sample in ref_data.keys():
+                assert sample in data.keys(), "Sample not found!"
+                sampled_data[sample] = data[sample]
+            return {
+                "raw_scored_generations": sampled_data,
+                "pass_at_1": calculate_passatk(sampled_data) * 100.
+            }
         elif file_name.endswith('.jsonl'):
+            if ref_file is not None:
+                print("Sampling is not supported for JSONL file, skip!")
             # Load multiple JSON objects, one per line
             for line in input_file:
                 data.append(json.loads(line))
@@ -187,7 +203,7 @@ def eval_per_cat(args):
             if not os.path.exists(nominal_data_path):
                 print(f"{nominal_data_path} missing, skip...")
                 continue
-            nominal_data = read_json(nominal_data_path)
+            nominal_data = read_json(nominal_data_path, ref_file=args.samples_like)
 
             nominal_pass_dict = nominal_data["raw_scored_generations"]
             nominal_passatk = nominal_data["pass_at_1"]
@@ -211,7 +227,7 @@ def eval_per_cat(args):
                 if args.n_outputs == 1:
                     perturbed_data_path = f"{args.method}/{method_name}/cruxeval_{task}/{model}_{infer_mode}/scored_results.json"
                     if os.path.exists(perturbed_data_path):
-                        perturbed_data = read_json(perturbed_data_path)
+                        perturbed_data = read_json(perturbed_data_path, ref_file=args.samples_like)
                         perturbed_data_list.append(perturbed_data["raw_scored_generations"])
                         method_passatk = perturbed_data["pass_at_1"]
                     else:
@@ -223,7 +239,7 @@ def eval_per_cat(args):
                             continue
                         perturbed_data_path = f"{args.method}/{method_name}_s{seed}/cruxeval_{task}/{model}_{infer_mode}/scored_results.json"
                         if os.path.exists(perturbed_data_path):
-                            perturbed_data = read_json(perturbed_data_path)
+                            perturbed_data = read_json(perturbed_data_path, ref_file=args.samples_like)
                             perturbed_data_list.append(perturbed_data["raw_scored_generations"])
                             passatk_list.append(perturbed_data["pass_at_1"])
                         else:
@@ -426,12 +442,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--granularity', type=str, default="category", choices=["category", "method"], help="Obtain robustness metrics on specific granularity")
     parser.add_argument('--method', type=str, choices=["normal", "nlaugmenter", "natgen", "format", "func_name", "random"], help="The classes of perturbation. Please set method to natgen with status nominal to evaluate nominal partial code.")
-    parser.add_argument('--config', default="../../recode/config.json", help="path to recode config")
+    parser.add_argument('--config', type=str, default="../../recode/config.json", help="Path to recode config")
     parser.add_argument('--aug_method', type=int, default=None, help="The detailed augmentation method used with index (index defined in config.json for each method). Default None means running all the perturbations")
     parser.add_argument('--models', nargs='+', default=["semcoder_s_1030"], help="A list of the models needed to evaluate with")
     parser.add_argument('--mode', type=str, default="monologue", choices=["monologue", "direct"], help="Inference mode of the model")
     parser.add_argument('--nonrobust_stats', action='store_true', help="Show detailed statistics of non-robust samples")
     parser.add_argument('--n_outputs', type=int, default=1, help="The total number of perturbations generated/evaluated with")
+    parser.add_argument('--samples_like', type=str, default=None, help="Path to a reference file which you wish to use for sampling the full result")
     args = parser.parse_args()
     print(args)
     
