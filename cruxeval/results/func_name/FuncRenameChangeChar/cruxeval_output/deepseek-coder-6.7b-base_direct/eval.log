@@ -1,0 +1,4 @@
+Scoring /home/hm3075/SemCoder/output/cruxeval/func_name/FuncRenameChangeChar/cruxeval_output/deepseek-coder-6.7b-base_direct/generations.json... expect around a minute
+Finished!
+pass@1: 34.5 pass@5: 100.0
+Dumping to /home/hm3075/SemCoder/output/cruxeval/func_name/FuncRenameChangeChar/cruxeval_output/deepseek-coder-6.7b-base_direct/scored_results.json

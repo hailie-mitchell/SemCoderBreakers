@@ -1,0 +1,602 @@
+{
+    "sample_759": [
+        "opeRatiOn_to_pErfOrm('', '')"
+    ],
+    "sample_697": [
+        "opeRatiOn_to_pErfOrm('not it', 'not')"
+    ],
+    "sample_2": [
+        "opeRatiOn_to_pErfOrm('h+b+t+o+f+d+e+i+e+q+u')"
+    ],
+    "sample_105": [
+        "opeRatiOn_to_pErfOrm('permission is granted')"
+    ],
+    "sample_672": [
+        "opeRatiOn_to_pErfOrm(['1', 'z', 'd'], 1, 'a')"
+    ],
+    "sample_620": [
+        "opeRatiOn_to_pErfOrm('t r e l   n d   d n q m x o h i 3')"
+    ],
+    "sample_201": [
+        "opeRatiOn_to_pErfOrm('425164')"
+    ],
+    "sample_711": [
+        "opeRatiOn_to_pErfOrm('apples\\npears\\nbananas')"
+    ],
+    "sample_696": [
+        "opeRatiOn_to_pErfOrm('abab')"
+    ],
+    "sample_449": [
+        "opeRatiOn_to_pErfOrm('1234567890')"
+    ],
+    "sample_126": [
+        "opeRatiOn_to_pErfOrm('kkxkxxfck')"
+    ],
+    "sample_406": [
+        "opeRatiOn_to_pErfOrm('opeRatiOn_to_pErfOrm')"
+    ],
+    "sample_680": [
+        "opeRatiOn_to_pErfOrm('we32r71g72ug94823658324')"
+    ],
+    "sample_198": [
+        "opeRatiOn_to_pErfOrm('mfcst', '')"
+    ],
+    "sample_582": [
+        "opeRatiOn_to_pErfOrm(7, 5)"
+    ],
+    "sample_391": [
+        "opeRatiOn_to_pErfOrm(['9'])"
+    ],
+    "sample_551": [
+        "opeRatiOn_to_pErfOrm({'a': ['b', 'c'], 'b': ['a', 'c'], 'c': ['a', 'b'], 'inf': []})"
+    ],
+    "sample_482": [
+        "opeRatiOn_to_pErfOrm('Because it \\\\'intrigues\\\\' them')"
+    ],
+    "sample_740": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 4], 3)"
+    ],
+    "sample_512": [
+        "f(16)"
+    ],
+    "sample_13": [
+        "opeRatiOn_to_pErfOrm(['John', 'Jane'])"
+    ],
+    "sample_253": [
+        "opeRatiOn_to_pErfOrm('operations to performumwwfv', 'operations to perform')"
+    ],
+    "sample_594": [
+        "opeRatiOn_to_pErfOrm('a\\nb\\nc\\nd\\ne\\nf\\ng\\nh\\ni\\nj\\nk\\nl\\nm\\nn\\no\\np\\nq\\nr\\ns\\nt\\nu\\nv\\nw\\nx\\ny\\nz\\n')"
+    ],
+    "sample_663": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 4, 5], 3)"
+    ],
+    "sample_141": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])"
+    ],
+    "sample_454": [
+        "opeRatiOn_to_pErfOrm({}, 0)"
+    ],
+    "sample_477": [
+        "opeRatiOn_to_pErfOrm('|xduaisf')"
+    ],
+    "sample_642": [
+        "opeRatiOn_to_pErfOrm(' ')"
+    ],
+    "sample_223": [
+        "opeRatiOn_to_pErfOrm([1], 1)"
+    ],
+    "sample_199": [
+        "opeRatiOn_to_pErfOrm('mnmnj krupa...##!' , '##')"
+    ],
+    "sample_606": [
+        "opeRatiOn_to_pErfOrm('ruam')"
+    ],
+    "sample_84": [
+        "opeRatiOn_to_pErfOrm('nwvday mefday ofmeday bdrylday')"
+    ],
+    "sample_429": [
+        "opeRatiOn_to_pErfOrm({87.29: 3, 'defghi': 2, 'abc': 2, 5: 1})"
+    ],
+    "sample_445": [
+        "opeRatiOn_to_pErfOrm('carrot, banana, and strawberry')"
+    ],
+    "sample_600": [
+        "opeRatiOn_to_pErfOrm([])"
+    ],
+    "sample_81": [
+        "opeRatiOn_to_pErfOrm({'Bulls': 45, 'White Sox': 'bulls'}, 'Bulls')"
+    ],
+    "sample_19": [
+        "opeRatiOn_to_pErfOrm('', '')"
+    ],
+    "sample_691": [
+        "opeRatiOn_to_pErfOrm('rpytt', '')"
+    ],
+    "sample_53": [
+        "f(16)"
+    ],
+    "sample_98": [
+        "opeRatiOn_to_pErfOrm('Hello World')"
+    ],
+    "sample_367": [
+        "opeRatiOn_to_pErfOrm([6, 2, 1, 1, 4, 1], 1)"
+    ],
+    "sample_558": [
+        "f(16)"
+    ],
+    "sample_23": [
+        "opeRatiOn_to_pErfOrm('new-medium-performing-application - XQuery 2. ', ' ')"
+    ],
+    "sample_74": [
+        "opeRatiOn_to_pErfOrm([44, 34, 23, 82, 15, 24, 11, 63, 99], 4, 99)"
+    ],
+    "sample_8": [
+        "opeRatiOn_to_pErfOrm('lower', 0)"
+    ],
+    "sample_344": [
+        "opeRatiOn_to_pErfOrm([6, 4, 2, 8, 15], lambda x: x)"
+    ],
+    "sample_49": [
+        "opeRatiOn_to_pErfOrm('816')"
+    ],
+    "sample_304": [
+        "opeRatiOn_to_pErfOrm({87: 7, 18: 6})"
+    ],
+    "sample_36": [
+        "opeRatiOn_to_pErfOrm('ha ', ' ')"
+    ],
+    "sample_245": [
+        "opeRatiOn_to_pErfOrm([], '')"
+    ],
+    "sample_100": [
+        "opeRatiOn_to_pErfOrm({'1': 'b', '2': 'a'}, ['2'])"
+    ],
+    "sample_269": [
+        "opeRatiOn_to_pErfOrm(['0', 2])"
+    ],
+    "sample_770": [
+        "opeRatiOn_to_pErfOrm('78', '$')"
+    ],
+    "sample_626": [
+        "opeRatiOn_to_pErfOrm('abab', {'a': 'b', 'b': 'a'})"
+    ],
+    "sample_394": [
+        "opeRatiOn_to_pErfOrm('''\n\n''')"
+    ],
+    "sample_297": [
+        "opeRatiOn_to_pErfOrm(0)"
+    ],
+    "sample_26": [
+        "opeRatiOn_to_pErfOrm('1.2 3.4 5.6 7.8 9.10', '1.2 3.4 5.6 7.8 9.10')"
+    ],
+    "sample_453": [
+        "opeRatiOn_to_pErfOrm('hello', 'o')"
+    ],
+    "sample_748": [
+        "opeRatiOn_to_pErfOrm({'a': 123, 'b': 456})"
+    ],
+    "sample_735": [
+        "opeRatiOn_to_pErfOrm('abb')"
+    ],
+    "sample_264": [
+        "opeRatiOn_to_pErfOrm('pApArA')"
+    ],
+    "sample_46": [
+        "opeRatiOn_to_pErfOrm(['many', 'letters', 'as', 'vs', 'z', 'hello', 'man'], '')"
+    ],
+    "sample_387": [
+        "opeRatiOn_to_pErfOrm([1, 0, 2], 0, 3)"
+    ],
+    "sample_648": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 4, 5, 6, 7], [1, 2, 3, 4, 5, 6])"
+    ],
+    "sample_103": [
+        "opeRatiOn_to_pErfOrm('ABCDEFGHIJ')"
+    ],
+    "sample_572": [
+        "f(16)"
+    ],
+    "sample_704": [
+        "opeRatiOn_to_pErfOrm('.', 1, '.')"
+    ],
+    "sample_785": [
+        "opeRatiOn_to_pErfOrm(1)"
+    ],
+    "sample_765": [
+        "opeRatiOn_to_pErfOrm('123')"
+    ],
+    "sample_579": [
+        "opeRatiOn_to_pErfOrm('')"
+    ],
+    "sample_353": [
+        "opeRatiOn_to_pErfOrm([1, 1, 1, 1])"
+    ],
+    "sample_221": [
+        "opeRatiOn_to_pErfOrm('bpxa24fc5.', '.')"
+    ],
+    "sample_278": [
+        "f(16)"
+    ],
+    "sample_398": [
+        "opeRatiOn_to_pErfOrm({'2': 2, '0': 1, '1': 2})"
+    ],
+    "sample_723": [
+        "opeRatiOn_to_pErfOrm('d g a   n q d k\\nu l l   q c h a   k l', False)"
+    ],
+    "sample_634": [
+        "opeRatiOn_to_pErfOrm('aeiou')"
+    ],
+    "sample_450": [
+        "opeRatiOn_to_pErfOrm('K KBz')"
+    ],
+    "sample_89": [
+        "f(16)"
+    ],
+    "sample_94": [
+        "opeRatiOn_to_pErfOrm({'w': 3}, {'wi': 10})"
+    ],
+    "sample_45": [
+        "opeRatiOn_to_pErfOrm('aa', 'a')"
+    ],
+    "sample_792": [
+        "opeRatiOn_to_pErfOrm(['a', 'b'], ['car', 'dog'])"
+    ],
+    "sample_273": [
+        "opeRatiOn_to_pErfOrm('TEN')"
+    ],
+    "sample_165": [
+        "opeRatiOn_to_pErfOrm('hello', 0, 5)"
+    ],
+    "sample_521": [
+        "opeRatiOn_to_pErfOrm([43, 0, 4, 77, 5, 2, 0, 9, 77])"
+    ],
+    "sample_790": [
+        "opeRatiOn_to_pErfOrm({'c': 1, 'd': 2})"
+    ],
+    "sample_407": [
+        "opeRatiOn_to_pErfOrm([])"
+    ],
+    "sample_25": [
+        "opeRatiOn_to_pErfOrm({'l': 1, 't': 2, 'r': 3})"
+    ],
+    "sample_746": [
+        "opeRatiOn_to_pErfOrm({})"
+    ],
+    "sample_69": [
+        "opeRatiOn_to_pErfOrm({}, 'John')"
+    ],
+    "sample_550": [
+        "opeRatiOn_to_pErfOrm([1, 2, 4])"
+    ],
+    "sample_56": [
+        "opeRatiOn_to_pErfOrm('Hello, world')"
+    ],
+    "sample_162": [
+        "opeRatiOn_to_pErfOrm('cBisHoPsWiFt')"
+    ],
+    "sample_142": [
+        "opeRatiOn_to_pErfOrm('YKDFHP')"
+    ],
+    "sample_327": [
+        "opeRatiOn_to_pErfOrm([3, 1, 7, 1])"
+    ],
+    "sample_227": [
+        "opeRatiOn_to_pErfOrm('manolo')"
+    ],
+    "sample_153": [
+        "opeRatiOn_to_pErfOrm('opeRatiOn_to_pErfOrm', 'pErfOrm', 1)"
+    ],
+    "sample_112": [
+        "opeRatiOn_to_pErfOrm('XyZlTtRrDnHoDlTtTbIgGeXeT FuLt')"
+    ],
+    "sample_731": [
+        "opeRatiOn_to_pErfOrm('Chris requires  ride to the irport on Fridy.', 'Chris')"
+    ],
+    "sample_644": [
+        "opeRatiOn_to_pErfOrm([1, 6], 1)"
+    ],
+    "sample_28": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 4, 5])"
+    ],
+    "sample_793": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3], 0, 3)"
+    ],
+    "sample_181": [
+        "opeRatiOn_to_pErfOrm('32912237')"
+    ],
+    "sample_701": [
+        "f(16)"
+    ],
+    "sample_251": [
+        "opeRatiOn_to_pErfOrm([['Marie', 'Nelson', 'Oscar', '+']])"
+    ],
+    "sample_284": [
+        "opeRatiOn_to_pErfOrm('operation_to_perform', 'opeRatiOn_to_pErfOrm')"
+    ],
+    "sample_292": [
+        "opeRatiOn_to_pErfOrm('58323')"
+    ],
+    "sample_419": [
+        "opeRatiOn_to_pErfOrm('mmfb', 'mmfb')"
+    ],
+    "sample_786": [
+        "opeRatiOn_to_pErfOrm('kefp719', 'k')"
+    ],
+    "sample_760": [
+        "opeRatiOn_to_pErfOrm({'k': 1, 'j': 2, 'h': 3, 'f': 4})"
+    ],
+    "sample_405": [
+        "opeRatiOn_to_pErfOrm([5, 3, 4, 1, 2, 3, 5])"
+    ],
+    "sample_446": [
+        "opeRatiOn_to_pErfOrm([])"
+    ],
+    "sample_796": [
+        "opeRatiOn_to_pErfOrm('operationtoperform','oper')"
+    ],
+    "sample_12": [
+        "opeRatiOn_to_pErfOrm('If you want to live a happy life!' 'If you want to live a happy life!' )"
+    ],
+    "sample_212": [
+        "opeRatiOn_to_pErfOrm([1, -9, 7, 2, 6, -3, 3])"
+    ],
+    "sample_443": [
+        "opeRatiOn_to_pErfOrm('lorem ipsum')"
+    ],
+    "sample_727": [
+        "opeRatiOn_to_pErfOrm(['opeRatiOn_to_pErfOrmdxh', 'opeRatiOn_to_pErfOrmix', 'opeRatiOn_to_pErfOmwsnegi', 'opeRatiOn_to_pErfOmwiubvu'], 'opeRatiOn_to_pErfOm')"
+    ],
+    "sample_216": [
+        "opeRatiOn_to_pErfOrm('12')"
+    ],
+    "sample_702": [
+        "f(16)"
+    ],
+    "sample_437": [
+        "opeRatiOn_to_pErfOrm(['d', 'o', 'e'])"
+    ],
+    "sample_195": [
+        "opeRatiOn_to_pErfOrm('ilfdoirwirmtoibsac  ')"
+    ],
+    "sample_63": [
+        "opeRatiOn_to_pErfOrm('perform', 'per')"
+    ],
+    "sample_93": [
+        "opeRatiOn_to_pErfOrm('i')"
+    ],
+    "sample_518": [
+        "opeRatiOn_to_pErfOrm('123')"
+    ],
+    "sample_208": [
+        "opeRatiOn_to_pErfOrm(['cat', '123', 'dog', '456'])"
+    ],
+    "sample_777": [
+        "opeRatiOn_to_pErfOrm([['avc  a .d e']], 'a')"
+    ],
+    "sample_517": [
+        "opeRatiOn_to_pErfOrm('SzHjifnzo')"
+    ],
+    "sample_519": [
+        "opeRatiOn_to_pErfOrm({'luck': 42})"
+    ],
+    "sample_756": [
+        "opeRatiOn_to_pErfOrm('12345')"
+    ],
+    "sample_529": [
+        "opeRatiOn_to_pErfOrm([1, 1, 2, 3])"
+    ],
+    "sample_138": [
+        "opeRatiOn_to_pErfOrm('this is a test', 'aeiou')"
+    ],
+    "sample_622": [
+        "opeRatiOn_to_pErfOrm('galgu.')"
+    ],
+    "sample_144": [
+        "opeRatiOn_to_pErfOrm([])"
+    ],
+    "sample_117": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 4, 5])"
+    ],
+    "sample_722": [
+        "opeRatiOn_to_pErfOrm(',wPzPppdl/')"
+    ],
+    "sample_296": [
+        "opeRatiOn_to_pErfOrm('http://www.https://www.www.ekapusta.com/image/url')"
+    ],
+    "sample_337": [
+        "opeRatiOn_to_pErfOrm('Ll')"
+    ],
+    "sample_5": [
+        "opeRatiOn_to_pErfOrm('xxxxxxxxxxxxxxxxxx', 'p', 'C')"
+    ],
+    "sample_749": [
+        "opeRatiOn_to_pErfOrm('l\\nl', 3)"
+    ],
+    "sample_650": [
+        "opeRatiOn_to_pErfOrm('', '')"
+    ],
+    "sample_261": [
+        "opeRatiOn_to_pErfOrm([12, 516, 5, 214, 51], 100)"
+    ],
+    "sample_209": [
+        "opeRatiOn_to_pErfOrm('operation', 'operation')"
+    ],
+    "sample_329": [
+        "opeRatiOn_to_pErfOrm('add 1 to 2')"
+    ],
+    "sample_355": [
+        "opeRatiOn_to_pErfOrm('23x John z', '')"
+    ],
+    "sample_763": [
+        "opeRatiOn_to_pErfOrm('yCxpg2C2Pny', 'yCxpg2C2Pny', 'yCxpg2C2Pny')"
+    ],
+    "sample_780": [
+        "f(16)"
+    ],
+    "sample_314": [
+        "opeRatiOn_to_pErfOrm('105, -90 244')"
+    ],
+    "sample_173": [
+        "opeRatiOn_to_pErfOrm([5, 8, 6, 8, 4])"
+    ],
+    "sample_363": [
+        "opeRatiOn_to_pErfOrm([1])"
+    ],
+    "sample_439": [
+        "opeRatiOn_to_pErfOrm('coscifysu ')"
+    ],
+    "sample_647": [
+        "opeRatiOn_to_pErfOrm('alcm@ an)t//eprw)\\ne!/d\\nujv', 1)"
+    ],
+    "sample_589": [
+        "opeRatiOn_to_pErfOrm([-70, 20, 9, 1])"
+    ],
+    "sample_411": [
+        "opeRatiOn_to_pErfOrm('hello', 'h')"
+    ],
+    "sample_787": [
+        "opeRatiOn_to_pErfOrm('xzd')"
+    ],
+    "sample_623": [
+        "opeRatiOn_to_pErfOrm('~IH', '@')"
+    ],
+    "sample_220": [
+        "opeRatiOn_to_pErfOrm('abcdefg', 3, 5)"
+    ],
+    "sample_274": [
+        "opeRatiOn_to_pErfOrm([1,2,3], 3)"
+    ],
+    "sample_539": [
+        "opeRatiOn_to_pErfOrm(['_'])"
+    ],
+    "sample_68": [
+        "opeRatiOn_to_pErfOrm('d.q.p.e.r.f.o.m', 'per')"
+    ],
+    "sample_555": [
+        "opeRatiOn_to_pErfOrm('odes\\ncode\\nwell', 4)"
+    ],
+    "sample_544": [
+        "opeRatiOn_to_pErfOrm('tab tab tabulates')"
+    ],
+    "sample_246": [
+        "opeRatiOn_to_pErfOrm('', '')"
+    ],
+    "sample_440": [
+        "opeRatiOn_to_pErfOrm('123')"
+    ],
+    "sample_290": [
+        "opeRatiOn_to_pErfOrm('ABIXAAAILY', 'ABIXAAAILY')"
+    ],
+    "sample_384": [
+        "opeRatiOn_to_pErfOrm('sfdellos', 'aeiou')"
+    ],
+    "sample_564": [
+        "opeRatiOn_to_pErfOrm([395, [666, 7], [7, 4]])"
+    ],
+    "sample_356": [
+        "opeRatiOn_to_pErfOrm([1, 2], 1)"
+    ],
+    "sample_161": [
+        "opeRatiOn_to_pErfOrm('j rinpxdif', 'j')"
+    ],
+    "sample_58": [
+        "opeRatiOn_to_pErfOrm([-1, 0, 0, 1, 1, -1, 0, -1, 0, -1])"
+    ],
+    "sample_123": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 5, 6], 5)"
+    ],
+    "sample_645": [
+        "opeRatiOn_to_pErfOrm([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,"
+    ],
+    "sample_222": [
+        "opeRatiOn_to_pErfOrm('0aabbaa0b', 'a')"
+    ],
+    "sample_64": [
+        "f(16)"
+    ],
+    "sample_767": [
+        "opeRatiOn_to_pErfOrm('hello world')"
+    ],
+    "sample_168": [
+        "opeRatiOn_to_pErfOrm('spaib', 'a', 0)"
+    ],
+    "sample_305": [
+        "opeRatiOn_to_pErfOrm('operation to perform', 'o')"
+    ],
+    "sample_109": [
+        "opeRatiOn_to_pErfOrm([9, 1, 0, 1, 1], 2, 1)"
+    ],
+    "sample_41": [
+        "opeRatiOn_to_pErfOrm([21, 92, 58], [])"
+    ],
+    "sample_609": [
+        "opeRatiOn_to_pErfOrm({}, 1)"
+    ],
+    "sample_426": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3], 8, 2)"
+    ],
+    "sample_381": [
+        "opeRatiOn_to_pErfOrm('19', 5)"
+    ],
+    "sample_375": [
+        "opeRatiOn_to_pErfOrm('sieriizzizam', 'z')"
+    ],
+    "sample_497": [
+        "opeRatiOn_to_pErfOrm(44)"
+    ],
+    "sample_101": [
+        "opeRatiOn_to_pErfOrm([-4, 4, 1], 1, 0)"
+    ],
+    "sample_615": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 4, 5], 6)"
+    ],
+    "sample_270": [
+        "opeRatiOn_to_pErfOrm({})"
+    ],
+    "sample_120": [
+        "opeRatiOn_to_pErfOrm({})"
+    ],
+    "sample_164": [
+        "opeRatiOn_to_pErfOrm([3, 1, 0])"
+    ],
+    "sample_318": [
+        "opeRatiOn_to_pErfOrm('a', 'a')"
+    ],
+    "sample_745": [
+        "opeRatiOn_to_pErfOrm('minimc@minimc.io')"
+    ],
+    "sample_472": [
+        "opeRatiOn_to_pErfOrm('aaaaa')"
+    ],
+    "sample_621": [
+        "opeRatiOn_to_pErfOrm('13:45:56', 'utf-8')"
+    ],
+    "sample_543": [
+        "opeRatiOn_to_pErfOrm('.,,,,, , \u0645\u0646\u0628\u062a')"
+    ],
+    "sample_417": [
+        "opeRatiOn_to_pErfOrm([8, 2, 8])"
+    ],
+    "sample_475": [
+        "opeRatiOn_to_pErfOrm([1, 2, 3, 4, 5], 0)"
+    ],
+    "sample_163": [
+        "opeRatiOn_to_pErfOrm('w', ')', 20)"
+    ],
+    "sample_789": [
+        "opeRatiOn_to_pErfOrm('bR', 2)"
+    ],
+    "sample_147": [
+        "opeRatiOn_to_pErfOrm([1, 1, 1, 1])"
+    ],
+    "sample_596": [
+        "f(16)"
+    ],
+    "sample_303": [
+        "opeRatiOn_to_pErfOrm('mJklbn')"
+    ],
+    "sample_310": [
+        "opeRatiOn_to_pErfOrm(['__1.00r__j_a6__6'])"
+    ]
+}
