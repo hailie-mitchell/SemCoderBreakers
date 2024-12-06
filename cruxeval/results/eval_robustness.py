@@ -92,11 +92,21 @@ def get_best_dict(perturbed_data_list):
     return best_dict
 
 
-def calculate_passatk(scored_results):
+def calculate_passatk(scored_results, modified_rp=False):
     pass_at_1s = []
-    for result in scored_results.values():
-        c, n = result.count(True), len(result)
-        pass_at_1s.append(pass_at_k(n, c, 1))
+    for results in scored_results.values():
+        if modified_rp:
+            method_pass_at_1s = []
+            for method_results in results:
+                seed_pass_at_1s = []
+                for seed_results in method_results:
+                    c, n = seed_results.count(True), len(seed_results)
+                    seed_pass_at_1s.append(pass_at_k(n, c, 1))
+                method_pass_at_1s.append(sum(seed_pass_at_1s) / len(seed_pass_at_1s))
+            pass_at_1s.append(sum(method_pass_at_1s) / len(method_pass_at_1s))
+        else:
+            c, n = results.count(True), len(results)
+            pass_at_1s.append(pass_at_k(n, c, 1))
     return sum(pass_at_1s) / len(pass_at_1s)
 
 
@@ -115,13 +125,60 @@ def transpose_result(perturbed_data_list):
 
     for perturbed_data in perturbed_data_list:
         for sample, passed in perturbed_data.items():
-            assert sample in transposed, "Unexpected sample found."
             assert len(passed) == n, "Unexpected length of scored results."
 
             for i in range(n):
+                assert sample in transposed[i], "Unexpected sample found."
                 transposed[i][sample].append(passed[i])
 
     return transposed
+
+
+def get_merge_dict(perturbed_data_list):
+    assert len(perturbed_data_list) >= 1, "Empty data!"
+    n = len(next(iter(perturbed_data_list[0].values())))
+    merge_dict = {sample: [] for sample in perturbed_data_list[0].keys()}
+
+    for perturbed_data in perturbed_data_list:
+        for sample, passed in perturbed_data.items():
+            assert sample in merge_dict, "Unexpected sample found."
+            assert len(passed) == n, "Unexpected length of scored results."
+
+            merge_dict[sample].append(passed)
+
+    return merge_dict
+
+
+def get_all_diff(nominal_dict, perturbed_dict):
+    right_to_wrong = {
+        sample: [
+            [
+                [False for _ in seed_results] for seed_results in method_results
+            ] for method_results in merge_dict
+        ] for sample, merge_dict in perturbed_dict.items()
+    }
+    wrong_to_right = {
+        sample: [
+            [
+                [False for _ in seed_results] for seed_results in method_results
+            ] for method_results in merge_dict
+        ] for sample, merge_dict in perturbed_dict.items()
+    }
+    for sample in nominal_dict.keys():
+        nominal = nominal_dict[sample]
+        merge_dict = perturbed_dict[sample]
+        n_methods = len(merge_dict)
+        for i in range(n_methods):
+            n_seeds = len(merge_dict[i])
+            for j in range(n_seeds):
+                seed_results = merge_dict[i][j]
+                assert len(seed_results) == len(nominal), "Unexpected length of scored results."
+                for k in range(len(seed_results)):
+                    if nominal[k] and (not seed_results[k]):
+                        right_to_wrong[sample][i][j][k] = True
+                    elif (not nominal[k]) and seed_results[k]:
+                        wrong_to_right[sample][i][j][k] = True
+    return right_to_wrong, wrong_to_right
 
 
 def get_suc_rate(perturbed_results, nominal):
@@ -131,11 +188,12 @@ def get_suc_rate(perturbed_results, nominal):
 
 
 def eval_robustness(args, infer_mode="monologue"):
-    results = {}                # for all perturbed results [worst_dict, best_dict]
+    results = {}                # for perturbed results [worst_dict, best_dict, Optional[merge_dict]]
     nominal_dict = {}           # for nominal result
     nominal_passatk_dict = {}   # for nominal passatk
 
     nonrobust_stats = args.nonrobust_stats
+    modified_rp = args.modified_rp
     nonrobust_dict = {
         "right_to_wrong": {},
         "wrong_to_right": {},
@@ -221,7 +279,10 @@ def eval_robustness(args, infer_mode="monologue"):
                     # merge results across different aug_method
                     worst_dict = get_worst_dict(perturbed_data_list)
                     best_dict = get_best_dict(perturbed_data_list)
+                    merge_dict = get_merge_dict(perturbed_data_list) if modified_rp else None
                     assert worst_dict.keys() == best_dict.keys(), "Worst and best dict have different samples."
+                    if modified_rp:
+                        assert merge_dict.keys() == worst_dict.keys(), "Merge dict and worst&best dict have different samples."
 
                     if not nominal_cross_checked:
                         assert len(worst_dict) <= len(nominal_pass_dict),\
@@ -246,7 +307,11 @@ def eval_robustness(args, infer_mode="monologue"):
                         raw_results[model][task][method_name] = transpose_result(perturbed_data_list)
 
                     if results[model][task] is None:
-                        results[model][task] = [worst_dict, best_dict]
+                        if modified_rp:
+                            merge_dict = {sample: [merge_dict[sample]] for sample in merge_dict.keys()}
+                            results[model][task] = [worst_dict, best_dict, merge_dict]
+                        else:
+                            results[model][task] = [worst_dict, best_dict]
                     else:
                         for sample in results[model][task][0].keys():
                             assert sample in worst_dict and sample in best_dict, "Unexpected sample found."
@@ -254,6 +319,9 @@ def eval_robustness(args, infer_mode="monologue"):
                             # results[model][task][1][sample] = results[model][task][1][sample] or best_dict[sample]
                             results[model][task][0][sample] = [r and w for r, w in zip(results[model][task][0][sample], worst_dict[sample])]
                             results[model][task][1][sample] = [r or b for r, b in zip(results[model][task][1][sample], best_dict[sample])]
+                            if modified_rp:
+                                assert sample in merge_dict, "Unexpected sample found."
+                                results[model][task][2][sample].append(merge_dict[sample])
                 else:
                     # no data available
                     print(f"No data processed for {method_name}. Skip...")
@@ -282,9 +350,9 @@ def eval_robustness(args, infer_mode="monologue"):
         row = ["passatk"]
         for model in args.models:
             try:
-                worst_dict = results[model][task][0]
-                assert worst_dict, "Empty result!"
-                row.append(calculate_passatk(worst_dict) * 100.)
+                pass_dict = results[model][task][2] if modified_rp else results[model][task][0]
+                assert pass_dict, "Empty result!"
+                row.append(calculate_passatk(pass_dict, modified_rp=modified_rp) * 100.)
             except Exception as e:
                 row.append(" ")
                 print(f"{type(e).__name__}: {str(e)}. Skip this result.")
@@ -293,11 +361,11 @@ def eval_robustness(args, infer_mode="monologue"):
         row = ["drop (%)"]
         for model in args.models:
             try:
-                worst_dict = results[model][task][0]
-                assert worst_dict, "Empty result!"
-                passatk = calculate_passatk(worst_dict) * 100.
+                pass_dict = results[model][task][2] if modified_rp else results[model][task][0]
+                assert pass_dict, "Empty result!"
+                passatk = calculate_passatk(pass_dict, modified_rp=modified_rp) * 100.
                 nominal_passatk = nominal_passatk_dict[model][task]
-                row.append((nominal_passatk - passatk) / nominal_passatk * 100.)                
+                row.append((nominal_passatk - passatk) / nominal_passatk * 100.)
             except Exception as e:
                 row.append(" ")
                 print(f"{type(e).__name__}: {str(e)}. Skip this result.")
@@ -376,7 +444,13 @@ def eval_robustness(args, infer_mode="monologue"):
                         with open(dump_path, "a") as file:
                             json.dump(nonrobust_dict_stream, file)
                             file.write("\n")
-                row.append((calculate_passatk(right_to_wrong) + calculate_passatk(wrong_to_right)) * 100.)
+                if modified_rp:
+                    assert results[model][task][2], "Empty result!"
+                    right_to_wrong, wrong_to_right = get_all_diff(nominal_dict[model][task], results[model][task][2])
+                row.append(
+                    (calculate_passatk(right_to_wrong, modified_rp=modified_rp)\
+                        + calculate_passatk(wrong_to_right, modified_rp=modified_rp)) * 100.
+                )
             except Exception as e:
                 row.append(" ")
                 print(f"{type(e).__name__}: {str(e)}. Skip this result.")
@@ -413,6 +487,7 @@ if __name__ == '__main__':
     parser.add_argument('--models', type=str, nargs='+', default=["semcoder_1030", "semcoder_s_1030"], help="A list of the models needed to evaluate with")
     parser.add_argument('--mode', type=str, nargs='+', default=["monologue", "direct"], choices=["monologue", "direct"], help="Inference mode of the model")
     parser.add_argument('--nonrobust_stats', action='store_true', help="Show detailed statistics of non-robust samples")
+    parser.add_argument('--modified_rp', action='store_true', help="Use modified Robust Pass for average case evaluation")
     parser.add_argument('--n_outputs', type=int, default=1, help="The total number of perturbations generated/evaluated with")
     parser.add_argument('--samples_like', type=str, default=None, help="Path to a reference file which you wish to use for sampling the full result")
     args = parser.parse_args()
