@@ -3,6 +3,7 @@ import json
 import argparse
 import csv
 import copy
+import numpy as np
 
 
 def read_config(config, data):
@@ -27,176 +28,141 @@ def read_config(config, data):
 
 
 def read_json(file_name, ref_file=None):
-    """ A help funtion to load data json files
+    """ A helper function to load json data
     """
-    data = []
+    assert file_name.endswith(".json"), "File must be json."
     if not os.path.exists(file_name):
         print(f"Warning: {file_name} not exists, skip!")
         return
 
     with open(file_name, 'r') as input_file:
-        if file_name.endswith('.json'):
-            if ref_file is None:
-                # Load a single JSON object from the file
-                return json.load(input_file)
+        if ref_file is None:
             data = json.load(input_file)
-            ref_data = read_json(ref_file)["raw_scored_generations"]
-            if data["raw_scored_generations"].keys() == ref_data.keys():
-                return data
-            data = data["raw_scored_generations"]
-            sampled_data = {}
-            for sample in ref_data.keys():
-                assert sample in data.keys(), "Sample not found!"
-                sampled_data[sample] = data[sample]
-            return {
-                "raw_scored_generations": sampled_data,
-                "pass_at_1": calculate_passatk(sampled_data) * 100.
-            }
-        elif file_name.endswith('.jsonl'):
-            if ref_file is not None:
-                print("Sampling is not supported for JSONL file, skip!")
-            # Load multiple JSON objects, one per line
-            for line in input_file:
-                data.append(json.loads(line))
+            assert "raw_scored_generations" in data.keys(),\
+                f"{os.path.basename(file_name)} doesn't seem like a CRUXEval scored result file."
             return data
-        else:
-            print(f"Warning: {file_name} is neither a JSON nor JSONL file.")
-            return
+
+        data = json.load(input_file)
+        assert "raw_scored_generations" in data.keys(),\
+            f"{os.path.basename(file_name)} doesn't seem like a CRUXEval scored result file."
+        ref_data = read_json(ref_file)["raw_scored_generations"]
+        if data["raw_scored_generations"].keys() == ref_data.keys():
+            return data
+
+        data = data["raw_scored_generations"]
+        sampled_data = {}
+        for sample in ref_data.keys():
+            assert sample in data.keys(), "Sample not found!"
+            sampled_data[sample] = data[sample]
+        return {
+            "raw_scored_generations": sampled_data,
+            "pass_at_1": calculate_passatk(sampled_data) * 100.
+        }
 
 
-def get_worst_passatk_dict(perturbed_data_list):
+def get_worst_dict(perturbed_data_list):
     assert len(perturbed_data_list) >= 1, "Empty data!"
-    passatk_worst = {sample: True for sample in perturbed_data_list[0].keys()}
+    n = len(next(iter(perturbed_data_list[0].values())))
+    worst_dict = {sample: [True] * n for sample in perturbed_data_list[0].keys()}
 
     for perturbed_data in perturbed_data_list:
         for sample, passed in perturbed_data.items():
-            assert sample in passatk_worst, "Unexpected sample found."
-            passatk_worst[sample] = passatk_worst[sample] and passed[0]
+            assert sample in worst_dict, "Unexpected sample found."
+            assert len(passed) == n, "Unexpected length of scored results."
 
-    return passatk_worst
+            for i in range(n):
+                worst_dict[sample][i] = worst_dict[sample][i] and passed[i]
+
+    return worst_dict
 
 
-def get_best_passatk_dict(perturbed_data_list):
+def get_best_dict(perturbed_data_list):
     assert len(perturbed_data_list) >= 1, "Empty data!"
-    passatk_best = {sample: False for sample in perturbed_data_list[0].keys()}
+    n = len(next(iter(perturbed_data_list[0].values())))
+    best_dict = {sample: [False] * n for sample in perturbed_data_list[0].keys()}
 
     for perturbed_data in perturbed_data_list:
         for sample, passed in perturbed_data.items():
-            assert sample in passatk_best, "Unexpected sample found."
-            passatk_best[sample] = passatk_best[sample] or passed[0]
+            assert sample in best_dict, "Unexpected sample found."
+            assert len(passed) == n, "Unexpected length of scored results."
 
-    return passatk_best
+            for i in range(n):
+                best_dict[sample][i] = best_dict[sample][i] or passed[i]
 
-
-def calculate_passatk(data, is_raw_data=True):
-    length = len(data)
-    cnt = 0
-    if is_raw_data:
-        for passed in data.values():
-            if passed[0]:
-                cnt += 1
-    else:
-        for passed in data.values():
-            if passed:
-                cnt += 1
-    return cnt / length
+    return best_dict
 
 
-def calculate_metric(perturbed_data_list, metric, nominal_data):
-    """ Get targeted metric numbers
-    perturbed_data_list: a list of perturbed data completions, each element is the completion of one seed dataset
-    """
-    length = len(nominal_data)
-
-    passatk_worst = get_worst_passatk_dict(perturbed_data_list)
-    passatk_best = get_best_passatk_dict(perturbed_data_list)
-
-    if metric == "passatk":
-        # perturbed pass@k
-        passatk_list = []
-        for perturbed_data in perturbed_data_list:
-            passatk_list.append(calculate_passatk(perturbed_data))
-
-        worst_cnt = 0
-        for passed in passatk_worst.values():
-            if passed: 
-                worst_cnt += 1
-
-        return passatk_list, worst_cnt / length if passatk_list else " ", passatk_worst
-
-    if metric == "drop":
-        # (nominal pass@k - perturbed pass@k) / nominal pass@k
-        nominal_passatk = calculate_passatk(nominal_data)
-
-        passatk_list = []
-        for perturbed_data in perturbed_data_list:
-            perturbed_passatk = calculate_passatk(perturbed_data)
-            passatk_list.append((nominal_passatk - perturbed_passatk) / nominal_passatk)
-
-        worst_cnt = 0
-        for sample in passatk_worst.keys():
-            if passatk_worst[sample]: 
-                worst_cnt += 1
-        perturbed_passatk_worst = worst_cnt / length
-
-        return passatk_list, (nominal_passatk - perturbed_passatk_worst) / nominal_passatk if passatk_list else " ", passatk_worst
-
-    if metric == "relative":
-        # (nominal != perturbed) / total prompts
-        diffset = []
-        relative_list = []
-
-        for perturbed_data in perturbed_data_list:
-            relative_cnt = 0
-            for sample, passed in perturbed_data.items():
-                if nominal_data[sample][0] != passed[0]:
-                    relative_cnt += 1
-                    diffset.append(sample)
-            relative_list.append(relative_cnt / length)
-
-        diffset = set(diffset)
-        worst_cnt = 0
-        for sample in passatk_worst.keys():
-            if nominal_data[sample][0] != passatk_worst[sample][0]:
-                worst_cnt += 1
-            elif nominal_data[sample][0] != passatk_best[sample][0]:
-                worst_cnt += 1
-        assert len(diffset) == worst_cnt
-
-        return relative_list, worst_cnt / length  if relative_list else " ", passatk_worst
+def calculate_passatk(scored_results):
+    pass_at_1s = []
+    for result in scored_results.values():
+        c, n = result.count(True), len(result)
+        pass_at_1s.append(pass_at_k(n, c, 1))
+    return sum(pass_at_1s) / len(pass_at_1s)
 
 
-def eval_per_cat(args):
-    results = {}    # for all the perturbed result [worst_dict, best_dict]
-    nominal_dict = {}   # for nominal result 
+def pass_at_k(n, c, k):
+    if n - c < k:
+        return 1.0
+    return 1.0 - np.prod(1.0 - k / np.arange(n - c + 1, n + 1))
+
+
+def transpose_result(perturbed_data_list):
+    assert len(perturbed_data_list) >= 1, "Empty data!"
+    n = len(next(iter(perturbed_data_list[0].values())))
+    transposed = [
+        {sample: [] for sample in perturbed_data_list[0].keys()} for _ in range(n)
+    ]
+
+    for perturbed_data in perturbed_data_list:
+        for sample, passed in perturbed_data.items():
+            assert sample in transposed, "Unexpected sample found."
+            assert len(passed) == n, "Unexpected length of scored results."
+
+            for i in range(n):
+                transposed[i][sample].append(passed[i])
+
+    return transposed
+
+
+def get_suc_rate(perturbed_results, nominal):
+    if perturbed_results is None or len(perturbed_results) == 0:
+        return 0.0
+    return perturbed_results.count((not nominal)) / len(perturbed_results)
+
+
+def eval_robustness(args, infer_mode="monologue"):
+    results = {}                # for all perturbed results [worst_dict, best_dict]
+    nominal_dict = {}           # for nominal result
     nominal_passatk_dict = {}   # for nominal passatk
-    if args.nonrobust_stats:
-        nonrobust_dict = {}     # for non-robust samples
+
+    nonrobust_stats = args.nonrobust_stats
+    nonrobust_dict = {
+        "right_to_wrong": {},
+        "wrong_to_right": {},
+        "right_to_all_wrong": [],
+        "wrong_to_all_right": [],
+    }                           # for non-robust samples
+    raw_results = {}            # for raw (not worst or best) perturbed results
 
     for model in args.models:
         results[model] = {}
         nominal_dict[model] = {}
         nominal_passatk_dict[model] = {}
-        if args.nonrobust_stats:
-            nonrobust_dict[model] = {}
+        if nonrobust_stats:
+            raw_results[model] = {}
         for task in ["input", "output"]:
             results[model][task] = {}
             nominal_dict[model][task] = {}
             nominal_passatk_dict[model][task] = {}
-            if args.nonrobust_stats:
-                nonrobust_dict[model][task] = {
-                    "right_to_wrong": {},
-                    "wrong_to_right": {},
-                    "right_to_complete_wrong": [],
-                    "wrong_to_complete_right": [],
-                }
-                nonrobust_dict[model][f"{task}_raw"] = {}
+            if nonrobust_stats:
+                nonrobust_dir = f"nonrobust_stats/cruxeval_{task}/{model}_{infer_mode}/"
+                os.makedirs(nonrobust_dir, exist_ok=True)
+                raw_results[model][task] = {}
 
+    NL_AUG_RECIPES, PARTIAL_RECIPES, FUNC_RECIPES, FORMAT_RECIPES, FULL_RECIPES, RECIPES, \
+        DATASET_PATH, RANDOM_TRANS, data_path, output_adv_path, model_generate_path, run_script = read_config(args.config, "cruxeval")
     for model in args.models:
-        NL_AUG_RECIPES, PARTIAL_RECIPES, FUNC_RECIPES, FORMAT_RECIPES, FULL_RECIPES, RECIPES, \
-            DATASET_PATH, RANDOM_TRANS, data_path, output_adv_path, model_generate_path, run_script = read_config(args.config, "cruxeval")
         for task in ["input", "output"]:
-            infer_mode = args.mode
             print(f"Evaluating {model} on {task} prediction (with {infer_mode} inference)...")
             nominal_data_path = f"nominal/cruxeval_{task}/{model}_{infer_mode}/scored_results.json"
 
@@ -209,8 +175,7 @@ def eval_per_cat(args):
             nominal_passatk = nominal_data["pass_at_1"]
 
             print(f"nominal pass@1: {nominal_passatk:.2f}")
-            # Works but in a dirty way
-            nominal_dict[model][task] = get_worst_passatk_dict([nominal_pass_dict])
+            nominal_dict[model][task] = nominal_pass_dict
             nominal_passatk_dict[model][task] = nominal_passatk
             nominal_cross_checked = False
 
@@ -245,10 +210,7 @@ def eval_per_cat(args):
                         else:
                             print(f"{perturbed_data_path} not exists, skip..")
                             pass
-
-                    # _, method_passatk, _ = calculate_metric(perturbed_data_list, "passatk", nominal_pass_dict)
-                    method_passatk = calculate_passatk(get_worst_passatk_dict(perturbed_data_list), is_raw_data=False)
-                    method_passatk *= 100.
+                    method_passatk = calculate_passatk(get_worst_dict(perturbed_data_list)) * 100.
 
                 if perturbed_data_list:
                     if passatk_list:
@@ -257,45 +219,43 @@ def eval_per_cat(args):
                         print(f"\t{RECIPES[args.method][aug_method]} passatk: {method_passatk:.2f}")
                     # import pdb; pdb.set_trace()
                     # merge results across different aug_method
-                    passatk_worst_dict = get_worst_passatk_dict(perturbed_data_list)
-                    passatk_best_dict = get_best_passatk_dict(perturbed_data_list)
-                    assert passatk_worst_dict.keys() == passatk_best_dict.keys(),\
-                        "Worst and best dict have different samples."
+                    worst_dict = get_worst_dict(perturbed_data_list)
+                    best_dict = get_best_dict(perturbed_data_list)
+                    assert worst_dict.keys() == best_dict.keys(), "Worst and best dict have different samples."
 
                     if not nominal_cross_checked:
-                        assert len(passatk_worst_dict) <= len(nominal_pass_dict),\
-                            "Perturbed datasets have more samples than nominal dataset."
-                        if len(passatk_worst_dict) < len(nominal_pass_dict):
-                            print("Perturbed datasets have less samples than nominal dataset.")
-                            print("Assume sampling and try to extract the subset from the nominal dataset:")
+                        assert len(worst_dict) <= len(nominal_pass_dict),\
+                            "Check the scored result file. Perturbed results have more samples than nominal result."
+                        if len(worst_dict) < len(nominal_pass_dict):
+                            print("Perturbed results have less samples than nominal result.")
+                            print("Assume sampling and try to extract the subset from the nominal result:")
                             sampled_nominal_pass_dict = {}
-                            for sample in passatk_worst_dict.keys():
+                            for sample in worst_dict.keys():
                                 assert sample in nominal_pass_dict.keys(), "Unexpected sample found."
                                 sampled_nominal_pass_dict[sample] = nominal_pass_dict[sample]
                             nominal_pass_dict = sampled_nominal_pass_dict
                             nominal_passatk = calculate_passatk(nominal_pass_dict) * 100.
-                            nominal_dict[model][task] = get_worst_passatk_dict([nominal_pass_dict])
+                            nominal_dict[model][task] = nominal_pass_dict
                             nominal_passatk_dict[model][task] = nominal_passatk
                             print(f"nominal sampled; re-evaluated nominal pass@1: {nominal_passatk:.2f}")
                         else:
-                            assert nominal_pass_dict.keys() == passatk_worst_dict.keys(), "Unexpected sample found."
+                            assert nominal_pass_dict.keys() == worst_dict.keys(), "Unexpected sample found."
                         nominal_cross_checked = True
 
-                    if args.nonrobust_stats:
-                        nonrobust_dict[model][f"{task}_raw"][method_name] = [
-                            copy.deepcopy(passatk_worst_dict), copy.deepcopy(passatk_best_dict)
-                        ]
+                    if nonrobust_stats:
+                        raw_results[model][task][method_name] = transpose_result(perturbed_data_list)
 
                     if results[model][task] is None:
-                        results[model][task] = [passatk_worst_dict, passatk_best_dict]
+                        results[model][task] = [worst_dict, best_dict]
                     else:
                         for sample in results[model][task][0].keys():
-                            assert sample in passatk_worst_dict and sample in passatk_best_dict, "Unexpected sample found."
-                            results[model][task][0][sample] = results[model][task][0][sample] and passatk_worst_dict[sample]
-                            results[model][task][1][sample] = results[model][task][1][sample] or passatk_best_dict[sample]
+                            assert sample in worst_dict and sample in best_dict, "Unexpected sample found."
+                            # results[model][task][0][sample] = results[model][task][0][sample] and worst_dict[sample]
+                            # results[model][task][1][sample] = results[model][task][1][sample] or best_dict[sample]
+                            results[model][task][0][sample] = [r and w for r, w in zip(results[model][task][0][sample], worst_dict[sample])]
+                            results[model][task][1][sample] = [r or b for r, b in zip(results[model][task][1][sample], best_dict[sample])]
                 else:
                     # no data available
-                    # print(f"\t{RECIPES[args.method][aug_method]} passatk: {passatk_list}, {method_passatk}")
                     print(f"No data processed for {method_name}. Skip...")
 
             if not nominal_cross_checked:
@@ -310,9 +270,6 @@ def eval_per_cat(args):
 
     # reformulate results to csv table
     for task in ["input", "output"]:
-        NL_AUG_RECIPES, PARTIAL_RECIPES, FUNC_RECIPES, FORMAT_RECIPES, FULL_RECIPES, RECIPES, \
-            DATASET_PATH, RANDOM_TRANS, data_path, output_adv_path, model_generate_path, run_script = read_config(args.config, "cruxeval")
-
         full_data = []
         row = ["nominal"]
         for model in args.models:
@@ -324,97 +281,109 @@ def eval_per_cat(args):
 
         row = ["passatk"]
         for model in args.models:
-            cnt = 0
-            total_cnt = 0
-            if results[model][task][0]:
-                for sample in results[model][task][0].keys():
-                    if results[model][task][0][sample]:
-                        cnt += 1
-                    total_cnt += 1
-                row.append(cnt / total_cnt * 100.)
-            else:
+            try:
+                worst_dict = results[model][task][0]
+                assert worst_dict, "Empty result!"
+                row.append(calculate_passatk(worst_dict) * 100.)
+            except Exception as e:
                 row.append(" ")
+                print(f"{type(e).__name__}: {str(e)}. Skip this result.")
         full_data.append(row)
 
         row = ["drop (%)"]
         for model in args.models:
-            cnt = 0
-            total_cnt = 0
-            if results[model][task][0]:
-                for sample in results[model][task][0].keys():
-                    if results[model][task][0][sample]:
-                        cnt += 1
-                    total_cnt += 1
-                passatk = cnt / total_cnt * 100.
+            try:
+                worst_dict = results[model][task][0]
+                assert worst_dict, "Empty result!"
+                passatk = calculate_passatk(worst_dict) * 100.
                 nominal_passatk = nominal_passatk_dict[model][task]
-                row.append((nominal_passatk - passatk) / nominal_passatk * 100.)
-            else:
+                row.append((nominal_passatk - passatk) / nominal_passatk * 100.)                
+            except Exception as e:
                 row.append(" ")
+                print(f"{type(e).__name__}: {str(e)}. Skip this result.")
         full_data.append(row)
-        
+
         row = ["relative (%)"]
         for model in args.models:
-            cnt = 0
-            total_cnt = 0
-            if results[model][task][0]:
-                for sample in results[model][task][0].keys():
-                    if results[model][task][0][sample] != nominal_dict[model][task][sample]:
-                        # worst dict difference
-                        cnt += 1
-                        if args.nonrobust_stats:
-                            if nominal_dict[model][task][sample]:
-                                nonrobust_dict[model][task]["right_to_wrong"][sample] = {
-                                    "nominal": nominal_dict[model][task][sample],
-                                    "perturbed": {
-                                        aug_method: nonrobust_dict[model][f"{task}_raw"][aug_method][0][sample]
-                                        for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
-                                    },
-                                    "method_succeeded": [
-                                        aug_method for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
-                                        if nonrobust_dict[model][f"{task}_raw"][aug_method][0][sample] != nominal_dict[model][task][sample]
-                                    ],
-                                }
-                                if all(
-                                    not passed for passed in nonrobust_dict[model][task]["right_to_wrong"][sample]["perturbed"].values()
-                                ):
-                                    nonrobust_dict[model][task]["right_to_complete_wrong"].append(sample)
+            try:
+                n = len(next(iter(nominal_dict[model][task].values())))
+                right_to_wrong = {sample: [False] * n for sample in nominal_dict[model][task].keys()}
+                wrong_to_right = {sample: [False] * n for sample in nominal_dict[model][task].keys()}
+
+                worst_dict = results[model][task][0]
+                best_dict = results[model][task][1]
+                assert worst_dict and best_dict, "Empty result!"
+
+                raw_result = raw_results[model][task] if nonrobust_stats else None
+                method_list = list(raw_result.keys()) if nonrobust_stats else None
+                for i in range(n):
+                    nonrobust_dict_stream = copy.deepcopy(nonrobust_dict) if nonrobust_stats else None
+                    for sample in worst_dict.keys():
+                        nominal = nominal_dict[model][task][sample][i]
+                        if worst_dict[sample][i] != nominal:
+                            # worst dict difference
+                            if nominal:
+                                right_to_wrong[sample][i] = True
+                                if nonrobust_stats:
+                                    nonrobust_dict_stream["right_to_wrong"][sample] = {
+                                        "nominal": nominal,
+                                        "perturbed": {
+                                            aug_method: raw_result[aug_method][i][sample]
+                                            for aug_method in method_list
+                                        },
+                                        "method_succeeded": {
+                                            aug_method: get_suc_rate(raw_result[aug_method][i][sample], nominal)
+                                            for aug_method in method_list if (not nominal) in raw_result[aug_method][i][sample]
+                                        },
+                                    }
+                                    if set(nonrobust_dict_stream["right_to_wrong"][sample]["method_succeeded"].keys()) == set(method_list):
+                                        nonrobust_dict_stream["right_to_all_wrong"].append(sample)
                             else:
-                                nonrobust_dict[model][task]["wrong_to_right"][sample] = {
-                                    "nominal": nominal_dict[model][task][sample],
+                                wrong_to_right[sample][i] = True
+                                if nonrobust_stats:
+                                    nonrobust_dict_stream["wrong_to_right"][sample] = {
+                                        "nominal": nominal,
+                                        "perturbed": {
+                                            aug_method: raw_result[aug_method][i][sample]
+                                            for aug_method in method_list
+                                        },
+                                        "method_succeeded": {
+                                            aug_method: get_suc_rate(raw_result[aug_method][i][sample], nominal)
+                                            for aug_method in method_list if (not nominal) in raw_result[aug_method][i][sample]
+                                        },
+                                    }
+                                    # due to worst dict, no need for extra check
+                                    nonrobust_dict_stream["wrong_to_all_right"].append(sample)
+                        elif best_dict[sample][i] != nominal:
+                            # best dict difference
+                            wrong_to_right[sample][i] = True
+                            if nonrobust_stats:
+                                nonrobust_dict_stream["wrong_to_right"][sample] = {
+                                    "nominal": nominal,
                                     "perturbed": {
-                                        aug_method: nonrobust_dict[model][f"{task}_raw"][aug_method][0][sample]
-                                        for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
+                                        aug_method: raw_result[aug_method][i][sample]
+                                        for aug_method in method_list
                                     },
-                                    "method_succeeded": [
-                                        aug_method for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
-                                        if nonrobust_dict[model][f"{task}_raw"][aug_method][0][sample] != nominal_dict[model][task][sample]
-                                    ],
+                                    "method_succeeded": {
+                                        aug_method: get_suc_rate(raw_result[aug_method][i][sample], nominal)
+                                        for aug_method in method_list if (not nominal) in raw_result[aug_method][i][sample]
+                                    },
                                 }
-                                # due to worst dict, no need for extra check
-                                nonrobust_dict[model][task]["wrong_to_complete_right"].append(sample)
-                    elif results[model][task][1][sample] != nominal_dict[model][task][sample]:
-                        # best dict difference
-                        cnt += 1
-                        if args.nonrobust_stats:
-                            nonrobust_dict[model][task]["wrong_to_right"][sample] = {
-                                "nominal": nominal_dict[model][task][sample],
-                                "perturbed": {
-                                    aug_method: nonrobust_dict[model][f"{task}_raw"][aug_method][1][sample]
-                                    for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
-                                },
-                                "method_succeeded": [
-                                    aug_method for aug_method in nonrobust_dict[model][f"{task}_raw"].keys()
-                                    if nonrobust_dict[model][f"{task}_raw"][aug_method][1][sample] != nominal_dict[model][task][sample]
-                                ],
-                            }
-                    total_cnt += 1
-                row.append(cnt / total_cnt * 100.)
-            else:
+                                if set(nonrobust_dict_stream["wrong_to_right"][sample]["method_succeeded"].keys()) == set(method_list):
+                                    nonrobust_dict_stream["wrong_to_all_right"].append(sample)
+                    if nonrobust_stats:
+                        dump_path = f"nonrobust_stats/cruxeval_{task}/{model}_{infer_mode}/{args.method}_nonrobust.jsonl"
+                        with open(dump_path, "a") as file:
+                            json.dump(nonrobust_dict_stream, file)
+                            file.write("\n")
+                row.append((calculate_passatk(right_to_wrong) + calculate_passatk(wrong_to_right)) * 100.)
+            except Exception as e:
                 row.append(" ")
+                print(f"{type(e).__name__}: {str(e)}. Skip this result.")
         full_data.append(row)
 
         # header = [args.method] + args.models
-        csv_path = f"category_report/{args.method}/{args.mode}/"
+        csv_path = f"category_report/{args.method}/{infer_mode}/"
         os.makedirs(csv_path, exist_ok=True)
 
         if args.aug_method is not None:
@@ -431,28 +400,23 @@ def eval_per_cat(args):
         writer.writerows(full_data)
         file.close()
 
-    if args.nonrobust_stats:
-        os.makedirs("stats", exist_ok=True)
-        json.dump(nonrobust_dict, open(f"stats/{args.method}_{infer_mode}_nonrobust.json", "w"))
     return
+
 
 if __name__ == '__main__':
     """ The main function for using our robustness benchmark
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--granularity', type=str, default="category", choices=["category", "method"], help="Obtain robustness metrics on specific granularity")
     parser.add_argument('--method', type=str, choices=["normal", "nlaugmenter", "natgen", "format", "func_name", "random"], help="The classes of perturbation. Please set method to natgen with status nominal to evaluate nominal partial code.")
     parser.add_argument('--config', type=str, default="../../recode/config.json", help="Path to recode config")
     parser.add_argument('--aug_method', type=int, default=None, help="The detailed augmentation method used with index (index defined in config.json for each method). Default None means running all the perturbations")
-    parser.add_argument('--models', nargs='+', default=["semcoder_s_1030"], help="A list of the models needed to evaluate with")
-    parser.add_argument('--mode', type=str, default="monologue", choices=["monologue", "direct"], help="Inference mode of the model")
+    parser.add_argument('--models', type=str, nargs='+', default=["semcoder_1030", "semcoder_s_1030"], help="A list of the models needed to evaluate with")
+    parser.add_argument('--mode', type=str, nargs='+', default=["monologue", "direct"], choices=["monologue", "direct"], help="Inference mode of the model")
     parser.add_argument('--nonrobust_stats', action='store_true', help="Show detailed statistics of non-robust samples")
     parser.add_argument('--n_outputs', type=int, default=1, help="The total number of perturbations generated/evaluated with")
     parser.add_argument('--samples_like', type=str, default=None, help="Path to a reference file which you wish to use for sampling the full result")
     args = parser.parse_args()
     print(args)
-    
-    if args.granularity == "category":
-        eval_per_cat(args)
-    else:
-        raise NotImplementedError
+
+    for mode in args.mode:
+        eval_robustness(args, mode)
