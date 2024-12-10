@@ -1,0 +1,3 @@
+[submodule "SemCoder"]
+	path = SemCoder
+	url = https://github.com/hailie-mitchell/SemCoder.git
