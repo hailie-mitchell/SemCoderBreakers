@@ -16,7 +16,7 @@ The MBPP+, HumanEval+ and CRUXEval datasets were perturbed using [ReCode](https:
 
 The installation steps provided in the [ReCode repository's](https://github.com/amazon-science/recode) README were first followed. We updated the dataset paths in the config.json file to map to our new MBPP+, HumanEval+, and CRUXEval datasets.
 
-### MBPP+ & HumanEval+
+### MBPP+ & HumanEval+ Perturbations
 Next, we used the [perturb] option of Recode to create the perturbed versions of the datasets.
 
 For natural language perturbations, we ran the following command:
@@ -51,7 +51,7 @@ To verify the perturbations modified the input as intended, we ran the following
 python run_robust.py analysis [perturbation_name] --aug_method [index] --models None
 ```
 
-### CRUXEval
+### CRUXEval Perturbations
 To perturb the CRUXEval dataset, we started by modifying the format of the original dataset so that it can be handled by the ReCode framework.
 Since all samples in the CRUXEval dataset have source code with function names `f`, we can optionally change all of the samples to have an alternate function name in order to later perform function name perturbations.
 To reformat the CRUXEval dataset, we run the following script from our own repository:
@@ -80,7 +80,8 @@ python nominal/data_process.py for_eval [path_to_perturbed_dataset] [path_to_sav
 python validate_split_data.py --data_path [path_to_perturbed_reformatted_dataset] --format eval
 ```
 
-## SemCoder
+## SemCoder Experiments
+### MBPP+ & HumanEval+ Experiments
 Next, we use the [SemCoder](https://arxiv.org/pdf/2406.01006) model to assess its robustness in code generation and execution reasoning against semantic-preserving perturbations of NL and code inputs.
 
 The installation steps provided in the [SemCoder repository's](https://github.com/ARiSE-Lab/SemCoder) README were first followed.
@@ -92,14 +93,19 @@ Then, the following command was run to generate solutions to the perturbed EvalP
 run_evalplus.py --model_key deepseek-ai/deepseek-coder-6.7b-base --dataset [dataset_name] --save_path [output_path] --n_batches 1     --n_problems_per_batch 1 --n_samples_per_problem 5     --max_new_tokens 100 --top_p 0.9 --temperature 0 --input_data_path [input_path]
 ```
 
+### CRUXEval Experiments
+To run experiments on the CRUXEval datasets for SemCoder and DeepSeek-Coder models, we use the SemCoder repository. All modifications we made can be found in our own fork of the SemCoder directory, included as a [submodule here](SemCoder).
 To generate model responses on the perturbed CRUXEval datasets, the SemCoder script `SemCoder/scripts/eval/eval_cruxeval.sh` was changed to use temperature 0.
 The `SemCoder/experiments/cruxeval_utils.py` file was updated to point to the perturbed dataset file of interest.
 Additionally, we modified the prompting in the file `SemCoder/experiments/cruxeval_prompts.py` so that prompts referred to a function rather than `function f` since we renamed all functions in the CRUXEval dataset.
-These changes can also be seen in our [modified fork of the SemCoder repository](https://github.com/hailie-mitchell/SemCoder).
-Then we generated model responses with the SemCoder script:
+Then we generated SemCoder model responses with the SemCoder script:
 ```
 cd SemCoder
 bash scripts/eval/eval_cruxeval.sh
+```
+And we generated DeepSeek-Coder responses with the command: 
+```
+bash scripts/eval/eval_cruxeval_deepseek.sh
 ```
 
 Additional details about robustness evaluations of model generations for the CRUXEval datasets are available in our [cruxeval evaluation documentation](cruxeval/results/README.md).
