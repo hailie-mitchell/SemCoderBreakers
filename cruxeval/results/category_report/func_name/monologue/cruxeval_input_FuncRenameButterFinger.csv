@@ -1,5 +1,5 @@
-func_name/FuncRenameButterFinger,semcoder_1030,semcoder_s_1030
-nominal,64.0,62.0
-passatk,64.5,57.49999999999999
-drop (%),-0.78125,7.258064516129044
-relative (%),20.5,20.5
+func_name/FuncRenameButterFinger,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,42.0,37.0,64.0,62.0
+passatk,44.0,41.5,64.5,57.49999999999999
+drop (%),-4.761904761904762,-12.162162162162163,-0.78125,7.258064516129044
+relative (%),11.0,23.5,20.5,20.5

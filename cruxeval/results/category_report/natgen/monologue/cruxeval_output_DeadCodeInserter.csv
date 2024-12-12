@@ -1,5 +1,5 @@
-natgen/DeadCodeInserter,semcoder_1030,semcoder_s_1030
-nominal,58.5,60.5
-passatk,56.49999999999999,59.5
-drop (%),3.418803418803431,1.6528925619834711
-relative (%),19.0,20.0
+natgen/DeadCodeInserter,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,34.0,40.5,58.5,60.5
+passatk,30.0,40.5,56.49999999999999,59.5
+drop (%),11.76470588235294,0.0,3.418803418803431,1.6528925619834711
+relative (%),16.0,18.0,19.0,20.0

@@ -1,5 +1,5 @@
-format/new_lines,semcoder_1030,semcoder_s_1030
-nominal,64.0,62.0
-passatk,62.0,61.0
-drop (%),3.125,1.6129032258064515
-relative (%),14.000000000000002,19.0
+format/new_lines,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,42.0,37.0,64.0,62.0
+passatk,41.0,34.5,62.0,61.0
+drop (%),2.380952380952381,6.756756756756757,3.125,1.6129032258064515
+relative (%),8.0,19.5,14.000000000000002,19.0

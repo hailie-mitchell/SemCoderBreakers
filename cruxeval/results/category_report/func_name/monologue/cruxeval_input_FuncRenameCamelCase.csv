@@ -1,5 +1,5 @@
-func_name/FuncRenameCamelCase,semcoder_1030,semcoder_s_1030
-nominal,64.0,62.0
-passatk,56.49999999999999,63.0
-drop (%),11.71875000000001,-1.6129032258064515
-relative (%),19.5,21.0
+func_name/FuncRenameCamelCase,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,42.0,37.0,64.0,62.0
+passatk,40.5,37.0,56.49999999999999,63.0
+drop (%),3.571428571428571,0.0,11.71875000000001,-1.6129032258064515
+relative (%),7.5,20.0,19.5,21.000000000000004

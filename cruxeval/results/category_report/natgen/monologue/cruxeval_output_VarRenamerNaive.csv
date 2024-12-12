@@ -1,5 +1,5 @@
-natgen/VarRenamerNaive,semcoder_1030,semcoder_s_1030
-nominal,58.5,60.5
-passatk,57.49999999999999,61.0
-drop (%),1.7094017094017218,-0.8264462809917356
-relative (%),14.000000000000002,13.5
+natgen/VarRenamerNaive,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,34.0,40.5,58.5,60.5
+passatk,34.5,37.5,57.49999999999999,61.0
+drop (%),-1.4705882352941175,7.4074074074074066,1.7094017094017218,-0.8264462809917356
+relative (%),16.5,16.0,14.000000000000002,13.5

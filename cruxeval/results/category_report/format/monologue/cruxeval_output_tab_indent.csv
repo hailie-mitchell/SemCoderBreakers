@@ -1,5 +1,5 @@
-format/tab_indent,semcoder_1030,semcoder_s_1030
-nominal,58.5,60.5
-passatk,59.5,57.49999999999999
-drop (%),-1.7094017094017095,4.958677685950425
-relative (%),11.0,12.0
+format/tab_indent,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,34.0,40.5,58.5,60.5
+passatk,37.0,39.0,59.5,57.49999999999999
+drop (%),-8.823529411764707,3.7037037037037033,-1.7094017094017095,4.958677685950425
+relative (%),9.0,11.5,11.0,12.0

@@ -1,5 +1,5 @@
-func_name/FuncRenameSwapChar,semcoder_1030,semcoder_s_1030
-nominal,45.0,44.0
-passatk,44.5,43.5
-drop (%),1.1111111111111112,1.1363636363636365
-relative (%),2.5,2.5
+func_name/FuncRenameSwapChar,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,39.0,36.0,45.0,44.0
+passatk,36.5,36.0,44.5,43.5
+drop (%),6.41025641025641,0.0,1.1111111111111112,1.1363636363636365
+relative (%),3.4999999999999996,5.0,2.5,2.5

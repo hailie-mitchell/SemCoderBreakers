@@ -1,5 +1,5 @@
-func_name/FuncRenameInflectionalVariation,semcoder_1030,semcoder_s_1030
-nominal,58.5,60.5
-passatk,57.99999999999999,59.5
-drop (%),0.854700854700867,1.6528925619834711
-relative (%),8.5,15.0
+func_name/FuncRenameInflectionalVariation,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,34.0,40.5,58.5,60.5
+passatk,36.0,36.5,57.99999999999999,59.5
+drop (%),-5.88235294117647,9.876543209876543,0.854700854700867,1.6528925619834711
+relative (%),9.0,9.0,8.5,15.000000000000002

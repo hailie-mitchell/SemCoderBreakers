@@ -1,5 +1,5 @@
-func_name,semcoder_1030,semcoder_s_1030
-nominal,44.5,49.0
-passatk,39.5,42.0
-drop (%),11.235955056179774,14.285714285714285
-relative (%),12.5,15.0
+func_name,deepseek-coder-6.7b-base,deepseek-coder-6.7b-instruct,semcoder_1030,semcoder_s_1030
+nominal,39.5,31.5,44.5,49.0
+passatk,30.0,22.5,39.5,42.0
+drop (%),24.050632911392405,28.57142857142857,11.235955056179774,14.285714285714285
+relative (%),18.0,19.5,12.5,15.000000000000002
