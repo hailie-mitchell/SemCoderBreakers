@@ -1,0 +1,8 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.6640211640211641,N/A,N/A
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/format/mbpp_doc2comments_s0-sanitized_eval_results.json,0.5846560846560847,0.11952191235059768,0.12698412698412698
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/format/mbpp_new_line_aftercode_s0-sanitized_eval_results.json,0.5740740740740741,0.13545816733067736,0.08994708994708994
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/format/mbpp_split_lines_s0-sanitized_eval_results.json,0.5740740740740741,0.13545816733067736,0.08994708994708994
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/format/mbpp_new_line_afterdoc_s0-sanitized_eval_results.json,0.0,1.0,0.6640211640211641
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/format/mbpp_tab_indent_s0-sanitized_eval_results.json,0.5740740740740741,0.13545816733067736,0.08994708994708994
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/format/mbpp_new_lines_s0-sanitized_eval_results.json,0.5740740740740741,0.13545816733067736,0.08994708994708994

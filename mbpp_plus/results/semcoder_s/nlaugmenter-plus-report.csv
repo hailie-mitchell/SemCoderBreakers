@@ -1,0 +1,12 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.6772486772486772,N/A,N/A
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_SwapCharactersPerturbation_s0-sanitized_eval_results.json,0.6772486772486772,0.0,0.047619047619047616
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_BackTranslation_s0-sanitized_eval_results.json,0.6640211640211641,0.01953124999999988,0.03968253968253968
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_ButterFingersPerturbation_s0-sanitized_eval_results.json,0.6613756613756614,0.023437499999999917,0.06878306878306878
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_SynonymInsertion_s0-sanitized_eval_results.json,0.6666666666666666,0.015625,0.08994708994708994
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_SynonymSubstitution_s0-sanitized_eval_results.json,0.6084656084656085,0.10156249999999992,0.10582010582010581
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_TenseTransformationFuture_s0-sanitized_eval_results.json,0.6666666666666666,0.015625,0.047619047619047616
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_TenseTransformationPast_s0-sanitized_eval_results.json,0.671957671957672,0.007812499999999918,0.05291005291005291
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_ChangeCharCase_s0-sanitized_eval_results.json,0.6243386243386243,0.078125,0.1111111111111111
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_EnglishInflectionalVariation_s0-sanitized_eval_results.json,0.6587301587301587,0.02734374999999996,0.07671957671957672
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_WhitespacePerturbation_s0-sanitized_eval_results.json,0.6640211640211641,0.01953124999999988,0.07142857142857142

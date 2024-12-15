@@ -1,0 +1,8 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.8068783068783069,N/A,N/A
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/format/mbpp_doc2comments_s0-sanitized_eval_results.json,0.7301587301587301,0.09508196721311478,0.10317460317460317
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/format/mbpp_new_line_aftercode_s0-sanitized_eval_results.json,0.7804232804232805,0.03278688524590157,0.026455026455026454
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/format/mbpp_split_lines_s0-sanitized_eval_results.json,0.7751322751322751,0.039344262295081964,0.031746031746031744
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/format/mbpp_new_line_afterdoc_s0-sanitized_eval_results.json,0.7936507936507936,0.016393442622950855,0.023809523809523808
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/format/mbpp_tab_indent_s0-sanitized_eval_results.json,0.7804232804232805,0.03278688524590157,0.026455026455026454
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/format/mbpp_new_lines_s0-sanitized_eval_results.json,0.7777777777777778,0.036065573770491764,0.0291005291005291

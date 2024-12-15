@@ -1,0 +1,8 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.6666666666666666,N/A,N/A
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/func_name/mbpp/mbpp_FuncRenameButterFinger_s0_eval_results.json,0.41534391534391535,0.3769841269841269,0.2830687830687831
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/func_name/mbpp/mbpp_FuncRenameInflectionalVariation_s0_eval_results.json,0.2566137566137566,0.615079365079365,0.42592592592592593
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/func_name/mbpp/mbpp_FuncRenameCamelCase_s0_eval_results.json,0.05555555555555555,0.9166666666666666,0.6164021164021164
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/func_name/mbpp/mbpp_FuncRenameChangeChar_s0_eval_results.json,0.25132275132275134,0.623015873015873,0.4417989417989418
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/func_name/mbpp/mbpp_FuncRenameSwapChar_s0_eval_results.json,0.5793650793650794,0.13095238095238082,0.15608465608465608
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/func_name/mbpp/mbpp_FuncRenameSynonymSub_s0_eval_results.json,0.6375661375661376,0.04365079365079361,0.05555555555555555

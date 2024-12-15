@@ -1,0 +1,12 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.8068783068783069,N/A,N/A
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_SwapCharactersPerturbation_s0-sanitized_eval_results.json,0.783068783068783,0.029508196721311507,0.03439153439153439
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_BackTranslation_s0-sanitized_eval_results.json,0.7751322751322751,0.039344262295081964,0.042328042328042326
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_ButterFingersPerturbation_s0-sanitized_eval_results.json,0.7698412698412699,0.045901639344262224,0.07407407407407407
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_SynonymInsertion_s0-sanitized_eval_results.json,0.791005291005291,0.019672131147540912,0.07407407407407407
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_SynonymSubstitution_s0-sanitized_eval_results.json,0.7142857142857143,0.1147540983606557,0.11904761904761904
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_TenseTransformationFuture_s0-sanitized_eval_results.json,0.7962962962962963,0.013114754098360656,0.031746031746031744
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_TenseTransformationPast_s0-sanitized_eval_results.json,0.7883597883597884,0.022950819672131112,0.03968253968253968
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_ChangeCharCase_s0-sanitized_eval_results.json,0.746031746031746,0.07540983606557373,0.12433862433862433
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_EnglishInflectionalVariation_s0-sanitized_eval_results.json,0.7698412698412699,0.045901639344262224,0.06349206349206349
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder_s/updated/nlaugmenter/mbpp_WhitespacePerturbation_s0-sanitized_eval_results.json,0.7777777777777778,0.036065573770491764,0.06613756613756613

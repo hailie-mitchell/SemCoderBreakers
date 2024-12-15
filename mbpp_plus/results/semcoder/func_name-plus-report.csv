@@ -1,0 +1,8 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.6640211640211641,N/A,N/A
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/func_name/mbpp_FuncRenameButterFinger_s0-sanitized_eval_results.json,0.2619047619047619,0.6055776892430279,0.41798941798941797
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/func_name/mbpp_FuncRenameInflectionalVariation_s0-sanitized_eval_results.json,0.21957671957671956,0.6693227091633467,0.4444444444444444
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/func_name/mbpp_FuncRenameCamelCase_s0-sanitized_eval_results.json,0.047619047619047616,0.9282868525896415,0.6164021164021164
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/func_name/mbpp_FuncRenameSwapChar_s0-sanitized_eval_results.json,0.4470899470899471,0.3266932270916335,0.2275132275132275
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/func_name/mbpp_FuncRenameSynonymSub_s0-sanitized_eval_results.json,0.5714285714285714,0.1394422310756973,0.09259259259259259
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/func_name/mbpp_FuncRenameChangeChar_s0-sanitized_eval_results.json,0.082010582010582,0.8764940239043826,0.5873015873015873

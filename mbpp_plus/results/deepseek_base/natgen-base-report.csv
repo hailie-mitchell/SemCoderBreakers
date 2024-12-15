@@ -1,0 +1,8 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.7301587301587301,N/A,N/A
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/natgen/mbpp/mbpp_DeadCodeInserter_s0_eval_results.json,0.4603174603174603,0.3695652173913043,0.35978835978835977
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/natgen/mbpp/mbpp_VarRenamerCB_s0_eval_results.json,0.6851851851851852,0.06159420289855061,0.18253968253968253
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/natgen/mbpp/mbpp_ForWhileTransformer_s0_eval_results.json,0.6798941798941799,0.06884057971014489,0.18783068783068782
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/natgen/mbpp/mbpp_VarRenamerNaive_s0_eval_results.json,0.6772486772486772,0.07246376811594203,0.1746031746031746
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/natgen/mbpp/mbpp_OperandSwap_s0_eval_results.json,0.701058201058201,0.03985507246376808,0.17724867724867724
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/natgen/mbpp/mbpp_VarRenamerRN_s0_eval_results.json,0.6851851851851852,0.06159420289855061,0.18253968253968253

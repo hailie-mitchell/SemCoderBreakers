@@ -1,0 +1,8 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.8042328042328042,N/A,N/A
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/natgen/mbpp_DeadCodeInserter_s0-sanitized_eval_results.json,0.49206349206349204,0.3881578947368421,0.31216931216931215
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/natgen/mbpp_VarRenamerCB_s0-sanitized_eval_results.json,0.6772486772486772,0.15789473684210525,0.12698412698412698
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/natgen/mbpp_VarRenamerRN_s0-sanitized_eval_results.json,0.6772486772486772,0.15789473684210525,0.12698412698412698
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/natgen/mbpp_OperandSwap_s0-sanitized_eval_results.json,0.6772486772486772,0.15789473684210525,0.12698412698412698
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/natgen/mbpp_VarRenamerNaive_s0-sanitized_eval_results.json,0.6772486772486772,0.15789473684210525,0.12698412698412698
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/natgen/mbpp_ForWhileTransformer_s0-sanitized_eval_results.json,0.6772486772486772,0.15789473684210525,0.12698412698412698

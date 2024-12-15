@@ -1,0 +1,12 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.5846560846560847,N/A,N/A
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_BackTranslation_s0_eval_results.json,0.5661375661375662,0.03167420814479633,0.09788359788359788
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_SynonymInsertion_s0_eval_results.json,0.5317460317460317,0.09049773755656108,0.13227513227513227
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_ButterFingersPerturbation_s0_eval_results.json,0.5370370370370371,0.08144796380090488,0.1164021164021164
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_SynonymSubstitution_s0_eval_results.json,0.5079365079365079,0.1312217194570136,0.15608465608465608
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_ChangeCharCase_s0_eval_results.json,0.5185185185185185,0.1131221719457014,0.17195767195767195
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_TenseTransformationFuture_s0_eval_results.json,0.5661375661375662,0.03167420814479633,0.11904761904761904
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_TenseTransformationPast_s0_eval_results.json,0.5476190476190477,0.06334841628959266,0.1111111111111111
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_EnglishInflectionalVariation_s0_eval_results.json,0.5317460317460317,0.09049773755656108,0.12169312169312169
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_SwapCharactersPerturbation_s0_eval_results.json,0.5555555555555556,0.049773755656108545,0.09788359788359788
+/home/preethiprakash2001/evalplus/output_dir/deepseek_base/nlaugmenter/mbpp/mbpp_WhitespacePerturbation_s0_eval_results.json,0.544973544973545,0.06787330316742077,0.10317460317460317

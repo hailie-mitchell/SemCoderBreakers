@@ -1,0 +1,8 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.6666666666666666,N/A,N/A
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/format/mbpp/mbpp_doc2comments_s0_eval_results.json,0.6825396825396826,-0.02380952380952389,0.1111111111111111
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/format/mbpp/mbpp_new_lines_s0_eval_results.json,0.6375661375661376,0.04365079365079361,0.0873015873015873
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/format/mbpp/mbpp_new_line_aftercode_s0_eval_results.json,0.6428571428571429,0.03571428571428559,0.05555555555555555
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/format/mbpp/mbpp_split_lines_s0_eval_results.json,0.6507936507936508,0.023809523809523725,0.06349206349206349
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/format/mbpp/mbpp_new_line_afterdoc_s0_eval_results.json,0.6402116402116402,0.0396825396825396,0.10052910052910052
+/home/preethiprakash2001/evalplus/output_dir/deepseek_instruct/format/mbpp/mbpp_tab_indent_s0_eval_results.json,0.6428571428571429,0.03571428571428559,0.05555555555555555

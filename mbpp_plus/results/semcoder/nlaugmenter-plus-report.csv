@@ -1,0 +1,12 @@
+Dataset,Pass@1,Drop,Relative
+nominal,0.6640211640211641,N/A,N/A
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_SwapCharactersPerturbation_s0-sanitized_eval_results.json,0.6296296296296297,0.051792828685259,0.07671957671957672
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_BackTranslation_s0-sanitized_eval_results.json,0.6455026455026455,0.027888446215139563,0.0873015873015873
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_ButterFingersPerturbation_s0-sanitized_eval_results.json,0.6137566137566137,0.0756972111553786,0.082010582010582
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_SynonymInsertion_s0-sanitized_eval_results.json,0.6349206349206349,0.043824701195219244,0.09259259259259259
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_SynonymSubstitution_s0-sanitized_eval_results.json,0.5925925925925926,0.10756972111553796,0.12433862433862433
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_TenseTransformationFuture_s0-sanitized_eval_results.json,0.6402116402116402,0.03585657370517932,0.05555555555555555
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_TenseTransformationPast_s0-sanitized_eval_results.json,0.6455026455026455,0.027888446215139563,0.03968253968253968
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_ChangeCharCase_s0-sanitized_eval_results.json,0.5978835978835979,0.09960159362549803,0.1455026455026455
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_EnglishInflectionalVariation_s0-sanitized_eval_results.json,0.6428571428571429,0.03187250996015936,0.07936507936507936
+/home/preethiprakash2001/SemCoder/output_dir/eval/evalplus/semcoder/nlaugmenter/mbpp_WhitespacePerturbation_s0-sanitized_eval_results.json,0.6243386243386243,0.059760956175298925,0.06613756613756613
