@@ -105,7 +105,7 @@ def calculate_relative(nominal_data, perturbed_data):
     return cnt / length
 
 
-def report_results_updated(nominal_data_path, perturbed_data_paths):
+def report_results(nominal_data_path, perturbed_data_paths):
     """Report results comparing a single nominal dataset with multiple perturbed datasets.
     Calculates multiple metrics: passatk, drop, and relative.
     """
