@@ -1,0 +1,17 @@
+Load from ground-truth from /home/rg3637/.cache/evalplus/fe585eb4df8c88d844eeb463ea4d0302.pkl
+Reading samples...
+0it [00:00, ?it/s]1it [00:00,  2.79it/s]74it [00:00, 185.06it/s]
+Traceback (most recent call last):
+  File "/opt/conda/envs/semcoder/bin/evalplus.evaluate", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/evalplus/evaluate.py", line 361, in main
+    Fire(evaluate)
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/evalplus/evaluate.py", line 230, in evaluate
+    assert len(completion_id) == len(problems), "Missing problems in samples"
+AssertionError: Missing problems in samples

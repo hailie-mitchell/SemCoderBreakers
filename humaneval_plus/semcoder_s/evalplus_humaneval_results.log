@@ -1,0 +1,15 @@
+Load from ground-truth from /home/rg3637/.cache/evalplus/fe585eb4df8c88d844eeb463ea4d0302.pkl
+Reading samples...
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/opt/conda/envs/semcoder/bin/evalplus.evaluate", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/evalplus/evaluate.py", line 357, in main
+    evaluate(args)
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/evalplus/evaluate.py", line 180, in evaluate
+    for sample in tqdm(load_solutions(flags.samples)):
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/opt/conda/envs/semcoder/lib/python3.10/site-packages/evalplus/data/utils.py", line 118, in load_solutions
+    for task_id in os.listdir(sample_path):
+FileNotFoundError: [Errno 2] No such file or directory: 'output_dir/eval/evalplus//semcoder_s/predictions_humaneval-sanitized.jsonl'
