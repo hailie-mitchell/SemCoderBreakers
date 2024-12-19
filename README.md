@@ -117,6 +117,12 @@ Then, we simply ran the following command to generate the comprehensive metrics:
 python run_robust.py report_results --nominal_data [nominal_dataset_path] --perturbed_data [perturbed_dataset_1_path] [perturbed_dataset_2_path] [perturbed_dataset_3_path] ...
 ```
 
+For automating the entire process, we have also created scripts that can be accesses in the humaneval_plus/ folder.
+For automatically running deepseek using the evalplus framework, the run_deepseek.sh script can be run by changing the RECODE_DIR to the location where the perturbed datasets are present and VLLM_DIR to the intended output directory.
+```
+./run_deepseek.sh
+```
+
 ### CRUXEval Experiments
 To run experiments on the CRUXEval datasets for SemCoder and DeepSeek-Coder models, we use the SemCoder repository. All modifications we made can be found in our own fork of the SemCoder directory, included as a [submodule here](SemCoder).
 To generate model responses on the perturbed CRUXEval datasets, the SemCoder script `SemCoder/scripts/eval/eval_cruxeval.sh` was changed to use temperature 0.
