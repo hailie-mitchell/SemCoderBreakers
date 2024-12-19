@@ -1,8 +1,12 @@
 #!/bin/bash
 
+# Input directory path containing the perturbed datasets
 SEMCODER_DIR="/home/preethiprakash2001/SemCoderBreakers/mbpp_plus/perturbed-datasets/partial"
+
+# Output directory to store the generated solutions
 OUTPUT_PATH="output_dir/semcoder_s"
 
+# Loop through the folders for each perturbation type
 folders=("natgen" "func_name" "format" "nlaugmenter")
 
 for folder in "${folders[@]}"; do
@@ -15,7 +19,7 @@ for folder in "${folders[@]}"; do
         # Create directory if it doesn't exist
         mkdir -p "$(dirname "$output_file")"
 
-        # Define the command to run
+        # Define the command to generate the solutions for the SemCoder model
         command="PYTHONPATH=\$PYTHONPATH:\$(pwd)/src python /home/preethiprakash2001/SemCoder/experiments/run_evalplus.py \
 --model_key deepseek-ai/deepseek-coder-6.7b-base \
 --model_name_or_path semcoder/semcoder_s_1030 \
