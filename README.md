@@ -126,6 +126,10 @@ Similarly, for SemCoder the run_semcoder.sh can be run by replacing INPUT_BASE_D
 ```
 ./run_semcoder.sh
 ```
+For getting the final metrics into a csv file, the run_results_bash.sh can be run (there were changes done to the main evalplus code for it to work).
+```
+./run_results_bash.sh
+```
 
 
 ### CRUXEval Experiments
