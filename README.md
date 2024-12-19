@@ -122,6 +122,11 @@ For automatically running deepseek using the evalplus framework, the run_deepsee
 ```
 ./run_deepseek.sh
 ```
+Similarly, for SemCoder the run_semcoder.sh can be run by replacing INPUT_BASE_DIR to the location of the perturbed file and OUTPUT_BASE_DIR to the intended output directory
+```
+./run_semcoder.sh
+```
+
 
 ### CRUXEval Experiments
 To run experiments on the CRUXEval datasets for SemCoder and DeepSeek-Coder models, we use the SemCoder repository. All modifications we made can be found in our own fork of the SemCoder directory, included as a [submodule here](SemCoder).
